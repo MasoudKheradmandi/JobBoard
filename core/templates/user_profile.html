@@ -1,0 +1,244 @@
+﻿{% extends 'base.html' %}
+{% load static %}
+
+{% block body %}
+    <!-- Content -->
+    <div class="page-content bg-white">
+		<!-- contact area -->
+        <div class="content-block">
+			<!-- Browse Jobs -->
+			<div class="section-full bg-white browse-job p-t50 p-b20">
+				<div class="container">
+					<div class="row">
+						<div class="col-xl-3 col-lg-4 m-b30">
+							<div class="sticky-top">
+								<div class="candidate-info">
+									<div class="candidate-detail text-center">
+										<div class="canditate-des">
+											<a href="javascript:void(0);">
+												<img alt="" src="images/team/pic1.jpg">
+											</a>
+											<div class="upload-link" title="آپلود عکس پروفایل" data-toggle="tooltip" data-placement="left">
+												<input type="file" class="update-flie">
+												<i class="fa fa-camera"></i>
+											</div>
+										</div>
+										<div class="candidate-title">
+											<div class="">
+												<h4 class="m-b5"><a href="javascript:void(0);">ثریا قاسمی</a></h4>
+												<p class="m-b0"><a href="javascript:void(0);">توسعه دهنده وب</a></p>
+											</div>
+										</div>
+									</div>
+									<ul>
+										<li><a href="jobs-profile.html" class="active">
+											<i class="fa fa-user-o" aria-hidden="true"></i> 
+											<span>پروفایل</span></a></li>
+										<li><a href="jobs-my-resume.html">
+											<i class="fa fa-file-text-o" aria-hidden="true"></i> 
+											<span>رزومه من</span></a></li>
+										<li><a href="jobs-saved-jobs.html">
+											<i class="fa fa-heart-o" aria-hidden="true"></i> 
+											<span>شغل های ذخیره شده</span></a></li>
+										<li><a href="jobs-applied-job.html">
+											<i class="fa fa-briefcase" aria-hidden="true"></i> 
+											<span>شغل های ثبت شده</span></a></li>
+										<li><a href="jobs-alerts.html">
+											<i class="fa fa-bell-o" aria-hidden="true"></i> 
+											<span>هشدارها</span></a></li>
+										<li><a href="jobs-cv-manager.html">
+											<i class="fa fa-id-card-o" aria-hidden="true"></i> 
+											<span>مدیریت رزومه</span></a></li>
+										<li><a href="jobs-change-password.html">
+											<i class="fa fa-key" aria-hidden="true"></i> 
+											<span>تغییر رمز عبور</span></a></li>
+										<li><a href="index.html">
+											<i class="fa fa-sign-out" aria-hidden="true"></i> 
+											<span>خروج</span></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-9 col-lg-8 m-b30">
+							<div class="job-bx job-profile">
+								<div class="job-bx-title clearfix">
+									<h5 class="font-weight-700 pull-left text-uppercase">اطلاعات اولیه</h5>
+									<a href="index.html" class="site-button right-arrow button-sm float-right">بازگشت</a>
+								</div>
+								<form>
+									<div class="row m-b30">
+										<div class="col-lg-6 col-md-6">
+											<div class="form-group">
+												<label>نام:</label>
+												{{form.name}}
+											</div>
+										</div>
+										<div class="col-lg-6 col-md-6">
+											<div class="form-group">
+												<label>نام خانوادگی:</label>
+												{{form.lastname}}
+											</div>
+										</div>
+										<div class="col-lg-6 col-md-6">
+											<div class="form-group">
+												<label>حرفه:</label>
+											{{form.job}}
+											</div>
+										</div>
+										<div class="col-lg-6 col-md-6">
+											<div class="form-group">
+												<label>سن:</label>
+											{{form.age}}
+											</div>
+										</div>
+										<div class="col-lg-6 col-md-6">
+											<div class="form-group">
+												<label>تلفن تماس:</label>
+												{{form.phone_number}}
+											</div>
+										</div>
+										<div class="col-lg-6 col-md-6">
+											<div class="form-group">
+												<label>محل اقامت:</label>
+											{{form.city}}
+											</div>
+										</div>
+										<div class="col-lg-6 col-md-6">
+											<div class="form-group">
+												<label>کد پستی</label>
+											{{form.code_posty}}
+											</div>
+										</div>
+										<div class="col-lg-12 col-md-12">
+											<div class="form-group">
+												<label>آدرس منزل:</label>
+											{{form.address}}
+											</div>
+										</div>
+										<div class="col-lg-12 col-md-12">
+											<div class="form-group">
+												<label>توضیحات بیشتر:</label>
+											{{form.info}}
+											</div>
+										</div>
+									</div>
+									<div class="job-bx-title clearfix">
+										<h5 class="font-weight-700 pull-left text-uppercase">اطلاعات تماس</h5>
+									</div>
+									<div class="row">
+										<div class="col-lg-6 col-md-6">
+											<div class="form-group">
+												<label>تلفن:</label>
+												<input type="text" class="form-control" placeholder="123 456 7890">
+											</div>
+										</div>
+										<div class="col-lg-6 col-md-6">
+											<div class="form-group">
+												<label>ایمیل:</label>
+												<input type="text" class="form-control" placeholder="info@example.com">
+											</div>
+										</div>
+										<div class="col-lg-6 col-md-6">
+											<div class="form-group">
+												<label>شهر / استان:</label>
+												<input type="text" class="form-control" placeholder="">
+											</div>
+										</div>
+										<div class="col-lg-6 col-md-6">
+											<div class="form-group">
+												<label>کد پستی:</label>
+												<input type="text" class="form-control" placeholder="112233">
+											</div>
+										</div>
+										<div class="col-lg-6 col-md-6">
+											<div class="form-group">
+												<label>شهر:</label>
+												<input type="text" class="form-control" placeholder="">
+											</div>
+										</div>
+										<div class="col-lg-6 col-md-6">
+											<div class="form-group">
+												<label>آدرس کامل:</label>
+												<input type="text" class="form-control" placeholder="">
+											</div>
+										</div>
+
+										<div id="attach_resume_bx" class="job-bx m-b30">
+											<h5 class="m-b10">آپلود رزومه</h5>
+											<p>رزومه مهمترین مدرکی است که استخدام کنندگان به دنبال آن هستند. استخدام کنندگان به طور کلی به پروفایل های های بدون رزومه نگاه نمی کنند.</p>
+											<form class="attach-resume">
+												<div class="row">
+													<div class="col-lg-12 col-md-12">
+														<div class="form-group">
+															<div class="custom-file">
+																<p class="m-auto align-self-center">
+																   <i class="fa fa-upload"></i>
+																   آپلود (حداکثر 8 مگابایت)
+																</p>
+																<input type="file" class="site-button form-control" id="customFile">
+															</div>
+														</div>
+													</div>
+												</div>
+											</form>
+											<p class="text-center">
+												اگر رزومه ندارید، می توانید مختصری از مشخصات حرفه ای خود را در <a class="site-button-link" href="javascript:void(0);">اینجا </a> بنویسید.
+											</p>
+										</div>
+
+									</div>
+									<button class="site-button m-b30">ذخیره</button>
+								</form>
+							</div>    
+						</div>
+					</div>
+				</div>
+			</div>
+            <!-- Browse Jobs END -->
+		</div>
+    </div>
+    <!-- Content END-->
+	<!-- Modal Box -->
+	<div class="modal fade lead-form-modal" id="car-details" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+				<div class="modal-body row m-a0 clearfix">
+					<div class="col-lg-6 col-md-6 overlay-primary-dark d-flex p-a0" style="background-image: url(images/background/bg3.jpg);  background-position:center; background-size:cover;">
+						<div class="form-info text-white align-self-center">
+							<h3 class="m-b15">وارد حساب کاربری خود شوید</h3>
+							<p class="m-b15">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+							<ul class="list-inline m-a0">
+								<li><a href="#" class="m-r10 text-white"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="#" class="m-r10 text-white"><i class="fa fa-google-plus"></i></a></li>
+								<li><a href="#" class="m-r10 text-white"><i class="fa fa-linkedin"></i></a></li>
+								<li><a href="#" class="m-r10 text-white"><i class="fa fa-instagram"></i></a></li>
+								<li><a href="#" class="m-r10 text-white"><i class="fa fa-twitter"></i></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-6 col-md-6 p-a0">
+						<div class="lead-form browse-job text-left">
+							<form>
+								<h3 class="m-t0">ورود</h3>
+								<div class="form-group">
+									<input value="" class="form-control" placeholder="نام">
+								</div>	
+								<div class="form-group">
+									<input value="" class="form-control" placeholder="شماره موبایل">
+								</div>
+								<div class="clearfix">
+									<button type="button" class="btn-primary site-button btn-block">ثبت </button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>	
+			</div>
+		</div>
+	</div>
+	<!-- Modal Box End -->
+
+{% endblock %}

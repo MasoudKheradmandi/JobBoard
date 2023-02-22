@@ -3,9 +3,9 @@ from django.contrib import messages
 from django.contrib.auth import login
 from .models.user import User
 from .models.company import Company
-from .forms import CompanyForm
+from .forms import CompanyForm,UserProfileForm
 from django.contrib.auth.forms import AuthenticationForm
-
+from .models.user_profile import UserProfile
 
 #--------------------Company--------
 
@@ -47,10 +47,6 @@ def CompanyProfile(request):
 
 
 
-
-
-
-
 #--------------------user--------------
 
 
@@ -82,3 +78,23 @@ def user_signup(request):
             messages.error(request,'رمز های وارد شده یکسان نمیباشد')
 
     return render(request,'register.html',)
+
+
+def user_profile(request):
+    print(request.user,request.user.id,UserProfile.objects.all())
+    obj = UserProfile.objects.get(user_id=request.user.id)
+
+    if request.method == "POST":
+        form = UserProfileForm(request.POST,instance=obj)
+        if form.is_valid:
+            form.save()
+            messages.success(request,'اطلاعات شما با موفقیت ذخیره شد')
+            return redirect('/')
+        else:
+            messages.error(request,'اطلاعات وارد شده مورد تایید نمیباشد')
+    form = UserProfileForm()
+    
+    context = {
+        "form":form,
+    }
+    return render(request,'user_profile.html',context)

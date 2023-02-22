@@ -1,6 +1,9 @@
 from django.db import models
 from account.validator import validate_file_size
 from django.contrib.auth import get_user_model
+from django.db.models.signals import pre_save,post_save
+from django.dispatch import receiver
+
 
 User = get_user_model()
 
@@ -14,7 +17,7 @@ class UserProfile(models.Model):
     picture = models.ImageField()
     lastname = models.CharField(max_length=250)
     job = models.CharField(max_length=250)
-    age = models.IntegerField()
+    age = models.IntegerField(blank=True,null=True)
     sex = models.CharField(choices=SEX,default='مرد',max_length=10)
 
     phone_number = models.CharField(max_length=15)
@@ -25,7 +28,15 @@ class UserProfile(models.Model):
     tahsilat = models.CharField(max_length=400)
     info = models.TextField()
     cv_file = models.FileField(validators=[validate_file_size])
+    linkedin = models.URLField(max_length=200,blank=True,null=True)
 
 
     def __str__(self):
-        return self.name + " " + self.lastname
+        return self.user.email + "/// " + self.lastname
+
+
+
+@receiver(post_save, sender=User)
+def profile_company_maker(sender,instance,created,**kwargs):
+    if created and instance.employee:
+        UserProfile.objects.create(user=instance)

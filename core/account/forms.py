@@ -1,7 +1,7 @@
 from django import forms
 from .models.company import Company
 from django.contrib.auth import get_user_model
-
+from .models.user_profile import UserProfile
 
 User = get_user_model()
 
@@ -29,4 +29,21 @@ class CompanyForm(forms.ModelForm):
         }
         exclude = ['user',]
 
+class UserProfileForm(forms.ModelForm):
+    class Meta:
+        model = UserProfile
+        exclude = ['user',]
 
+        widgets = {
+            'name' : forms.TextInput(attrs={'class': 'form-control','placeholder':"نام خود را وارد کنید"}),
+            'lastname' : forms.TextInput(attrs={'class': 'form-control','placeholder':"نام خانوادگی"}),
+            'job':forms.URLInput(attrs={'class': 'form-control','placeholder':"تخصص خود را وارد بنویسید"}),
+            'age' : forms.TextInput(attrs={'class': 'form-control','placeholder':"21"}),
+            'phone_number':forms.TextInput(attrs={'class': 'form-control','placeholder':"234734858"}),
+            'city':forms.TextInput(attrs={'class': 'form-control','placeholder':"بابلسر"}),
+            'code_posty':forms.TextInput(attrs={'class': 'form-control','placeholder':"4741688093"}),
+            'address' : forms.Textarea(attrs={'class': 'form-control','placeholder':"این قسمت بصورت private است و نمایش داده نمیشود"}),
+            'info': forms.Textarea(attrs={'class': 'form-control','placeholder':"در مورد خود بیشتر توضیح دهید"}),
+            'tahsilat':forms.TextInput(attrs={'class': 'form-control','placeholder':"دیپلم"}),
+            'linkedin':forms.URLInput(attrs={'class': 'form-control','placeholder':"https://www.linkedin.com/"}),
+        }
