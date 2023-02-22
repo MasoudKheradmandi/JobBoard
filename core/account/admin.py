@@ -2,6 +2,7 @@ from django.contrib import admin
 from .models import User
 from account.models.company import Company
 from django.contrib.auth.admin import UserAdmin
+from account.models.user_profile import UserProfile
 # Register your models here.
 
 class CustomUserAdmin(UserAdmin):
@@ -48,3 +49,4 @@ class CustomUserAdmin(UserAdmin):
 admin.site.register(User,CustomUserAdmin)
 
 admin.site.register(Company)
+admin.site.register(UserProfile)
