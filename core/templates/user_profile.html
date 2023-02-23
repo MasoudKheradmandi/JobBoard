@@ -16,12 +16,8 @@
 									<div class="candidate-detail text-center">
 										<div class="canditate-des">
 											<a href="javascript:void(0);">
-												<img alt="" src="images/team/pic1.jpg">
+												<img alt="" style="width: 145px;height: 145px;" src="{{obj.picture.url}}">
 											</a>
-											<div class="upload-link" title="آپلود عکس پروفایل" data-toggle="tooltip" data-placement="left">
-												<input type="file" class="update-flie">
-												<i class="fa fa-camera"></i>
-											</div>
 										</div>
 										<div class="candidate-title">
 											<div class="">
@@ -65,7 +61,8 @@
 									<h5 class="font-weight-700 pull-left text-uppercase">اطلاعات اولیه</h5>
 									<a href="index.html" class="site-button right-arrow button-sm float-right">بازگشت</a>
 								</div>
-								<form>
+								<form method='post' action='' enctype="multipart/form-data">
+									{% csrf_token %}
 									<div class="row m-b30">
 										<div class="col-lg-6 col-md-6">
 											<div class="form-group">
@@ -109,6 +106,24 @@
 											{{form.code_posty}}
 											</div>
 										</div>
+										<div class="col-lg-6 col-md-6">
+											<div class="form-group">
+												<label>جنسیت</label>
+											{{form.sex}}
+											</div>
+										</div>
+										<div class="col-lg-6 col-md-6">
+											<div class="form-group">
+												<label>تحصیلات</label>
+											{{form.tahsilat}}
+											</div>
+										</div>
+										<div class="col-lg-6 col-md-6">
+											<div class="form-group">
+												<label>لینکدین</label>
+											{{form.linkedin}}
+											</div>
+										</div>
 										<div class="col-lg-12 col-md-12">
 											<div class="form-group">
 												<label>آدرس منزل:</label>
@@ -121,52 +136,40 @@
 											{{form.info}}
 											</div>
 										</div>
+										<div class="row">
+										
+
+											<div id="attach_resume_bx" class="job-bx m-b30">
+												<h5 class="m-b10">عکس پروفایل</h5>
+												<p>برای خود یک عکس پروفایل بسازید تا حرفه ایی تر باشید</p>
+												
+													<div class="row">
+														<div class="col-lg-12 col-md-12">
+															<div class="form-group">
+																<div class="custom-file">
+																	<p class="m-auto align-self-center">
+																	   <i class="fa fa-upload"></i>
+																	   آپلود (حداکثر 4 مگابایت)
+																	</p>
+																	<br>
+																	{{form.picture}}
+																</div>
+															</div>
+														</div>
+													</div>
+											</div>
+										</div>
 									</div>
 									<div class="job-bx-title clearfix">
-										<h5 class="font-weight-700 pull-left text-uppercase">اطلاعات تماس</h5>
+										<h5 class="font-weight-700 pull-left text-uppercase">رزومه شما</h5>
 									</div>
 									<div class="row">
-										<div class="col-lg-6 col-md-6">
-											<div class="form-group">
-												<label>تلفن:</label>
-												<input type="text" class="form-control" placeholder="123 456 7890">
-											</div>
-										</div>
-										<div class="col-lg-6 col-md-6">
-											<div class="form-group">
-												<label>ایمیل:</label>
-												<input type="text" class="form-control" placeholder="info@example.com">
-											</div>
-										</div>
-										<div class="col-lg-6 col-md-6">
-											<div class="form-group">
-												<label>شهر / استان:</label>
-												<input type="text" class="form-control" placeholder="">
-											</div>
-										</div>
-										<div class="col-lg-6 col-md-6">
-											<div class="form-group">
-												<label>کد پستی:</label>
-												<input type="text" class="form-control" placeholder="112233">
-											</div>
-										</div>
-										<div class="col-lg-6 col-md-6">
-											<div class="form-group">
-												<label>شهر:</label>
-												<input type="text" class="form-control" placeholder="">
-											</div>
-										</div>
-										<div class="col-lg-6 col-md-6">
-											<div class="form-group">
-												<label>آدرس کامل:</label>
-												<input type="text" class="form-control" placeholder="">
-											</div>
-										</div>
+										
 
 										<div id="attach_resume_bx" class="job-bx m-b30">
 											<h5 class="m-b10">آپلود رزومه</h5>
 											<p>رزومه مهمترین مدرکی است که استخدام کنندگان به دنبال آن هستند. استخدام کنندگان به طور کلی به پروفایل های های بدون رزومه نگاه نمی کنند.</p>
-											<form class="attach-resume">
+											
 												<div class="row">
 													<div class="col-lg-12 col-md-12">
 														<div class="form-group">
@@ -175,19 +178,19 @@
 																   <i class="fa fa-upload"></i>
 																   آپلود (حداکثر 8 مگابایت)
 																</p>
-																<input type="file" class="site-button form-control" id="customFile">
+																{{form.cv_file}}
 															</div>
 														</div>
 													</div>
 												</div>
-											</form>
+											
 											<p class="text-center">
 												اگر رزومه ندارید، می توانید مختصری از مشخصات حرفه ای خود را در <a class="site-button-link" href="javascript:void(0);">اینجا </a> بنویسید.
 											</p>
 										</div>
 
 									</div>
-									<button class="site-button m-b30">ذخیره</button>
+									<button type='submit' class="site-button m-b30">ذخیره</button>
 								</form>
 							</div>    
 						</div>

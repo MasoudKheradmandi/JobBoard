@@ -1,5 +1,5 @@
 from django.db import models
-from account.validator import validate_file_size
+from account.validator import validate_file_size,validate_picture_size
 from django.contrib.auth import get_user_model
 from django.db.models.signals import pre_save,post_save
 from django.dispatch import receiver
@@ -14,7 +14,7 @@ class UserProfile(models.Model):
     )
     user = models.OneToOneField('User',on_delete=models.CASCADE)
     name = models.CharField(max_length=250)
-    picture = models.ImageField()
+    picture = models.ImageField(validators=[validate_picture_size],blank=True,null=True)
     lastname = models.CharField(max_length=250)
     job = models.CharField(max_length=250)
     age = models.IntegerField(blank=True,null=True)

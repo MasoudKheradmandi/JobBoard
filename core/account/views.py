@@ -29,7 +29,7 @@ def CompanyProfile(request):
     
     if request.method == "POST":
         form = CompanyForm(request.POST,instance=obj)
-        if form.is_valid:
+        if form.is_valid():
             form.save()
             messages.success(request,'اطلاعات شما با موفقیت ذخیره شد')
             return redirect('/')
@@ -81,20 +81,20 @@ def user_signup(request):
 
 
 def user_profile(request):
-    print(request.user,request.user.id,UserProfile.objects.all())
     obj = UserProfile.objects.get(user_id=request.user.id)
 
     if request.method == "POST":
-        form = UserProfileForm(request.POST,instance=obj)
-        if form.is_valid:
+        form = UserProfileForm(request.POST,request.FILES,instance=obj)
+        if form.is_valid():
             form.save()
             messages.success(request,'اطلاعات شما با موفقیت ذخیره شد')
             return redirect('/')
         else:
             messages.error(request,'اطلاعات وارد شده مورد تایید نمیباشد')
-    form = UserProfileForm()
+    form = UserProfileForm(instance=obj)
     
     context = {
         "form":form,
+        'obj':obj
     }
     return render(request,'user_profile.html',context)
