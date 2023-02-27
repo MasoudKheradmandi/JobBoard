@@ -4,12 +4,12 @@
     <!-- Content -->
     <div class="page-content">
 		<!-- Section Banner -->
-		<div class="dez-bnr-inr dez-bnr-inr-md main-slider" style="background-image:url({% static 'images/main-slider/slide2.jpg' %});">
+		<div class="dez-bnr-inr dez-bnr-inr-md main-slider" style="background-image:url({{slider.image.url}});">
             <div class="container">
                 <div class="dez-bnr-inr-entry align-m">
 					<div class="find-job-bx">
 						<a href="browse-job-list.html" class="site-button button-sm">مشاغل، فرصت های شغلی و استخدامی</a>
-						<h2>شغل خود را بین <br> <span class="text-primary">50,000</span> شغل انتخاب کنید.</h2>
+						<h2>{{slider.text}}</h2>
 						<form class="dezPlaceAni">
 							<div class="row">
 								<div class="col-lg-4 col-md-6">
