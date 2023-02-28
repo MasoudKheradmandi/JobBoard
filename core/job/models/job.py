@@ -20,4 +20,31 @@ class Ostan(models.Model):
 
 
 class Job(models.Model):
-    pass
+    STYLE = (
+        ('تمام وقت','تمام وقت'),
+        ('پاره وقت','پاره وقت'),
+        ('کارآموز','کارآموز'),
+        ('فریلنسر','فریلنسر')
+    )
+    EXPERIENCE = (
+        ('1','1'),
+        ('2','2'),
+        ('3','3'),
+        ('4','4'),
+        ('5','5'),
+    )
+    name = models.CharField(max_length=400)
+    category = models.ForeignKey(JobCategory,on_delete=models.CASCADE,null=True)
+    style = models.CharField(max_length=20,choices=STYLE)
+    experience = models.CharField(max_length=2,choices=EXPERIENCE)
+    ostan = models.ForeignKey(Ostan,on_delete=models.CASCADE)
+    salary = models.CharField(max_length=3,help_text='به میلیون بنویسید')
+    info = models.TextField()
+    necessary = models.TextField(verbose_name='مهارت های ضروری')
+    privilege = models.TextField(blank=True,null=True,verbose_name='مهارت های امتیازی')
+    created = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+
+
+    def __str__(self):
+        return self.name
