@@ -1,0 +1,260 @@
+﻿{% extends 'base.html' %}
+{% load static %}
+
+
+{% block body %}
+    <div class="page-content bg-white">
+        <!-- inner page banner -->
+        <div class="dez-bnr-inr overlay-black-middle" style="background-image:url({{slider.image.url}});">
+            <div class="container">
+                <div class="dez-bnr-inr-entry">
+                    <h1 class="text-white">جستجوی شغل ها لیستی</h1>
+					<!-- Breadcrumb row -->
+					<div class="breadcrumb-row">
+						<ul class="list-inline">
+							<li><a href="#">خانه</a></li>
+							<li>جستجوی شغل ها لیستی</li>
+						</ul>
+					</div>
+					<!-- Breadcrumb row END -->
+                </div>
+            </div>
+        </div>
+        <!-- inner page banner END -->
+		<!-- Filters Search -->
+		<div class="section-full browse-job-find">
+			<div class="container">
+				<div class="find-job-bx">
+					<form class="dezPlaceAni">
+						<div class="row">
+							<div class="col-lg-4 col-md-6">
+								<div class="form-group">
+									<label>عنوان شغل، عبارت یا کلمه کلیدی</label>
+									<div class="input-group">
+										<input type="text" class="form-control" placeholder="">
+										<div class="input-group-append">
+										  <span class="input-group-text"><i class="fa fa-search"></i></span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-6">
+								<div class="form-group">
+									<label>شهر، استان یا کد پستی</label>
+									<div class="input-group">
+										<input type="text" class="form-control" placeholder="">
+										<div class="input-group-append">
+										  <span class="input-group-text"><i class="fa fa-map-marker"></i></span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-6">
+								<div class="form-group">
+									<select>
+										<option>انتخاب کنید</option>
+										<option>ساخت  و ساز</option>
+										<option>هماهنگ کننده</option>
+										<option>کارمند</option>
+										<option>مالی</option>
+										<option>فناوری اطلاعات</option>
+										<option>فروش</option>
+										<option>تضمین کیفیت</option>
+										<option>مشاور املاک</option>
+										<option>فروش</option>
+										<option>پشتیبان</option>
+										<option>تدریس</option> 
+									</select>
+								</div>
+							</div>
+							<div class="col-lg-2 col-md-6">
+								<button type="ثبت" class="site-button btn-block">جستجو</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<!-- Filters Search END -->
+        <!-- contact area -->
+        <div class="content-block">
+			<!-- Browse Jobs -->
+			<div class="section-full browse-job p-b50">
+				<div class="container">
+					<div class="row">
+						<div class="col-xl-9 col-lg-8 col-md-7">
+							<div class="job-bx-title clearfix">
+								<div class="float-right">
+									<span class="select-title">مرتب سازی بر اساس تازه ترین ها</span>
+									<select>
+										<option>3 ماه گذشته</option>
+										<option>ماه گذشته</option>
+										<option>یک هفته پیش</option>
+										<option>3 روز پیش</option>
+									</select>
+								</div>
+							</div>
+							<ul class="post-job-bx">
+								{% for job in jobs %}
+								<li>
+									<div class="post-bx">
+										<div class="d-flex m-b30">
+											<div class="job-post-company">
+												<a href="javascript:void(0);"><span>
+													<img alt="" src="{{job.company.logo.url}}">
+												</span></a>
+											</div>
+											<div class="job-post-info">
+												<h4><a href="job-detail.html">{{job.name}}</a></h4>
+												<ul>
+													<li><i class="fa fa-map-marker"></i>{{job.ostan}}</li>
+													<li><i class="fa fa-bookmark-o"></i>{{job.style}}</li>
+													<li><i class="fa fa-clock-o"></i>{{job.days_passed}}</li>
+												</ul>
+											</div>
+										</div>
+										<div class="d-flex">
+											<div class="job-time mr-auto">
+												{% if job.telecommuting %}
+												<span>دورکاری</span>
+											   {% endif %}
+											</div>
+											<div class="salary-bx">
+												<span>{{job.salary}} میلیون</span>
+											</div>
+										</div>
+										<label class="like-btn">
+											  <input type="checkbox">
+											  <span class="checkmark"></span>
+										</label>
+									</div>
+								</li>
+								{% endfor %}
+							</ul>
+							<div class="pagination-bx m-t30">
+								<ul class="pagination">
+									<li class="next"><a href="javascript:void(0);"><i class="ti-arrow-left"></i> قبلی</a></li>
+								<li class="active"><a href="javascript:void(0);">1</a></li>
+								<li><a href="javascript:void(0);">2</a></li>
+								<li><a href="#">3</a></li>
+								<li class="previous"><a href="javascript:void(0);">بعدی <i class="ti-arrow-right"></i></a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-xl-3 col-lg-4 col-md-5">
+							<div class="sticky-top">
+								<div class="candidates-are-sys m-b30">
+									<div class="candidates-bx">
+										<div class="testimonial-pic radius"><img src="images/testimonials/pic3.jpg" alt="" width="100" height="100"></div>
+										<div class="testimonial-text">
+											<p>من به تازگی شغلی را پیدا کرده ام که از طریق جاب بورد درخواست آن را داده ام! من در طول شغل خود از سایت همیشه استفاده می کردم.</p>
+										</div>
+										<div class="testimonial-detail"> <strong class="testimonial-name">ریحانه بیوت</strong> <span class="testimonial-position">یزد</span> </div>
+									</div>
+								</div>
+								<ul class="company-logo-wg sidebar bg-white job-bx m-b30 clearfix">
+									<li class="brand-logo">
+										<a href="javascript:void(0);">
+											<img src="images/logo/logo1.jpg" alt="">
+										</a>
+									</li>
+									<li class="brand-logo">
+										<a href="javascript:void(0);">
+											<img src="images/logo/logo2.jpg" alt="">
+										</a>
+									</li>
+									<li class="brand-logo">
+										<a href="javascript:void(0);">
+											<img src="images/logo/logo3.jpg" alt="">
+										</a>
+									</li>
+									<li class="brand-logo">
+										<a href="javascript:void(0);">
+											<img src="images/logo/logo4.jpg" alt="">
+										</a>
+									</li>
+									<li class="brand-logo">
+										<a href="javascript:void(0);">
+											<img src="images/logo/logo5.jpg" alt="">
+										</a>
+									</li>
+									<li class="brand-logo">
+										<a href="javascript:void(0);">
+											<img src="images/logo/logo6.jpg" alt="">
+										</a>
+									</li>
+									<li class="brand-logo">
+										<a href="javascript:void(0);">
+											<img src="images/logo/logo7.jpg" alt="">
+										</a>
+									</li>
+									<li class="brand-logo">
+										<a href="javascript:void(0);">
+											<img src="images/logo/logo8.jpg" alt="">
+										</a>
+									</li>
+									<li class="brand-logo">
+										<a href="javascript:void(0);">
+											<img src="images/logo/logo9.jpg" alt="">
+										</a>
+									</li>
+								</ul>								
+								<div class="quote-bx">
+									<div class="quote-info">
+										<h4>با رزومه ساز انلاین ما متفاوت باشید</h4>
+										<p>با رزومه ساز جاب بورد کارفرمای خود را تحت تاثیر قرار دهید</p>
+										<a href="register.html" class="site-button">ایجاد حساب کاربری</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+            <!-- Browse Jobs END -->
+		</div>
+    </div>
+    <!-- Content END-->
+	<!-- Modal Box -->
+	<div class="modal fade lead-form-modal" id="car-details" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+				<div class="modal-body row m-a0 clearfix">
+					<div class="col-lg-6 col-md-6 overlay-primary-dark d-flex p-a0" style="background-image: url(images/background/bg3.jpg);  background-position:center; background-size:cover;">
+						<div class="form-info text-white align-self-center">
+							<h3 class="m-b15">وارد حساب کاربری خود شوید</h3>
+							<p class="m-b15">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+							<ul class="list-inline m-a0">
+								<li><a href="#" class="m-r10 text-white"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="#" class="m-r10 text-white"><i class="fa fa-google-plus"></i></a></li>
+								<li><a href="#" class="m-r10 text-white"><i class="fa fa-linkedin"></i></a></li>
+								<li><a href="#" class="m-r10 text-white"><i class="fa fa-instagram"></i></a></li>
+								<li><a href="#" class="m-r10 text-white"><i class="fa fa-twitter"></i></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-6 col-md-6 p-a0">
+						<div class="lead-form browse-job text-left">
+							<form>
+								<h3 class="m-t0">ورود</h3>
+								<div class="form-group">
+									<input value="" class="form-control" placeholder="نام">
+								</div>	
+								<div class="form-group">
+									<input value="" class="form-control" placeholder="شماره موبایل">
+								</div>
+								<div class="clearfix">
+									<button type="button" class="btn-primary site-button btn-block">ثبت </button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>	
+			</div>
+		</div>
+	</div>
+	<!-- Modal Box End -->
+{% endblock %}

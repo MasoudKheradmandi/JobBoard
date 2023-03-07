@@ -18,3 +18,30 @@ class NavTwo(models.Model):
     def __str__(self):
         return self.name
     
+
+class AboutUs(models.Model):
+    banner = models.ImageField(null=True)
+    title = models.CharField(max_length=400)
+    body = models.TextField()
+    image = models.ImageField()
+
+
+    def __str__(self):
+        return self.title
+    
+
+
+class ZirAboutUs(models.Model):
+    banner = models.ImageField(null=True)
+    title = models.CharField(max_length=250)
+    zir_title = models.TextField()
+    button_name = models.CharField(max_length=150)
+    button_link = models.URLField()
+
+
+class ContatctUs(models.Model):
+    email = models.EmailField(max_length=254,unique=True)
+
+
+    def __str__(self):
+        return self.email

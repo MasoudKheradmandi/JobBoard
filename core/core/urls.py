@@ -23,6 +23,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('account.urls')),
     path('', include('home.urls')),
+    path('', include('job.urls')),
 ]
 if settings.DEBUG : 
     urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

@@ -56,10 +56,11 @@
                             <img src="images/logo-white.png" width="180" class="m-b15" alt="">
 							<p class="text-capitalize m-b20">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است</p>
                             <div class="subscribe-form m-b20">
-								<form class="dzSubscribe" action="https://designista.ir/themes/job-board/rtl/script/mailchamp.php" method="post">
+								<form class="dzSubscribe" action="{% url 'home:contactus' %}" method="post">
+									{% csrf_token %}
 									<div class="dzSubscribeMsg"></div>
 									<div class="input-group">
-										<input name="dzEmail" required="required" class="form-control" placeholder="آدرس ایمیل" type="email">
+										<input name="email" required="required" class="form-control" placeholder="آدرس ایمیل" type="email">
 										<span class="input-group-btn">
 											<button name="submit" value="Submit" type="submit" class="site-button radius-xl">عضویت</button>
 										</span> 
