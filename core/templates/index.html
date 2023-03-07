@@ -506,39 +506,20 @@
 		</div>
 	</div>
 	<!-- Modal Box End -->
-	<script>
-		
-		
-	</script>
-	<script>
-		$(document).ready(function(){
-			$('#checkmark').click(function(){
-				alert("Done")
-				/* id = $(this).data('id')
-				$.ajax({
-					type : 'GET',
-					url : '/quick/',
-					data: {'id':id}
-					dataType : 'json',
-		
-					success : function (data) {
-						$('#modal-image').attr('src',data.image)
-						$('#modal-category').text(data.category)
-						$('#modal-price').text(`${data.price} تومان`)
-						$('#modal-info').html(data.info)
-						$('#modal-avg-stars').text(data.stars)
-						$('#modal-sell-count').text(data.sell_count)
-						$('#modal-comment-count').text('('+data.comments_count+')')
-						$('#modal-moreinfo-href').attr('href',`/detail/${data.id}/`)
-					},  
-					error: function(data){
-						alert('error')
-					}                                
-				}) 
-			})*/
+
+
+
+{%  endblock %}
+
+
+{% block js %}
+<script>
+	$(document).ready(function(){
+		$('.checkmark').click(function(){
+			alert("Done");
 		});
-		</script>
+		});
 
+</script>
 
-{%  endblock%}
-	
+{% endblock %}

@@ -128,6 +128,7 @@
     <button class="scroltop fa fa-arrow-up"></button>
 </div>
 <!-- JAVASCRIPT FILES ========================================= -->
+<script type="text/javascript" src="{% static 'js/jquery.min.js' %}"></script>
 <script src="{% static 'js/combining.js' %}"></script><!-- COMBINING JS  -->
 <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 			<script>
@@ -145,7 +146,11 @@
 						{% endif %}
 					{% endfor %}
 			</script>
+{% block js %}
+
+{% endblock %}
 </body>
 
 <!-- Mirrored from designista.ir/themes/job-board/rtl/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 08 Feb 2023 15:21:50 GMT -->
 </html>
+
