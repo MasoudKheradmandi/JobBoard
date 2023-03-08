@@ -302,7 +302,7 @@
 									<div class="d-flex">
 										<div class="job-time mr-auto">
 											{% if job.telecommuting %}
-										 	<span>دورکاری</span>
+										 	<a href="javascript:void(0);"><span>دورکاری</span></a>
 											{% endif %}
 										</div>
 										<div class="salary-bx">
@@ -310,7 +310,7 @@
 										</div>
 									</div>
 									<label class="like-btn">
-										  <input type="checkbox">
+										  <input class='inputid' type="checkbox" data-id="{{job.id}}" {% if job in request.user.userprofile.wish_list.all %} checked="checked" {% endif %} >
 										  
 										  <span class="checkmark"></span>
 									</label>
@@ -515,8 +515,19 @@
 {% block js %}
 <script>
 	$(document).ready(function(){
-		$('.checkmark').click(function(){
-			alert("Done");
+		$('.inputid').click(function(){
+			$.ajax({
+				type : 'GET',
+				url : '{% url "job:add_product_wish_list" %}',
+				data : {'id':$(this).data('id'),},
+				dataType : 'json',
+				success : function (data) {
+					alert(data.status)
+				},  
+				error: function(data){
+					alert('Error');
+				}                                
+			})   
 		});
 		});
 

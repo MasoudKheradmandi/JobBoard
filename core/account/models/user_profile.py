@@ -27,8 +27,9 @@ class UserProfile(models.Model):
 
     tahsilat = models.CharField(max_length=400)
     info = models.TextField()
-    cv_file = models.FileField(validators=[validate_file_size])
+    cv_file = models.FileField(validators=[validate_file_size],null=True)
     linkedin = models.URLField(max_length=200,blank=True,null=True)
+    wish_list = models.ManyToManyField('job.Job',blank=True)
 
 
     def __str__(self):

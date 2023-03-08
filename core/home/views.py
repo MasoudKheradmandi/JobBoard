@@ -10,6 +10,7 @@ from .forms import ContactUsForm
 User = get_user_model()
 # Create your views here.
 def home(request):
+
     context = {
         'slider':Slider.objects.filter().last(),
         'jobs':Job.objects.filter(status=True).order_by('-created'),
