@@ -133,11 +133,18 @@
 							</ul>
 							<div class="pagination-bx m-t30">
 								<ul class="pagination">
-									<li class="next"><a href="javascript:void(0);"><i class="ti-arrow-left"></i> قبلی</a></li>
-								<li class="active"><a href="javascript:void(0);">1</a></li>
-								<li><a href="javascript:void(0);">2</a></li>
-								<li><a href="#">3</a></li>
-								<li class="previous"><a href="javascript:void(0);">بعدی <i class="ti-arrow-right"></i></a></li>
+									{% if jobs.has_previous %}
+									<li class="next"><a href="?page={{ jobs.previous_page_number }}"><i class="ti-arrow-left"></i> قبلی</a></li>
+									<li><a href="?page={{ jobs.previous_page_number }}">{{ jobs.previous_page_number }}</a></li>
+									{% endif %}
+									
+									<li class="active"><a href="javascript:void(0);">{{ jobs.number }}</a></li>
+								
+								
+									{% if jobs.has_next %}
+									<li><a href="?page={{ jobs.next_page_number }}">{{ jobs.next_page_number }}</a></li>
+									<li class="previous"><a href="?page={{ jobs.next_page_number }}">بعدی <i class="ti-arrow-right"></i></a></li>
+									{% endif %}
 								</ul>
 							</div>
 						</div>

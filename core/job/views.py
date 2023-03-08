@@ -6,8 +6,8 @@ from django.core.paginator import Paginator
 
 # Create your views here.
 def listview(request):
-    contact_list = Job.objects.filter(status=True).order_by('-created'),
-    paginator = Paginator(contact_list, 25)
+    contact_list = Job.objects.filter(status=True).order_by('-created')
+    paginator = Paginator(contact_list, 1)
     
     
     page_number = request.GET.get('page')
@@ -15,7 +15,7 @@ def listview(request):
 
 
     context = {
-        'jobs':Job.objects.filter(status=True).order_by('-created'),
+        'jobs':page_obj,
         'slider':Slider.objects.filter().last(),
     }
     return render(request,'listview.html',context)
