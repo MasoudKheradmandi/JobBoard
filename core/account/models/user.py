@@ -1,5 +1,8 @@
 from django.db import models
 from django.contrib.auth.models import (BaseUserManager,AbstractBaseUser,PermissionsMixin)
+from django.db.models.signals import post_save
+from django.dispatch import receiver
+
 
 # Create your models here.
 class UserManager(BaseUserManager):
@@ -44,7 +47,7 @@ class User(AbstractBaseUser,PermissionsMixin):
     employee = models.BooleanField(default=False)
 
 
-
+    Token = models.IntegerField(blank=True,null=True)
 
     USERNAME_FIELD = 'email'
     REQUIRED_FIELDS = []
@@ -57,3 +60,4 @@ class User(AbstractBaseUser,PermissionsMixin):
 
     def __str__(self):
         return self.email
+    

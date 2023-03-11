@@ -35,6 +35,12 @@ class CustomUserAdmin(UserAdmin):
                'last_login',
             )
         }),
+         ('Token',
+        {
+            "fields":(
+               'Token',
+            )
+        }),
     )
     add_fieldsets = (
         (

@@ -6,6 +6,11 @@ from .models.company import Company
 from .forms import CompanyForm,UserProfileForm
 from django.contrib.auth.forms import AuthenticationForm
 from .models.user_profile import UserProfile
+import random
+from django.http import HttpResponse
+
+
+
 
 #--------------------Company--------
 
@@ -98,3 +103,21 @@ def user_profile(request):
         'obj':obj
     }
     return render(request,'user_profile.html',context)
+
+
+def reset_token(request):
+    if request.method == "POST":
+        email = request.POST.get('email')
+        try:
+            User.objects.get(email=email)
+            random_number = random.randint(1000,9999)
+            user=User.objects.get(email=email)
+            user.Token = random_number
+            user.save()
+            return redirect('account:send_mail')
+        except:
+            messages.error(request,'همچین اکانتی وجود ندارد')
+            return HttpResponse("BUG")
+        
+def send_mail(request):
+    pass

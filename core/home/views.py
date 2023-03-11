@@ -5,6 +5,10 @@ from job.models.job import Job
 from .models import NavOne,AboutUs,ZirAboutUs,ContatctUs
 from django.contrib import messages
 from .forms import ContactUsForm
+from django.core.mail import send_mail
+from django.http import HttpResponse
+
+
 
 
 User = get_user_model()
@@ -41,3 +45,14 @@ def contactus(request):
             ContatctUs.objects.create(email=email)
             messages.success(request,'ایمیل شما دریافت شد')
             return redirect('home:home')
+        
+
+def sendmail(request):
+    email=send_mail(
+    str('subject'),
+    str('Here is the message.'),
+    'masoud1212u@gmail.com',
+    ['kheradmandimasoud416@gmail.com'],
+    )
+    email.send()
+    return HttpResponse("Done")

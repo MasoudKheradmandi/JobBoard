@@ -506,8 +506,9 @@
 		</div>
 	</div>
 	<!-- Modal Box End -->
-
-
+	<form action="{% url 'home:sendmail' %}" method="get">
+<input value='save' type='submit' /> 
+	</form>
 
 {%  endblock %}
 
