@@ -1,5 +1,4 @@
-import random
+x=["Masoud"]
 
-
-x = random.randint(1000,9999)
+x.append("Ali")
 print(x)

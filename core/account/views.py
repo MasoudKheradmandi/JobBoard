@@ -8,7 +8,7 @@ from django.contrib.auth.forms import AuthenticationForm
 from .models.user_profile import UserProfile
 import random
 from django.http import HttpResponse
-
+from django.core.mail import send_mail
 
 
 
@@ -108,16 +108,49 @@ def user_profile(request):
 def reset_token(request):
     if request.method == "POST":
         email = request.POST.get('email')
-        try:
+        if True:
             User.objects.get(email=email)
             random_number = random.randint(1000,9999)
             user=User.objects.get(email=email)
             user.Token = random_number
+            # send_mail(
+            #     'فراوشی رمز عبور',
+            #     f'{random_number}',
+            #     'masoud1212u@gmail.com',
+            #     [email],
+            # )
+            print(random_number)
             user.save()
-            return redirect('account:send_mail')
-        except:
+            response = redirect('account:verify')
+            response.set_cookie('email',email,1000)
+            return response
+            # return redirect('account:send_mail').set_cookie("Email",email,1000)
+    else:
             messages.error(request,'همچین اکانتی وجود ندارد')
             return HttpResponse("BUG")
-        
-def send_mail(request):
-    pass
+
+
+def verify(request):
+    if request.method == "POST":
+        token = request.POST.get('token')
+        try:
+            email = request.COOKIES['email']
+            user=User.objects.get(email=email)
+
+            print(user.Token)
+            if user.Token == int(token):
+                print("asddsdsdssds")
+                return HttpResponse("OK")
+            """
+            میخوام بعد گرفتن توکن کاربرو ببرم صفحه ایی که برای خودش پسوورد ست کنه
+            فقط باید بعد گرفتن توکن باید پسوورد جدید رو اپدیت کنه
+            
+            شاید هم برم برای ارسال کد چهاررقمی به کاربر
+
+            """
+
+
+        except:
+            return HttpResponse("دوباره تلاش کنید")
+
+    return render(request,'company_login/tokeninput.html',{})

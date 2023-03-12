@@ -11,7 +11,7 @@ urlpatterns = [
     path('signup/',views.user_signup,name='user_signup'),
     path('user_profile/',views.user_profile,name='user_profile'),
     path('reset_token/',views.reset_token,name='reset_token'),
-    path('send_mail/',views.send_mail,name='send_mail'),
+    path('verify/',views.verify,name='verify'),
 ]
 
 
