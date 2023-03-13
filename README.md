@@ -12,6 +12,47 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ### Features
 - Django LTS
 - Class Based views (ApiView)
@@ -23,6 +64,29 @@
 - Bootstrap5
 - heroku
 - postman exported api
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ### About
