@@ -4,6 +4,9 @@ from .models.job import Job
 from home.models import Slider
 from django.core.paginator import Paginator
 from django.http import JsonResponse
+from django.contrib.auth.decorators import login_required
+
+from account.models.user import User
 
 # Create your views here.
 def listview(request):
@@ -33,3 +36,12 @@ def add_product_wish_list(request):
         profile.wish_list.add(obj)
 
     return JsonResponse({'status':'success'})
+
+@login_required
+def wish_list(request):
+    user = User.objects.get(id=1)
+    print(user.userprofile.wish_list.all())
+    context = {
+        'wish_list':user.userprofile.wish_list.all()
+    }
+    return render(request,'wishlist.html',context)
