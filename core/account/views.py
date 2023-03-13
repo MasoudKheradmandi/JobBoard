@@ -9,8 +9,8 @@ from .models.user_profile import UserProfile
 import random
 from django.http import HttpResponse
 from django.core.mail import send_mail
-
-
+from django.contrib.auth.hashers import make_password
+from django.contrib.auth.decorators import login_required
 
 #--------------------Company--------
 
@@ -137,10 +137,10 @@ def verify(request):
             email = request.COOKIES['email']
             user=User.objects.get(email=email)
 
-            print(user.Token)
             if user.Token == int(token):
                 print("asddsdsdssds")
-                return HttpResponse("OK")
+                login(request,user)
+                return redirect('account:new_password')
             """
             میخوام بعد گرفتن توکن کاربرو ببرم صفحه ایی که برای خودش پسوورد ست کنه
             فقط باید بعد گرفتن توکن باید پسوورد جدید رو اپدیت کنه
@@ -148,9 +148,19 @@ def verify(request):
             شاید هم برم برای ارسال کد چهاررقمی به کاربر
 
             """
-
-
         except:
             return HttpResponse("دوباره تلاش کنید")
 
     return render(request,'company_login/tokeninput.html',{})
+
+@login_required
+def new_password(request):
+    if request.method == "POST":
+        pass1 = request.POST.get('pass1')
+        pass2 = request.POST.get('pass2')
+        if pass1 == pass2 :
+            user = request.user
+            user.password = make_password(pass1)
+            user.save()
+            return HttpResponse("Success")
+    return render(request,'changepass.html')
