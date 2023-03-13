@@ -8,87 +8,20 @@
 
 - [About](#about)
 - [Features](#features)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [Info](#info)
 
 ### Features
-- Django LTS
-- Class Based views (ApiView)
-- Django RestFramework
+- Django
 - User authentication
-- Black
-- Flake8
-- Responsive Design
-- Bootstrap5
-- heroku
-- postman exported api
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- Being project close to reality
 
 
 
 ### About
 
-- test
+- این پروژه یک وبسایت کاریابی هستش و تمام تمرکزم روی این موضوع بود که بیشترین شباهت رو به یک سایت کاریابی داشته باشه
+
+
+### Info
+
+- قسمت ایمیل بعد از رفتن روی هاست و بیرون اومدن از محیط دولوپمنت تنظیم مجدد خواهد شد
