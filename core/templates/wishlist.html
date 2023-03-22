@@ -38,7 +38,7 @@
 						<div class="col-xl-9 col-lg-8 m-b30">
 							<div class="job-bx save-job table-job-bx clearfix">
 								<div class="job-bx-title clearfix">
-									<h5 class="font-weight-700 pull-left text-uppercase">65 شغل ذخیره شده</h5>
+									<h5 class="font-weight-700 pull-left text-uppercase">{{wish_list.count}} شغل ذخیره شده</h5>
 									<div class="float-right">
 										<span class="select-title">مرتب سازی بر اساس تازه ترین ها</span>
 										<select>
@@ -64,12 +64,12 @@
 										<tr>
 											<td class="job-post-company">
 												<a href="javascript:void(0);"><span>
-													<img alt="" src="images/logo/icon2.png">
+													<img alt="" src="{{wish.company.logo.url}}">
 												</span></a>
 											</td>
 											<td class="job-name"><a href="job-detail.html">{{wish.name}}</a></td>
-											<td class="criterias text-primary"><a href="company-profile.html">{{wish.name.company}}</a></td>
-											<td class="date">5 آذر 1399</td>
+											<td class="criterias text-primary"><a href="company-profile.html">{{wish.company.name}}</a></td>
+											<td class="date">{{wish.created.date}}</td>
 											<td class="job-links">
 												<a href="javascript:void(0);" data-toggle="modal" data-target="#exampleModalLong">
 												<i class="fa fa-eye"></i></a>
@@ -81,11 +81,18 @@
 								</table>
 								<div class="pagination-bx float-left">
 									<ul class="pagination">
-										<li class="next"><a href="javascript:void(0);"><i class="ti-arrow-left"></i> بعدی</a></li>
-										<li><a href="javascript:void(0);">3</a></li>
-										<li><a href="javascript:void(0);">2</a></li>
-										<li class="active"><a href="javascript:void(0);">1</a></li>
-										<li class="previous"><a href="javascript:void(0);">قبلی <i class="ti-arrow-right"></i></a></li>
+										
+										{% if wish_list.has_previous %}
+										<li class="next"><a href="?page={{ wish_list.previous_page_number }}"><i class="ti-arrow-left"></i> قبلی</a></li>
+										<li><a href="?page={{ wish_list.previous_page_number }}">{{ wish_list.previous_page_number }}</a></li>
+										{% endif %}
+										
+										<li class='active'><a href="javascript:void(0);">{{ wish_list.number }}</a></li>
+										
+										{% if wish_list.has_next %}
+											<li><a href="?page={{ wish_list.next_page_number }}">{{ wish_list.next_page_number }}</a></li>
+											<li class="previous"><a href="?page={{ wish_list.next_page_number }}">بعدی <i class="ti-arrow-right"></i></a></li>
+										{% endif %}
 									</ul>
 								</div>
 							</div>

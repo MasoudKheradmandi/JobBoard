@@ -40,8 +40,11 @@ def add_product_wish_list(request):
 @login_required
 def wish_list(request):
     user = User.objects.get(id=1)
-    print(user.userprofile.wish_list.all())
+    wish_list = user.userprofile.wish_list.all()
+    paginator = Paginator(wish_list, 10)
+    page_number = request.GET.get('page')
+    page_obj = paginator.get_page(page_number)
     context = {
-        'wish_list':user.userprofile.wish_list.all()
+        'wish_list':page_obj
     }
     return render(request,'wishlist.html',context)

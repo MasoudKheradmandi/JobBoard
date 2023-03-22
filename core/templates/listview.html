@@ -95,41 +95,7 @@
 								</div>
 							</div>
 							<ul class="post-job-bx">
-								{% for job in jobs %}
-								<li>
-									<div class="post-bx">
-										<div class="d-flex m-b30">
-											<div class="job-post-company">
-												<a href="javascript:void(0);"><span>
-													<img alt="" src="{{job.company.logo.url}}">
-												</span></a>
-											</div>
-											<div class="job-post-info">
-												<h4><a href="job-detail.html">{{job.name}}</a></h4>
-												<ul>
-													<li><i class="fa fa-map-marker"></i>{{job.ostan}}</li>
-													<li><i class="fa fa-bookmark-o"></i>{{job.style}}</li>
-													<li><i class="fa fa-clock-o"></i>{{job.days_passed}}</li>
-												</ul>
-											</div>
-										</div>
-										<div class="d-flex">
-											<div class="job-time mr-auto">
-												{% if job.telecommuting %}
-												<span>دورکاری</span>
-											   {% endif %}
-											</div>
-											<div class="salary-bx">
-												<span>{{job.salary}} میلیون</span>
-											</div>
-										</div>
-										<label class="like-btn">
-											  <input type="checkbox">
-											  <span class="checkmark"></span>
-										</label>
-									</div>
-								</li>
-								{% endfor %}
+							{% include 'layout/job_list.html' %}
 							</ul>
 							<div class="pagination-bx m-t30">
 								<ul class="pagination">
@@ -264,4 +230,27 @@
 		</div>
 	</div>
 	<!-- Modal Box End -->
+{% endblock %}
+
+
+{% block js %}
+    <script>
+        $(document).ready(function(){
+            $('.inputid').click(function(){
+                $.ajax({
+                    type : 'GET',
+                    url : '{% url "job:add_product_wish_list" %}',
+                    data : {'id':$(this).data('id'),},
+                    dataType : 'json',
+                    success : function (data) {
+                        alert(data.status)
+                    },  
+                    error: function(data){
+                        alert('Error');
+                    }                                
+                })   
+            });
+            });
+    
+    </script>
 {% endblock %}

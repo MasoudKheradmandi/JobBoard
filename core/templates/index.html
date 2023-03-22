@@ -280,43 +280,7 @@
 				<div class="row">
 					<div class="col-lg-9">
 						<ul class="post-job-bx browse-job">
-							{% for job in jobs %}
-							
-							<li>
-								<div class="post-bx">
-									<div class="d-flex m-b30">
-										<div class="job-post-company">
-											
-											<span><img alt="" src="{{job.company.logo.url}}"></span>
-											
-										</div>
-										<div class="job-post-info">
-											<h4><a href="job-detail.html">{{job.name}}</a></h4>
-											<ul>
-												<li><i class="fa fa-map-marker"></i>{{job.ostan}}</li>
-												<li><i class="fa fa-bookmark-o"></i> {{job.style}}</li>
-												<li><i class="fa fa-clock-o"></i> {{job.days_passed}}</li>
-											</ul>
-										</div>
-									</div>
-									<div class="d-flex">
-										<div class="job-time mr-auto">
-											{% if job.telecommuting %}
-										 	<a href="javascript:void(0);"><span>دورکاری</span></a>
-											{% endif %}
-										</div>
-										<div class="salary-bx">
-											<span>{{job.salary}}میلیون</span>
-										</div>
-									</div>
-									<label class="like-btn">
-										  <input class='inputid' type="checkbox" data-id="{{job.id}}" {% if job in request.user.userprofile.wish_list.all %} checked="checked" {% endif %} >
-										  
-										  <span class="checkmark"></span>
-									</label>
-								</div>
-							</li>
-							{% endfor %}
+							{% include 'layout/job_list.html' %}
 						</ul>
 						<div class="m-t30">
 							<div class="d-flex">
@@ -513,25 +477,25 @@
 {%  endblock %}
 
 
+
 {% block js %}
-<script>
-	$(document).ready(function(){
-		$('.inputid').click(function(){
-			$.ajax({
-				type : 'GET',
-				url : '{% url "job:add_product_wish_list" %}',
-				data : {'id':$(this).data('id'),},
-				dataType : 'json',
-				success : function (data) {
-					alert(data.status)
-				},  
-				error: function(data){
-					alert('Error');
-				}                                
-			})   
-		});
-		});
-
-</script>
-
+    <script>
+        $(document).ready(function(){
+            $('.inputid').click(function(){
+                $.ajax({
+                    type : 'GET',
+                    url : '{% url "job:add_product_wish_list" %}',
+                    data : {'id':$(this).data('id'),},
+                    dataType : 'json',
+                    success : function (data) {
+                        alert(data.status)
+                    },  
+                    error: function(data){
+                        alert('Error');
+                    }                                
+                })   
+            });
+            });
+    
+    </script>
 {% endblock %}
