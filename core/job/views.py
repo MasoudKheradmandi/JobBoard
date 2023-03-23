@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render,get_object_or_404
 from account.models import UserProfile
 from .models.job import Job
 from home.models import Slider
@@ -25,6 +25,16 @@ def listview(request):
     return render(request,'listview.html',context)
 
 
+def detailview(request,id):
+    job = get_object_or_404(Job,id=id)
+    context = {
+        'job':job
+    }
+    return render(request,'job_detail.html',context)
+
+
+
+
 def add_product_wish_list(request):
 
     profile=UserProfile.objects.get(user_id=request.user.id)
@@ -45,6 +55,8 @@ def wish_list(request):
     page_number = request.GET.get('page')
     page_obj = paginator.get_page(page_number)
     context = {
-        'wish_list':page_obj
+        'wish_list':page_obj,
     }
     return render(request,'wishlist.html',context)
+
+

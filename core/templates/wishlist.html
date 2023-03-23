@@ -79,6 +79,7 @@
 									{% endfor %}
 									</tbody>
 								</table>
+								{% if wish_list.paginator.num_pages != 1 %}
 								<div class="pagination-bx float-left">
 									<ul class="pagination">
 										
@@ -95,6 +96,7 @@
 										{% endif %}
 									</ul>
 								</div>
+								{% endif %}
 							</div>
 							<!-- Modal -->
 							<div class="modal fade modal-bx-info" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">

@@ -9,7 +9,7 @@
 											
 										</div>
 										<div class="job-post-info">
-											<h4><a href="job-detail.html">{{job.name}}</a></h4>
+											<h4><a href="{% url 'job:detailview' job.id %}">{{job.name}}</a></h4>
 											<ul>
 												<li><i class="fa fa-map-marker"></i>{{job.ostan}}</li>
 												<li><i class="fa fa-bookmark-o"></i> {{job.style}}</li>
