@@ -5,24 +5,33 @@ from home.models import Slider
 from django.core.paginator import Paginator
 from django.http import JsonResponse
 from django.contrib.auth.decorators import login_required
-
+from django.db.models import F
 from account.models.user import User
-
+from django.utils import timezone
+from datetime import datetime
 # Create your views here.
 def listview(request):
+
     contact_list = Job.objects.filter(status=True).order_by('-created')
-    paginator = Paginator(contact_list, 1)
+    if request.GET.get('time'):
+        time = request.GET.get('time')
+        time_dict = {
+            '3day':3,
+            '3month':90,
+            'week':7,
+            'amonth':30,
+        }
+        contact_list=contact_list.annotate(days_passed3 =(datetime.now(timezone.utc).day-F('created__day'))).filter(days_passed3__lte=time_dict[time])
     
-    
+    paginator = Paginator(contact_list, 10)
     page_number = request.GET.get('page')
     page_obj = paginator.get_page(page_number)
-
-
     context = {
         'jobs':page_obj,
         'slider':Slider.objects.filter().last(),
     }
     return render(request,'listview.html',context)
+
 
 
 def detailview(request,id):
@@ -41,7 +50,7 @@ def add_product_wish_list(request):
     obj = Job.objects.get(id=request.GET.get('id'))
     if obj in profile.wish_list.all():
         profile.wish_list.remove(obj)
-    
+
     else:
         profile.wish_list.add(obj)
 
@@ -58,5 +67,3 @@ def wish_list(request):
         'wish_list':page_obj,
     }
     return render(request,'wishlist.html',context)
-
-

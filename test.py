@@ -1,4 +1,6 @@
-x=["Masoud"]
+test = {
+    'masoud':12,
+    'ali':13
+}
 
-x.append("Ali")
-print(x)
+print(test['ali'])

@@ -60,3 +60,8 @@ class Job(models.Model):
         today = datetime.now(timezone.utc)
         days_passed = today - self.created
         return f"{days_passed.days} روز پیش" if days_passed.days != 0 else 'امروز'
+    
+    def days_passed2(self):
+        today = datetime.now(timezone.utc)
+        days_passed = today - self.created
+        return days_passed.days
