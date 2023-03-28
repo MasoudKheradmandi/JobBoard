@@ -260,6 +260,7 @@
 
     <script>
       $(document).ready(function(){
+	  $('#sort-select option[value="{{time}}"]').attr("selected", "selected");
       $("#sort-select").on('change',function(){
         $('#timeform').submit()
         })

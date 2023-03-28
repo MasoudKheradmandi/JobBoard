@@ -41,12 +41,14 @@
 									<h5 class="font-weight-700 pull-left text-uppercase">{{wish_list.count}} شغل ذخیره شده</h5>
 									<div class="float-right">
 										<span class="select-title">مرتب سازی بر اساس تازه ترین ها</span>
-										<select>
-											<option>2 ماه پیش</option>
-											<option>ماه قبل</option>
-											<option>هفته گذشته</option>
-											<option>3 روز گذشته</option>
-										</select>
+										<form id='timeform' method='get' action="">
+											<select id='sort-select' name='time'>
+											<option value='3month'>3 ماه گذشته</option>
+											<option value='amonth'>ماه گذشته</option>
+											<option value='week'>یک هفته پیش</option>
+											<option value='3day'>3 روز پیش</option>
+											</select>
+										</form>
 									</div>
 								</div>
 								<table>
@@ -176,4 +178,15 @@
 		</div>
 	</div>
 	<!-- Modal Box End -->
+{% endblock %}
+
+{% block js %}
+<script>
+	$(document).ready(function(){
+	$('#sort-select option[value="{{time}}"]').attr("selected", "selected");
+	$("#sort-select").on('change',function(){
+	  $('#timeform').submit()
+	  })
+	})
+  </script>
 {% endblock %}

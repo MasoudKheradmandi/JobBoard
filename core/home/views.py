@@ -2,24 +2,25 @@ from django.shortcuts import render,redirect
 from django.contrib.auth import get_user_model
 from .models import Slider
 from job.models.job import Job
-from .models import NavOne,AboutUs,ZirAboutUs,ContatctUs
+from .models import NavOne,AboutUs,ZirAboutUs,ContatctUs,HomeComment
 from django.contrib import messages
 from .forms import ContactUsForm
 from django.core.mail import send_mail
 from django.http import HttpResponse
-
-
-
+from job.models import JobCategory
+from django.db.models import Count , Q
 
 User = get_user_model()
 # Create your views here.
 def home(request):
-
     context = {
         'slider':Slider.objects.filter().last(),
         'jobs':Job.objects.filter(status=True).order_by('-created'),
+        'comments':HomeComment.objects.filter(status=True),
+        'category':JobCategory.objects.annotate(num_jobs=Count('job'),filter=Q(job__status=True)).order_by('-num_jobs')
     }
     return render(request,'index.html',context)
+
 
 
 def NavBar(request):

@@ -7,6 +7,7 @@ from datetime import datetime
 class JobCategory(models.Model):
     image = models.ImageField(blank=True,null=True)
     name = models.CharField(max_length=100)
+    class_icon = models.CharField(max_length=100,null=True)
 
     
     def __str__(self):
