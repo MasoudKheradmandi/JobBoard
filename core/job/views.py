@@ -23,14 +23,15 @@ def listview(request):
             'amonth':30,
         }
         contact_list=contact_list.annotate(days_passed3 =(datetime.now(timezone.utc).day-F('created__day'))).filter(days_passed3__lte=time_dict[time])
-    
+
     paginator = Paginator(contact_list, 10)
     page_number = request.GET.get('page')
     page_obj = paginator.get_page(page_number)
     context = {
         'jobs':page_obj,
         'slider':Slider.objects.filter().last(),
-        'time':time
+        'time':time,
+        'categorys':JobCategory.objects.all(),
     }
     return render(request,'listview.html',context)
 
@@ -79,3 +80,20 @@ def wish_list(request):
         'time':time
     }
     return render(request,'wishlist.html',context)
+
+
+
+def searchlistview(request):
+    name = request.GET.get('name')
+    ostan = request.GET.get('ostan')
+    category = request.GET.get('category')
+
+    jobs = Job.objects.filter(status=True,name__contains=name,ostan__contains=ostan,category__name__contains=category).order_by('-created')
+    paginator = Paginator(jobs, 1)
+    page_number = request.GET.get('page')
+    page_obj = paginator.get_page(page_number)
+    context = {
+        'jobs':page_obj
+    }
+
+    return render(request,'search_list_view.html',context)
