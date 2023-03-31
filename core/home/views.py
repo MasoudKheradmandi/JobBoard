@@ -17,7 +17,8 @@ def home(request):
         'slider':Slider.objects.filter().last(),
         'jobs':Job.objects.filter(status=True).order_by('-created'),
         'comments':HomeComment.objects.filter(status=True),
-        'category':JobCategory.objects.annotate(num_jobs=Count('job'),filter=Q(job__status=True)).order_by('-num_jobs')
+        'category':JobCategory.objects.annotate(num_jobs=Count('job'),filter=Q(job__status=True)).order_by('-num_jobs'),
+        'cat_count':JobCategory.objects.all().count()
     }
     return render(request,'index.html',context)
 

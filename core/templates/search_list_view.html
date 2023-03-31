@@ -29,45 +29,54 @@
 			<div class="section-full browse-job-find">
 				<div class="container">
 					<div class="find-job-bx">
-						<form class="dezPlaceAni">
+						<form class="dezPlaceAni" action="{% url 'job:searchlistview' %}">
 							<div class="row">
 								<div class="col-lg-4 col-md-6">
 									<div class="form-group">
 										<label>عنوان شغل، عبارت یا کلمه کلیدی</label>
 										<div class="input-group">
-											<input type="text" class="form-control" placeholder="">
+											<input name='name' type="text" class="form-control" placeholder="">
 											<div class="input-group-append">
 											  <span class="input-group-text"><i class="fa fa-search"></i></span>
 											</div>
 										</div>
 									</div>
 								</div>
-								<div class="col-lg-3 col-md-6">
+				  <div class="col-lg-3 col-md-6">
 									<div class="form-group">
-										<label>شهر، استان یا کد پستی</label>
-										<div class="input-group">
-											<input type="text" class="form-control" placeholder="">
-											<div class="input-group-append">
-											  <span class="input-group-text"><i class="fa fa-map-marker"></i></span>
-											</div>
-										</div>
+										<select name='ostan'>
+											<option value=''>همه استان ها</option>
+											<option value='تهران'>تهران</option>
+											<option value='گیلان'>گیلان</option>
+											<option value='مازندران'>مازندران</option>
+											<option value='آذربایجان شرقی'>آذربایجان شرقی</option>
+											<option value='آذربایجان غربی'>آذربایجان غربی</option>
+											<option value='کرمانشاه'>کرمانشاه</option>
+											<option value='سیستان و بلوچستان'>سیستان و بلوچستان</option>
+											<option value='کردستان'>کردستان</option><option>همدان</option>
+											<option value='چهارمحال و بختیاری'>چهارمحال و بختیاری</option>
+											<option value='لرستان'>لرستان</option>
+											<option value='زنجان'>زنجان</option>
+											<option value='بوشهر'>بوشهر</option>
+											<option value='سمنان'>سمنان</option>
+											<option value='یزد'>یزد</option>
+											<option value='اردبیل'>اردبیل</option>
+											<option value='قم'>قم</option>
+											<option value='قزوین'>قزوین</option>
+											<option value='هرمزگان'>هرمزگان</option>
+											<option value='البرز'>البرز</option>
+											<option value='مرکزی'>مرکزی</option>
+											<option value='خراسان جنوبی'>خراسان جنوبی</option>
+										</select>
 									</div>
 								</div>
 								<div class="col-lg-3 col-md-6">
 									<div class="form-group">
-										<select>
-											<option>عنوان شغل</option>
-											<option>ساخت و ساز</option>
-											<option>هماهنگ کننده</option>
-											<option>کارفرما</option>
-											<option>مالی</option>
-											<option>فناوری اطلاعات</option>
-											<option>بازار یابی</option>
-											<option>تضمین کیفیت</option>
-											<option>مشاور املاک</option>
-											<option>فروش</option>
-											<option>پشتیبان</option>
-											<option>تدریس</option> 
+										<select name='category'>
+											<option value=''>دسته بندی خود را انتخاب کنید</option>
+										{% for cat in categorys %}
+											<option>{{cat.name}}</option>
+										{% endfor %}
 										</select>
 									</div>
 								</div>
@@ -84,54 +93,25 @@
 			<div class="section-full bg-white p-b50">
 				<div class="container">
 					<div class="job-bx-title clearfix">
-						<h5 class="font-weight-700 pull-left text-uppercase">{{jobs.count}} شغل پیدا شد</h5>
+						<h5 class="font-weight-700 pull-left text-uppercase">{{paginator.count}} شغل پیدا شد</h5>
 					</div>
 					<ul class="post-job-bx browse-job-grid row">
-						{% for job in jobs %}
-						<li class="col-lg-4 col-md-6">
-							<div class="post-bx">
-								<div class="d-flex m-b30">
-									<div class="job-post-info">
-										<h5><a href="job-detail.html">{{job.name}}</a></h5>
-										<ul>
-											<li><i class="fa fa-map-marker"></i>{{job.ostan}}</li>
-											<li><i class="fa fa-bookmark-o"></i>{{job.style}}</li>
-											<li><i class="fa fa-clock-o"></i>{{job.days_passed}}</li>
-										</ul>
-									</div>
-								</div>
-								<div class="d-flex">
-									<div class="job-time mr-auto">
-										{% if job.telecommuting %}
-										<a href="javascript:void(0);"><span>دور کاری</span></a>
-										{% endif %}
-									</div>
-									<div class="salary-bx">
-										<span>{{job.salary}} میلیون</span>
-									</div>
-								</div>
-								<label class="like-btn">
-									<input type="checkbox">
-									<span class="checkmark"></span>
-								</label>
-							</div>
-						</li>
-						{% endfor %}
+						{% include 'layout/job_list.html' %}
 					</ul>
 					{% if jobs.paginator.num_pages != 1 %}
 							<div class="pagination-bx m-t30">
 								<ul class="pagination">
 									{% if jobs.has_previous %}
-									<li class="next"><a href="?page={{ jobs.previous_page_number }}"><i class="ti-arrow-left"></i> قبلی</a></li>
-									<li><a href="?page={{ jobs.previous_page_number }}">{{ jobs.previous_page_number }}</a></li>
+									<li class="next"><a href="?page={{ jobs.previous_page_number }}&name={{ name }}&ostan={{ ostan }}&category={{ category }}"><i class="ti-arrow-left"></i> قبلی</a></li>
+									<li><a href="?page={{ jobs.previous_page_number }}&name={{ name }}&ostan={{ ostan }}&category={{ category }}">{{ jobs.previous_page_number }}</a></li>
 									{% endif %}
 
 									<li class="active"><a href="javascript:void(0);">{{ jobs.number }}</a></li>
 
 
 									{% if jobs.has_next %}
-									<li><a href="?page={{ jobs.next_page_number }}">{{ jobs.next_page_number }}</a></li>
-									<li class="previous"><a href="?page={{ jobs.next_page_number }}">بعدی <i class="ti-arrow-right"></i></a></li>
+									<li><a href="?page={{ jobs.next_page_number }}&name={{ name }}&ostan={{ ostan }}&category={{ category }}">{{ jobs.next_page_number }}</a></li>
+									<li class="previous"><a href="?page={{ jobs.next_page_number }}&name={{ name }}&ostan={{ ostan }}&category={{ category }}">بعدی <i class="ti-arrow-right"></i></a></li>
 									{% endif %}
 								</ul>
 							</div>

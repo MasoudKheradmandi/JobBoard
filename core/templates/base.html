@@ -146,6 +146,25 @@
 						{% endif %}
 					{% endfor %}
 			</script>
+			<script>
+				$(document).ready(function(){
+					$('.inputid').click(function(){
+						$.ajax({
+							type : 'GET',
+							url : '{% url "job:add_product_wish_list" %}',
+							data : {'id':$(this).data('id'),},
+							dataType : 'json',
+							success : function (data) {
+								alert(data.status)
+							},
+							error: function(data){
+								alert('Error');
+							}
+						})
+					});
+					});
+		
+			</script>
 {% block js %}
 
 {% endblock %}

@@ -68,10 +68,10 @@
         <div class="section-head d-flex head-counter clearfix">
             <div class="mr-auto">
                 <h2 class="m-b5">دسته های محبوب</h2>
-                <h6 class="fw3">بیش از 20 دسته شغل</h6>
+                <h6 class="fw3">بیش از {{cat_count}} دسته شغل</h6>
             </div>
             <div class="head-counter-bx">
-                <h2 class="m-b5 counter">1800</h2>
+                <h2 class="m-b5 counter">{{jobs.count}}</h2>
                 <h6 class="fw3">شغل ارسال شده</h6>
             </div>
             <div class="head-counter-bx">
@@ -89,7 +89,7 @@
                 <div class="icon-bx-wraper">
                     <div class="icon-content">
                         <div class="icon-md text-primary m-b20"><i class="{{cat.class_icon}}"></i></div>
-                        <a href="{% url 'job:listview' %}" class="dez-tilte">{{cat.name}}</a>
+                        <a href="{% url 'job:searchlistview' %}?name=&ostan=&category={{cat.name}}" class="dez-tilte">{{cat.name}}</a>
                         <p class="m-a0">{{cat.num_jobs}} موقعیت شغلی
 							
 						</p>
@@ -105,7 +105,12 @@
     </div>
 </div>
 <!-- About Us END -->
-        {% include 'will.html' %}
+
+{% comment %} 
+اینجا باید will.html اپلود بشه
+{% endcomment %}
+
+
 		<!-- Call To Action END -->
 		<!-- Our Job -->
 		<div class="section-full bg-white content-inner-2">

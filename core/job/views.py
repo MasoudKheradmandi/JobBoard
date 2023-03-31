@@ -93,7 +93,12 @@ def searchlistview(request):
     page_number = request.GET.get('page')
     page_obj = paginator.get_page(page_number)
     context = {
-        'jobs':page_obj
+        'jobs':page_obj,
+        'paginator':paginator,
+        'name':name,
+        'ostan':ostan,
+        'category':category,
+        'categorys':JobCategory.objects.all(),
     }
 
     return render(request,'search_list_view.html',context)

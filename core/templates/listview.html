@@ -41,7 +41,7 @@
               <div class="col-lg-3 col-md-6">
 								<div class="form-group">
 									<select name='ostan'>
-										<option value=''>استان</option>
+										<option value=''>همه استان ها</option>
 										<option value='تهران'>تهران</option>
 										<option value='گیلان'>گیلان</option>
 										<option value='مازندران'>مازندران</option>
@@ -247,26 +247,6 @@
 
 
 {% block js %}
-    <script>
-        $(document).ready(function(){
-            $('.inputid').click(function(){
-                $.ajax({
-                    type : 'GET',
-                    url : '{% url "job:add_product_wish_list" %}',
-                    data : {'id':$(this).data('id'),},
-                    dataType : 'json',
-                    success : function (data) {
-                        alert(data.status)
-                    },
-                    error: function(data){
-                        alert('Error');
-                    }
-                })
-            });
-            });
-
-    </script>
-
     <script>
       $(document).ready(function(){
 	  $('#sort-select option[value="{{time}}"]').attr("selected", "selected");
