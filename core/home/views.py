@@ -13,6 +13,7 @@ from django.db.models import Count , Q
 User = get_user_model()
 # Create your views here.
 def home(request):
+    print(request.user.email)
     context = {
         'slider':Slider.objects.filter().last(),
         'jobs':Job.objects.filter(status=True).order_by('-created'),
