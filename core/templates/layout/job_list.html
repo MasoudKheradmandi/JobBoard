@@ -5,7 +5,7 @@
 									<div class="d-flex m-b30">
 										<div class="job-post-company">
 											
-											<span><img alt="" src="{{job.company.logo.url}}"></span>
+											<span><img alt="" {% if job.company.logo %} src="{{job.company.logo.url}}" {% else %} src='' {% endif %}></span>
 											
 										</div>
 										<div class="job-post-info">

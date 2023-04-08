@@ -24,6 +24,7 @@ urlpatterns = [
     path('', include('account.urls')),
     path('', include('home.urls')),
     path('', include('job.urls')),
+    path('', include('resume.urls'))
 ]
 if settings.DEBUG : 
     urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

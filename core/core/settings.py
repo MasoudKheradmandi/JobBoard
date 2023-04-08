@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'account',
     'home',
     'job',
+    'resume',
     'django_render_partial',
 ]
 

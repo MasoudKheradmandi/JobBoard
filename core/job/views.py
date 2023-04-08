@@ -9,6 +9,10 @@ from django.db.models import F
 from account.models.user import User
 from django.utils import timezone
 from datetime import datetime
+from resume.forms import FormSender
+from django.contrib import messages
+
+from resume.models import SendResume
 # Create your views here.
 def listview(request):
 
@@ -38,11 +42,25 @@ def listview(request):
 
 def detailview(request,id):
     job = get_object_or_404(Job,id=id)
+    form = FormSender()
+    if request.method == "POST":
+        if SendResume.objects.filter(reciver=job.company,sender=request.user,post=job):
+            messages.error(request,'شما قبلا رزومه برای این شرکت فرستادید')
+        else:
+            form = FormSender(request.POST,request.FILES)
+            if form.is_valid():
+                print(form.errors)
+                reciver = job.company
+                sender = request.user
+                cv_file = form.cleaned_data['cv_file']
+                SendResume.objects.create(reciver=reciver,sender=sender,post=job,cv_file=cv_file)
+                messages.success(request,'رزومه شما با موفقیت ارسال شد')
+
     context = {
-        'job':job
+        'job':job,
+        'form':form
     }
     return render(request,'job_detail.html',context)
-
 
 
 

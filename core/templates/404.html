@@ -1,0 +1,83 @@
+﻿{% extends 'base.html' %}
+{% load static %}
+
+{% block body %}
+    <!-- header END -->
+    <!-- Content -->
+    <div class="page-content">
+		<!-- inner page banner -->
+        <div class="dez-bnr-inr overlay-black-middle" style="background-image:url(images/banner/bnr1.jpg);">
+            <div class="container">
+                <div class="dez-bnr-inr-entry">
+                    <h1 class="text-white">خطای <span style="font-family: iranyekan;">404</span></h1>
+					<!-- Breadcrumb row -->
+					<div class="breadcrumb-row">
+						<ul class="list-inline">
+							<li><a href="#">خانه</a></li>
+							<li>خطای <span style="font-family: iranyekan;">404</span></li>
+						</ul>
+					</div>
+					<!-- Breadcrumb row END -->
+                </div>
+            </div>
+        </div>
+        <!-- inner page banner END -->
+        <!-- Error Page -->
+		<div class="section-full content-inner-3 bg-white">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 col-md-12 col-sm-12 error-page text-center">
+						<h2 class="dz_error text-secondry" style="font-family: iranyekan;">404</h2>
+						<h3>اوه!</h3>
+						<h4 class="text-primary">صفحه پیدا نشد</h4>
+						<a href="index.html" class="site-button">بازگشت به صفحه اصلی</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Error Page END -->
+    </div>
+    <!-- Content END-->
+	<!-- Modal Box -->
+	<div class="modal fade lead-form-modal" id="car-details" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+				<div class="modal-body row m-a0 clearfix">
+					<div class="col-lg-6 col-md-6 overlay-primary-dark d-flex p-a0" style="background-image: url(images/background/bg3.jpg);  background-position:center; background-size:cover;">
+						<div class="form-info text-white align-self-center">
+							<h3 class="m-b15">وارد حساب کاربری خود شوید</h3>
+							<p class="m-b15">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+							<ul class="list-inline m-a0">
+								<li><a href="#" class="m-r10 text-white"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="#" class="m-r10 text-white"><i class="fa fa-google-plus"></i></a></li>
+								<li><a href="#" class="m-r10 text-white"><i class="fa fa-linkedin"></i></a></li>
+								<li><a href="#" class="m-r10 text-white"><i class="fa fa-instagram"></i></a></li>
+								<li><a href="#" class="m-r10 text-white"><i class="fa fa-twitter"></i></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-6 col-md-6 p-a0">
+						<div class="lead-form browse-job text-left">
+							<form>
+								<h3 class="m-t0">ورود</h3>
+								<div class="form-group">
+									<input value="" class="form-control" placeholder="نام">
+								</div>	
+								<div class="form-group">
+									<input value="" class="form-control" placeholder="شماره موبایل">
+								</div>
+								<div class="clearfix">
+									<button type="button" class="btn-primary site-button btn-block">ثبت </button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>	
+			</div>
+		</div>
+	</div>
+	<!-- Modal Box End -->
+ {% endblock %}

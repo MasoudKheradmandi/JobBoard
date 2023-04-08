@@ -71,6 +71,11 @@
 								<a href="jobs-applied-job.html" class="site-button">درخواست</a>
 							</div>
 						</div>
+						<form method='post' action='' enctype="multipart/form-data" >
+							{% csrf_token %}
+						{{ form.cv_file }}
+						<button type='submit'>Save</button>
+						</form>
 					</div>
 				</div>
 			</div>

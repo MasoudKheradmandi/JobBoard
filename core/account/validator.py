@@ -16,3 +16,12 @@ def validate_picture_size(value):
         raise ValidationError("You cannot upload file more than 4MB")
     else:
         return value
+
+
+def validate_resume_size(value):
+    filesize= value.size
+    
+    if filesize > 3485760:
+        raise ValidationError("You cannot upload file more than 3MB")
+    else:
+        return value
