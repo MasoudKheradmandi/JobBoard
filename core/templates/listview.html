@@ -141,57 +141,59 @@
 								<ul class="company-logo-wg sidebar bg-white job-bx m-b30 clearfix">
 									<li class="brand-logo">
 										<a href="javascript:void(0);">
-											<img src="images/logo/logo1.jpg" alt="">
+											<img src="{% static 'images/logo/logo1.jpg' %}" alt="">
 										</a>
 									</li>
 									<li class="brand-logo">
 										<a href="javascript:void(0);">
-											<img src="images/logo/logo2.jpg" alt="">
+											<img src="{% static 'images/logo/logo2.jpg' %}" alt="">
 										</a>
 									</li>
 									<li class="brand-logo">
 										<a href="javascript:void(0);">
-											<img src="images/logo/logo3.jpg" alt="">
+											<img src="{% static 'images/logo/logo3.jpg' %}" alt="">
 										</a>
 									</li>
 									<li class="brand-logo">
 										<a href="javascript:void(0);">
-											<img src="images/logo/logo4.jpg" alt="">
+											<img src="{% static 'images/logo/logo4.jpg' %}" alt="">
 										</a>
 									</li>
 									<li class="brand-logo">
 										<a href="javascript:void(0);">
-											<img src="images/logo/logo5.jpg" alt="">
+											<img src="{% static 'images/logo/logo5.jpg' %}" alt="">
 										</a>
 									</li>
 									<li class="brand-logo">
 										<a href="javascript:void(0);">
-											<img src="images/logo/logo6.jpg" alt="">
+											<img src="{% static 'images/logo/logo6.jpg' %}" alt="">
 										</a>
 									</li>
 									<li class="brand-logo">
 										<a href="javascript:void(0);">
-											<img src="images/logo/logo7.jpg" alt="">
+											<img src="{% static 'images/logo/logo7.jpg' %}" alt="">
 										</a>
 									</li>
 									<li class="brand-logo">
 										<a href="javascript:void(0);">
-											<img src="images/logo/logo8.jpg" alt="">
+											<img src="{% static 'images/logo/logo8.jpg' %}" alt="">
 										</a>
 									</li>
 									<li class="brand-logo">
 										<a href="javascript:void(0);">
-											<img src="images/logo/logo9.jpg" alt="">
+											<img src="{% static 'images/logo/logo9.jpg' %}" alt="">
 										</a>
 									</li>
 								</ul>
+								{% if user.is_anonymous %}
 								<div class="quote-bx">
 									<div class="quote-info">
 										<h4>با رزومه ساز انلاین ما متفاوت باشید</h4>
 										<p>با رزومه ساز جاب بورد کارفرمای خود را تحت تاثیر قرار دهید</p>
-										<a href="register.html" class="site-button">ایجاد حساب کاربری</a>
+										<a href="{% url 'account:user_signup' %}" class="site-button">ایجاد حساب کاربری</a>
 									</div>
 								</div>
+								{% endif %}
 							</div>
 						</div>
 					</div>

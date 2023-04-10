@@ -142,13 +142,15 @@
 									<div class="testimonial-detail"> <strong class="testimonial-name">ریحانه بیوت</strong> <span class="testimonial-position">یزد</span> </div>
 								</div>
 							</div>
+							{% if user.is_anonymous %}
 							<div class="quote-bx">
 								<div class="quote-info">
 									<h4>با رزومه ساز انلاین ما متفاوت باشید</h4>
 									<p>با رزومه ساز جاب بورد کارفرمای خود را تحت تاثیر قرار دهید</p>
-									<a href="register.html" class="site-button">ایجاد حساب کاربری</a>
+									<a href="{% url 'account:user_signup' %}" class="site-button">ایجاد حساب کاربری</a>
 								</div>
 							</div>
+							{% endif %}
 						</div>
 					</div>
 				</div>
