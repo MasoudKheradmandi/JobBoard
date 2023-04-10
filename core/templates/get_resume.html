@@ -52,13 +52,13 @@
 												<h6><a href="javascript:void(0);">{{cv.sender}}</a></h6>
 												<ul>
 													<li><i class="fa fa-bookmark-o"></i> تمام وقت</li>
-													<li><i class="fa fa-clock-o"></i> 11 روز پیش</li>
+													<li><i class="fa fa-clock-o"></i> {{cv.days_passed}}</li>
 												</ul>
 											</div>
 										</div>
 										<div class="job-links action-bx">
 											<a href="{{cv.cv_file.url}}" target="blank"><i class="fa fa-download"></i></a>
-											<a href="javascript:void(0);"><i class="ti-trash"></i></a>
+											<a href="{% url 'resume:delete_cv' cv.id %}"><i class="ti-trash"></i></a>
 										</div>
 									</li>
 									{% endfor %}

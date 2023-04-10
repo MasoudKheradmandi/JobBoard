@@ -1,9 +1,9 @@
-from django.shortcuts import render
+from django.shortcuts import render,get_object_or_404,redirect
 from .forms import FormSender
 from django.contrib.auth.decorators import login_required
 from resume.models import SendResume
 from account.models import User,Company
-
+from django.contrib import messages
 
 @login_required()
 def get_resume(request):
@@ -19,3 +19,9 @@ def get_resume(request):
     else:
         return render(request,'404.html')
     
+
+def delete_cv(request,id):
+    obj = get_object_or_404(SendResume,id=id)
+    obj.delete()
+    messages.success(request,'درخواست از لیست شما حذف شد')
+    return redirect('resume:get_resume')
