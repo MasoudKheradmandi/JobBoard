@@ -51,7 +51,7 @@
 											<div class="job-post-info">
 												<h6><a href="javascript:void(0);">{{cv.sender}}</a></h6>
 												<ul>
-													<li><i class="fa fa-bookmark-o"></i> تمام وقت</li>
+													<li><i class="fa fa-bookmark-o"></i><a href="{% url 'job:detailview' cv.post.id %}">{{cv.post}}</a></li>
 													<li><i class="fa fa-clock-o"></i> {{cv.days_passed}}</li>
 												</ul>
 											</div>

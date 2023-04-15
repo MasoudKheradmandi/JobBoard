@@ -9,7 +9,7 @@ from django.contrib import messages
 def get_resume(request):
     if request.user.company:
         company = Company.objects.get(user=request.user)
-        resume=SendResume.objects.filter(reciver=company)
+        resume=SendResume.objects.filter(reciver=company,status=True)
         # resume = SendResume.objects.filter(reciver=request.user)
         print(resume)
         context = {
@@ -22,6 +22,7 @@ def get_resume(request):
 
 def delete_cv(request,id):
     obj = get_object_or_404(SendResume,id=id)
-    obj.delete()
+    obj.status = False
+    obj.save()
     messages.success(request,'درخواست از لیست شما حذف شد')
     return redirect('resume:get_resume')
