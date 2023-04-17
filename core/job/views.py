@@ -49,7 +49,6 @@ def detailview(request,id):
         else:
             form = FormSender(request.POST,request.FILES)
             if form.is_valid():
-                print(form.errors)
                 reciver = job.company
                 sender = request.user
                 cv_file = form.cleaned_data['cv_file']
@@ -76,11 +75,13 @@ def add_product_wish_list(request):
 
     return JsonResponse({'status':'success'})
 
+
 @login_required
-def wish_list(request):
+def wish_list(request,*rm):
     user = User.objects.get(id=1)
     wish_list = user.userprofile.wish_list.all()
     time = 90
+    
     if request.GET.get('time'):
         time = request.GET.get('time')
         time_dict = {
@@ -98,7 +99,6 @@ def wish_list(request):
         'time':time
     }
     return render(request,'wishlist.html',context)
-
 
 
 def searchlistview(request):

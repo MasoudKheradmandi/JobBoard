@@ -10,52 +10,62 @@
 					<div class="find-job-bx">
 						<a href="browse-job-list.html" class="site-button button-sm">مشاغل، فرصت های شغلی و استخدامی</a>
 						<h2>{{slider.text}}</h2>
-						<form class="dezPlaceAni">
+						<form class="dezPlaceAni" action="{% url 'job:searchlistview' %}">
 							<div class="row">
 								<div class="col-lg-4 col-md-6">
 									<div class="form-group">
 										<label>عنوان شغل، عبارت یا کلمه کلیدی</label>
 										<div class="input-group">
-											<input type="text" class="form-control" placeholder="">
+											<input name='name' type="text" class="form-control" placeholder="">
 											<div class="input-group-append">
 											  <span class="input-group-text"><i class="fa fa-search"></i></span>
 											</div>
 										</div>
 									</div>
 								</div>
-								<div class="col-lg-3 col-md-6">
+				  <div class="col-lg-3 col-md-6">
 									<div class="form-group">
-										<label>شهر، استان یا کد پستی</label>
-										<div class="input-group">
-											<input type="text" class="form-control" placeholder="">
-											<div class="input-group-append">
-											  <span class="input-group-text"><i class="fa fa-map-marker"></i></span>
-											</div>
-										</div>
+										<select name='ostan'>
+											<option value=''>همه استان ها</option>
+											<option value='تهران'>تهران</option>
+											<option value='گیلان'>گیلان</option>
+											<option value='مازندران'>مازندران</option>
+											<option value='آذربایجان شرقی'>آذربایجان شرقی</option>
+											<option value='آذربایجان غربی'>آذربایجان غربی</option>
+											<option value='کرمانشاه'>کرمانشاه</option>
+											<option value='سیستان و بلوچستان'>سیستان و بلوچستان</option>
+											<option value='کردستان'>کردستان</option><option>همدان</option>
+											<option value='چهارمحال و بختیاری'>چهارمحال و بختیاری</option>
+											<option value='لرستان'>لرستان</option>
+											<option value='زنجان'>زنجان</option>
+											<option value='بوشهر'>بوشهر</option>
+											<option value='سمنان'>سمنان</option>
+											<option value='یزد'>یزد</option>
+											<option value='اردبیل'>اردبیل</option>
+											<option value='قم'>قم</option>
+											<option value='قزوین'>قزوین</option>
+											<option value='هرمزگان'>هرمزگان</option>
+											<option value='البرز'>البرز</option>
+											<option value='مرکزی'>مرکزی</option>
+											<option value='خراسان جنوبی'>خراسان جنوبی</option>
+										</select>
 									</div>
 								</div>
 								<div class="col-lg-3 col-md-6">
 									<div class="form-group">
-										<select>
-											<option>عنوان شغل</option>
-											<option>ساخت و ساز</option>
-											<option>هماهنگ کننده</option>
-											<option>کارفرما</option>
-											<option>مالی</option>
-											<option>فناوری اطلاعات</option>
-											<option>بازار یابی</option>
-											<option>تضمین کیفیت</option>
-											<option>مشاور املاک</option>
-											<option>فروش</option>
-											<option>پشتیبان</option>
-											<option>تدریس</option> 
+										<select name='category'>
+											<option value=''>دسته بندی خود را انتخاب کنید</option>
+										{% for cat in category %}
+											<option>{{cat.name}}</option>
+										{% endfor %}
 										</select>
 									</div>
 								</div>
 								<div class="col-lg-2 col-md-6">
-									<button type="ثبت" href="browse-job-list.html" class="site-button btn-block">جستجو</button>
+									<button type="ثبت" class="site-button btn-block">جستجو</button>
 								</div>
 							</div>
+						</form>
 						</form>
 					</div>
 				</div>
