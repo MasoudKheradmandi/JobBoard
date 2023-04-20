@@ -18,11 +18,15 @@ def company_signup(request):
     if request.method == "POST":
         username = request.POST['username']
         password = request.POST['password']
-
-        user=User.objects.create_user(email=username,password=password,company=True)
-        messages.success(request,'ثبت نام شما با موفقیت انجام شد!')
-        login(request,user)
-        return redirect('account:company_profile')
+        password1 = request.POST['password1']
+        
+        if password == password1:
+            user=User.objects.create_user(email=username,password=password,company=True)
+            messages.success(request,'ثبت نام شما با موفقیت انجام شد!')
+            login(request,user)
+            return redirect('account:company_profile')
+        else:
+            messages.error(request,'پسووردهای وارد شده یکسان نمیباشد')
 
 
     return render(request,'company_login/register.html',)

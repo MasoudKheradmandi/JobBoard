@@ -75,7 +75,7 @@
 											<td class="job-links">
 												<a href="{% url 'job:detailview' wish.id %}">
 												<i class="fa fa-eye"></i></a>
-												<a href="javascript:void(0);"><i class="ti-trash"></i></a>
+												<a href="{% url 'job:delete_from_wish_list' wish.id %}"><i class="ti-trash"></i></a>
 											</td>
 										</tr>
 									{% endfor %}

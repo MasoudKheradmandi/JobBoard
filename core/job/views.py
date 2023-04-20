@@ -1,4 +1,4 @@
-from django.shortcuts import render,get_object_or_404
+from django.shortcuts import render,get_object_or_404,redirect
 from account.models import UserProfile
 from .models.job import Job,JobCategory
 from home.models import Slider
@@ -77,11 +77,10 @@ def add_product_wish_list(request):
 
 
 @login_required
-def wish_list(request,*rm):
+def wish_list(request):
     user = User.objects.get(id=1)
     wish_list = user.userprofile.wish_list.all()
     time = 90
-    
     if request.GET.get('time'):
         time = request.GET.get('time')
         time_dict = {
@@ -101,13 +100,22 @@ def wish_list(request,*rm):
     return render(request,'wishlist.html',context)
 
 
+@login_required
+def delete_from_wish_list(request,id):    
+    obj = request.user.userprofile.wish_list.get(id=id)
+    request.user.userprofile.wish_list.remove(obj)
+    print(obj.__class__)
+    return redirect('job:wish_list')
+
+
+
 def searchlistview(request):
     name = request.GET.get('name')
     ostan = request.GET.get('ostan')
     category = request.GET.get('category')
 
     jobs = Job.objects.filter(status=True,name__contains=name,ostan__contains=ostan,category__name__contains=category).order_by('-created')
-    paginator = Paginator(jobs, 1)
+    paginator = Paginator(jobs, 10)
     page_number = request.GET.get('page')
     page_obj = paginator.get_page(page_number)
     context = {
