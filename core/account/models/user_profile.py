@@ -3,7 +3,7 @@ from account.validator import validate_file_size,validate_picture_size
 from django.contrib.auth import get_user_model
 from django.db.models.signals import pre_save,post_save
 from django.dispatch import receiver
-
+from job.models.suggest import Key
 
 User = get_user_model()
 
@@ -27,6 +27,7 @@ class UserProfile(models.Model):
 
     tahsilat = models.CharField(max_length=400)
     info = models.TextField()
+    key = models.ManyToManyField(Key,blank=True)
     cv_file = models.FileField(validators=[validate_file_size],null=True)
     linkedin = models.URLField(max_length=200,blank=True,null=True)
     wish_list = models.ManyToManyField('job.Job',blank=True)

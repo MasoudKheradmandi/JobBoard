@@ -12,7 +12,8 @@ urlpatterns = [
     path('user_profile/',views.user_profile,name='user_profile'),
     path('reset_token/',views.reset_token,name='reset_token'),
     path('verify/',views.verify,name='verify'),
-    path('changepassword/',views.new_password,name='new_password')
+    path('changepassword/',views.new_password,name='new_password'),
+    path('suggest/',views.suggest_job_for_user,name='suggest_job_for_user'),
 ]
 
 

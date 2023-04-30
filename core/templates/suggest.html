@@ -1,0 +1,166 @@
+﻿{% extends 'base.html' %}
+
+{% block body %}
+    <!-- Content -->
+    <div class="page-content bg-white">
+        <!-- contact area -->
+        <div class="content-block">
+			<!-- Browse Jobs -->
+			<div class="section-full bg-white p-t50 p-b20">
+				<div class="container">
+					<div class="row">
+						<div class="col-xl-3 col-lg-4 m-b30">
+							<div class="sticky-top">
+								<div class="candidate-info">
+									<div class="candidate-detail text-center">
+										<div class="canditate-des">
+											<a href="javascript:void(0);">
+												<img alt="" src="images/team/pic1.jpg">
+											</a>
+											<div class="upload-link" title="آپلود عکس پروفایل" data-toggle="tooltip" data-placement="left">
+												<input type="file" class="update-flie">
+												<i class="fa fa-camera"></i>
+											</div>
+										</div>
+										<div class="candidate-title">
+											<div class="">
+												<h4 class="m-b5"><a href="javascript:void(0);">ثریا قاسمی</a></h4>
+												<p class="m-b0"><a href="javascript:void(0);">توسعه دهنده وب</a></p>
+											</div>
+										</div>
+									</div>
+									{% include 'profile_rtl_include.html' %}
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-9 col-lg-8 m-b30">
+							<div class="job-bx table-job-bx browse-job clearfix">
+								<div class="job-bx-title clearfix">
+									<h5 class="font-weight-700 pull-left text-uppercase">شغل های پیشنهاد شده</h5>
+									<div class="float-right">
+									
+									</div>
+								</div>
+								<table>
+									<thead>
+										<tr>
+											<th>مشاغل ممتاز</th>
+											<th>شرکت</th>
+											<th>تاریخ</th>
+											<th></th>
+										</tr>
+									</thead>
+									<tbody>
+									{% for job in jobs %}	
+										<tr>
+											<td class="job-name"><a href="job-detail.html">{{job.name}}</a></td>
+											<td class="criterias text-primary">{{job.company.name}}</td>
+											<td class="date">{{job.created.date}}</td>
+											<td class="job-links">
+												<a href="{% url 'job:detailview' job.id %}">
+												<i class="fa fa-eye"></i></a>
+											
+											</td>
+										</tr>
+									{% endfor %}
+									</tbody>
+								</table>
+								<div class="pagination-bx float-left">
+									{% if jobs.paginator.num_pages != 1 %}
+							<div class="pagination-bx m-t30">
+								<ul class="pagination">
+									{% if jobs.has_previous %}
+									<li class="next"><a href="?page={{ jobs.previous_page_number }}"><i class="ti-arrow-left"></i> قبلی</a></li>
+									<li><a href="?page={{ jobs.previous_page_number }}">{{ jobs.previous_page_number }}</a></li>
+									{% endif %}
+
+									<li class="active"><a href="javascript:void(0);">{{ jobs.number }}</a></li>
+
+
+									{% if jobs.has_next %}
+									<li><a href="?page={{ jobs.next_page_number }}">{{ jobs.next_page_number }}</a></li>
+									<li class="previous"><a href="?page={{ jobs.next_page_number }}">بعدی <i class="ti-arrow-right"></i></a></li>
+									{% endif %}
+								</ul>
+							</div>
+							{% endif %}
+								</div>
+							</div>
+							<!-- Modal -->
+							<div class="modal fade modal-bx-info" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+								<div class="modal-dialog" role="document">
+									<div class="modal-content">
+										<div class="modal-header">
+											<div class="logo-img">
+												<img alt="" src="images/logo/icon2.png">
+											</div>
+											<h5 class="modal-title">نام شرکت</h5>
+											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+												<span aria-hidden="true">&times;</span>
+											</button>
+										</div>
+										<div class="modal-body">
+											<ul>
+												<li><strong>نام شغل :</strong><p> توسعه دهنده وب - HTML, CSS, PHP </p></li>
+												<li><strong>تجربیات :</strong><p>5 سال</p></li>
+												<li><strong>توضیحات :</strong>
+													<p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p></li>
+											</ul>
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn btn-secondary" data-dismiss="modal">بستن</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- Modal End -->
+						</div>
+					</div>
+				</div>
+			</div>
+            <!-- Browse Jobs END -->
+		</div>
+    </div>
+    <!-- Content END-->
+	<!-- Modal Box -->
+	<div class="modal fade lead-form-modal" id="car-details" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+				<div class="modal-body row m-a0 clearfix">
+					<div class="col-lg-6 col-md-6 overlay-primary-dark d-flex p-a0" style="background-image: url(images/background/bg3.jpg);  background-position:center; background-size:cover;">
+						<div class="form-info text-white align-self-center">
+							<h3 class="m-b15">وارد حساب کاربری خود شوید</h3>
+							<p class="m-b15">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+							<ul class="list-inline m-a0">
+								<li><a href="#" class="m-r10 text-white"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="#" class="m-r10 text-white"><i class="fa fa-google-plus"></i></a></li>
+								<li><a href="#" class="m-r10 text-white"><i class="fa fa-linkedin"></i></a></li>
+								<li><a href="#" class="m-r10 text-white"><i class="fa fa-instagram"></i></a></li>
+								<li><a href="#" class="m-r10 text-white"><i class="fa fa-twitter"></i></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-6 col-md-6 p-a0">
+						<div class="lead-form browse-job text-left">
+							<form>
+								<h3 class="m-t0">ورود</h3>
+								<div class="form-group">
+									<input value="" class="form-control" placeholder="نام">
+								</div>	
+								<div class="form-group">
+									<input value="" class="form-control" placeholder="شماره موبایل">
+								</div>
+								<div class="clearfix">
+									<button type="button" class="btn-primary site-button btn-block">ثبت </button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>	
+			</div>
+		</div>
+	</div>
+{% endblock %}

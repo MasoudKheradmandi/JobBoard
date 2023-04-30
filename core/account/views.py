@@ -11,7 +11,9 @@ from django.http import HttpResponse
 from django.core.mail import send_mail
 from django.contrib.auth.hashers import make_password
 from django.contrib.auth.decorators import login_required
-
+from job.models.job import Job
+from django.db.models import Count
+from django.core.paginator import Paginator
 #--------------------Company--------
 
 def company_signup(request):
@@ -168,3 +170,18 @@ def new_password(request):
             user.save()
             return HttpResponse("Success")
     return render(request,'changepass.html')
+
+
+def suggest_job_for_user(request):
+    keys = request.user.userprofile.key.all()
+    print(keys)
+    print("-----------------------")
+    job_suggestions = Job.objects.filter(job_keys__title__in=list(keys))
+    job_suggestions = job_suggestions.annotate(s_count=Count('job_keys')).order_by('-s_count','-created')
+    paginator = Paginator(job_suggestions, 25)
+    page_number = request.GET.get("page")
+    page_obj = paginator.get_page(page_number)
+    context ={
+        'jobs':page_obj
+    }
+    return render(request,'suggest.html',context)

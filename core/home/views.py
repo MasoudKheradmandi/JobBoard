@@ -15,7 +15,7 @@ User = get_user_model()
 def home(request):
     context = {
         'slider':Slider.objects.filter().last(),
-        'jobs':Job.objects.filter(status=True).order_by('-created'),
+        'jobs':Job.objects.filter(status=True).order_by('-created')[:5],
         'comments':HomeComment.objects.filter(status=True),
         'category':JobCategory.objects.annotate(num_jobs=Count('job'),filter=Q(job__status=True)).order_by('-num_jobs'),
         'cat_count':JobCategory.objects.all().count()

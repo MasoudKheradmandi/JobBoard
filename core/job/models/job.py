@@ -2,7 +2,7 @@ from django.db import models
 from account.models.company import Company
 from django.utils import timezone
 from datetime import datetime
-
+from .suggest import Key
 
 class JobCategory(models.Model):
     image = models.ImageField(blank=True,null=True)
@@ -45,7 +45,7 @@ class Job(models.Model):
     privilege = models.TextField(blank=True,null=True,verbose_name='مهارت های امتیازی')
     
     status = models.BooleanField(default=False)
-    
+    job_keys = models.ManyToManyField(Key)
     telecommuting = models.BooleanField(default=False,verbose_name='امکان دورکاری')
 
     created = models.DateTimeField(auto_now_add=True)
