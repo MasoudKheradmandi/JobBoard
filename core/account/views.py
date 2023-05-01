@@ -1,6 +1,6 @@
 from django.shortcuts import render,redirect
 from django.contrib import messages
-from django.contrib.auth import login
+from django.contrib.auth import login,logout
 from .models.user import User
 from .models.company import Company
 from .forms import CompanyForm,UserProfileForm
@@ -174,8 +174,6 @@ def new_password(request):
 
 def suggest_job_for_user(request):
     keys = request.user.userprofile.key.all()
-    print(keys)
-    print("-----------------------")
     job_suggestions = Job.objects.filter(job_keys__title__in=list(keys))
     job_suggestions = job_suggestions.annotate(s_count=Count('job_keys')).order_by('-s_count','-created')
     paginator = Paginator(job_suggestions, 25)
@@ -185,3 +183,9 @@ def suggest_job_for_user(request):
         'jobs':page_obj
     }
     return render(request,'suggest.html',context)
+
+
+def log_out(request):
+    logout(request)
+    messages.success(request,"شما با موفقیت از حساب کاربری خود خارج شدید")
+    return redirect('/')

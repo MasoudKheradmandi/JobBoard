@@ -14,6 +14,7 @@ urlpatterns = [
     path('verify/',views.verify,name='verify'),
     path('changepassword/',views.new_password,name='new_password'),
     path('suggest/',views.suggest_job_for_user,name='suggest_job_for_user'),
+    path('logout/',views.log_out,name='log_out'),
 ]
 
 
