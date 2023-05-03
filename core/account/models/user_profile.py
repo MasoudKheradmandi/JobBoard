@@ -26,7 +26,7 @@ class UserProfile(models.Model):
     address = models.TextField(help_text='آدرس دقیق')
 
     tahsilat = models.CharField(max_length=400)
-    info = models.TextField()
+    info = models.TextField(null=True)
     key = models.ManyToManyField(Key,blank=True)
     cv_file = models.FileField(validators=[validate_file_size],null=True)
     linkedin = models.URLField(max_length=200,blank=True,null=True)

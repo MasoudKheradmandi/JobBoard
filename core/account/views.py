@@ -14,6 +14,7 @@ from django.contrib.auth.decorators import login_required
 from job.models.job import Job
 from django.db.models import Count
 from django.core.paginator import Paginator
+from account.decorators import is_company
 #--------------------Company--------
 
 def company_signup(request):
@@ -34,7 +35,7 @@ def company_signup(request):
     return render(request,'company_login/register.html',)
 
 
-    
+@is_company
 def CompanyProfile(request):
     obj = Company.objects.get(user_id=request.user.id)
     

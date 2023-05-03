@@ -1,0 +1,2937 @@
+[
+{
+  "model": "sessions.session",
+  "pk": "0trfwha0m1xcgozisk4tf213wj59n7c1",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQBe_iGlm7xp-Ekj5niNbrBQeQLcVJhbg7iZQC2jcz761GWpc8rk3mcUrqohDU6XeMxE8pO0kPKvequZZlnqLeFX3Qpoea5HU93L-DTC1vtU1OKCBDcGwDI0HsBYD57NhQlyCy79nYG9rOCotnNJ4QjNtcdEZ9vhDgOAM:1pbk1G:vnnw6weryC7sUAeVGx6aec1aQHM7B0SrJbtAWRoY8A8",
+    "expire_date": "2023-03-27T15:23:26.425Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "0ypz93ri5vidw6wg5shsapiv8wm9ytci",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQRe_C2hDKUAou3fcMDcwMUjWQlHZlvLtt0oVu_3vvv8UUtjVPW-NlmklcRScuv1sM-ORyAHqEcq8Sa1mXOcpDkSdtcqzEr9vp_h3k0PJeA2pPSJhAgfHGRGXYgfecht4nG4G8sz0OACGxM4HtTjqkTiulDGjx-QLnJDew:1pbM7j:igrGm1rwC1ZXI_zJWM8d8mhJ0kWZXUzrOoPxXklBxR4",
+    "expire_date": "2023-03-26T13:52:31.405Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "10x58qx60lh1oha8jlp6rwpapfybabhz",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQRe_C2pABhgou3fcMZIBBqoYmpV0Z765NutDtf-_9lwi0rTVsnZcwZXERSovT7xgpPbjtJN-p3WaZ5rYuU5S7Ig_a5Thnfl4P9--gUq_fGhgToBkGAFSkHMYz52ixUMnGYbHsIRbjHCuVNGTWaNF44wsqr6GI9wf0jDdq:1pqUu3:3gS9ACT3Npkx1in4oI-C1KBNQDEtSsOP3pjsdI3Y8nM",
+    "expire_date": "2023-05-07T08:16:59.859Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "5io90th9gd3671gc6eclzr1pgwu9970c",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQRe_C2hDKUAou3fcMDcwMUjWQlHZlvLtt0oVu_3vvv8UUtjVPW-NlmklcRScuv1sM-ORyAHqEcq8Sa1mXOcpDkSdtcqzEr9vp_h3k0PJeA2pPSJhAgfHGRGXYgfecht4nG4G8sz0OACGxM4HtTjqkTiulDGjx-QLnJDew:1popRL:7RN51DK6SMAwnziZC3hEW_H-09zvteUMidSKpx_XXIo",
+    "expire_date": "2023-05-02T17:48:27.492Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "b2za0kw42dipnms6je2mw5hr3lrwgbrb",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQRe_C2pABhgou3fcMZIBBqoYmpV0Z765NutDtf-_9lwi0rTVsnZcwZXERSovT7xgpPbjtJN-p3WaZ5rYuU5S7Ig_a5Thnfl4P9--gUq_fGhgToBkGAFSkHMYz52ixUMnGYbHsIRbjHCuVNGTWaNF44wsqr6GI9wf0jDdq:1pqdt9:OT662hUDKtgT5YTlz7Nu53h2wEIR_v7GUYdut_MVUrI",
+    "expire_date": "2023-05-07T17:52:39.356Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "cmubqr7auia4epod5wwkdgt0kbv6d6cv",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQRe_C2pAydSi4dO8ZyAwMUjU0Ke3KeHfbpAvdvvf-f6tA61LC2mQOY1IX5dTplzHFp9RdpAfV-6TjVJd5ZL0n-rBN36Ykr-vR_h0UamVbGxIiQSHk6CN7SwgeKEfue-hEjOk2mDwgOWSw7LIbzga8zTl6HNTnCxTqOG0:1pV42O:ylH-Io3gXW_-_rqmLqqOo5NTQlhuhLodjCHlYuk_aV0",
+    "expire_date": "2023-03-09T05:21:00.712Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "ebym1gcwm30fdjmwbf9cdu5sw29xr3nw",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQRe_C2hDKUAou3fcMDcwMUjWQlHZlvLtt0oVu_3vvv8UUtjVPW-NlmklcRScuv1sM-ORyAHqEcq8Sa1mXOcpDkSdtcqzEr9vp_h3k0PJeA2pPSJhAgfHGRGXYgfecht4nG4G8sz0OACGxM4HtTjqkTiulDGjx-QLnJDew:1pnf5g:MrK57EX3LlP-ECQPTyYiEFnu2DSi887XgNj9HfFx88w",
+    "expire_date": "2023-04-29T12:33:16.428Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "f7ykgtclq814n200hy6j9x12ev2b7486",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQRe_C2hDKUAou3fcMDcwMUjWQlHZlvLtt0oVu_3vvv8UUtjVPW-NlmklcRScuv1sM-ORyAHqEcq8Sa1mXOcpDkSdtcqzEr9vp_h3k0PJeA2pPSJhAgfHGRGXYgfecht4nG4G8sz0OACGxM4HtTjqkTiulDGjx-QLnJDew:1pV4Cy:2J3gjuq_u2ihUu6MVfh0CKz40krdK65wBGDz1mfPDKg",
+    "expire_date": "2023-03-09T05:31:56.191Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "fopgqk0q42bvab4ramc3iy2c7j4l9ifn",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQRe_C2hDKUAou3fcMDcwMUjWQlHZlvLtt0oVu_3vvv8UUtjVPW-NlmklcRScuv1sM-ORyAHqEcq8Sa1mXOcpDkSdtcqzEr9vp_h3k0PJeA2pPSJhAgfHGRGXYgfecht4nG4G8sz0OACGxM4HtTjqkTiulDGjx-QLnJDew:1pj3VM:oo8sa3RhMCjXFAu1MkFCeFhFZAebQw1Dzmr8AzSiIwk",
+    "expire_date": "2023-04-16T19:36:44.131Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "gx1lm620fcy2aumzh35pmyuqf8q9mzbz",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQRe_C2hDKUAou3fcMDcwMUjWQlHZlvLtt0oVu_3vvv8UUtjVPW-NlmklcRScuv1sM-ORyAHqEcq8Sa1mXOcpDkSdtcqzEr9vp_h3k0PJeA2pPSJhAgfHGRGXYgfecht4nG4G8sz0OACGxM4HtTjqkTiulDGjx-QLnJDew:1poh7C:a_GehiHOKlfZRQ4oOI2YG_xDjGH9EAZvE9bio7y7DxQ",
+    "expire_date": "2023-05-02T08:55:06.809Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "h553zb16qdr1dm4lzhmy1661qiypn99s",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQRe_C2hDKUAou3fcMDcwMUjWQlHZlvLtt0oVu_3vvv8UUtjVPW-NlmklcRScuv1sM-ORyAHqEcq8Sa1mXOcpDkSdtcqzEr9vp_h3k0PJeA2pPSJhAgfHGRGXYgfecht4nG4G8sz0OACGxM4HtTjqkTiulDGjx-QLnJDew:1po34T:ySvvSvTyon0fZgPi4sk6ELGg2ptPAy4A-TWpiEBCeZY",
+    "expire_date": "2023-04-30T14:09:37.469Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "i3g6l8k793is58dqorv6g5za6fs4ihbd",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQRe_C2hDKUAou3fcMDcwMUjWQlHZlvLtt0oVu_3vvv8UUtjVPW-NlmklcRScuv1sM-ORyAHqEcq8Sa1mXOcpDkSdtcqzEr9vp_h3k0PJeA2pPSJhAgfHGRGXYgfecht4nG4G8sz0OACGxM4HtTjqkTiulDGjx-QLnJDew:1pbM7P:2cIyvAVN0hJI6BnDbr2-RaWSyA1udKlAYF3QW1c3QoI",
+    "expire_date": "2023-03-26T13:52:11.038Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "i8zh47yl1qn3dam795j119x1x62b5eq3",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQRe_C2hDKUAou3fcMDcwMUjWQlHZlvLtt0oVu_3vvv8UUtjVPW-NlmklcRScuv1sM-ORyAHqEcq8Sa1mXOcpDkSdtcqzEr9vp_h3k0PJeA2pPSJhAgfHGRGXYgfecht4nG4G8sz0OACGxM4HtTjqkTiulDGjx-QLnJDew:1pWY4k:ZjgHT928dz_CI45uWa89x0DGtXQgsfrBZoULOkmWNR0",
+    "expire_date": "2023-03-13T07:37:34.081Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "lpth3rpi51c6hlqnbhhko69s32blzmqt",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQRe_C2hDKUAou3fcMDcwMUjWQlHZlvLtt0oVu_3vvv8UUtjVPW-NlmklcRScuv1sM-ORyAHqEcq8Sa1mXOcpDkSdtcqzEr9vp_h3k0PJeA2pPSJhAgfHGRGXYgfecht4nG4G8sz0OACGxM4HtTjqkTiulDGjx-QLnJDew:1pgLll:dLDowKXCmaXv5KZU26gyKV84e1OstV40U2xSx2nxkEA",
+    "expire_date": "2023-04-09T08:30:29.629Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "mqh884vqjm271oiw539gmxzd7zbvpnb1",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQRe_C2hDKUAou3fcMDcwMUjWQlHZlvLtt0oVu_3vvv8UUtjVPW-NlmklcRScuv1sM-ORyAHqEcq8Sa1mXOcpDkSdtcqzEr9vp_h3k0PJeA2pPSJhAgfHGRGXYgfecht4nG4G8sz0OACGxM4HtTjqkTiulDGjx-QLnJDew:1ptr7M:RpY14McThWrKz8Vr_anRW7GyCfyC1N5aSWXWujLstl8",
+    "expire_date": "2023-05-16T14:36:36.079Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "ojq9ctlng44jkuoe2j8wp2s990pe3fug",
+  "fields": {
+    "session_data": "e30:1pUkWa:Q28zyrCTPRDALylBKKqSND7k7TriJ6Rr1c9yHuq9e6g",
+    "expire_date": "2023-03-08T08:30:52.251Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "omb7uie979fp0j1lcm9rb1hac49g9l7e",
+  "fields": {
+    "session_data": ".eJxVjMsOwiAUBf-FtSFQWgou3fcbmvtCqgaSPlbGf7dNutDtzJzzViNsax63ReZxYnVV1qrLL0Sgp5TD8APKvWqqZZ0n1EeiT7voobK8bmf7d5Bhyfs6cooOwbK3zmDTYSCf2tALiWVEgp47R9RI9MbtuAUwCRx5QRMci_p8ASvROUg:1pj3TE:0JJg1Tf0YsGNT13gk_6u_kU194UlLGNNTLtT4xTDyLY",
+    "expire_date": "2023-04-16T19:34:32.105Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "u60w92bla7t8tiyqxkc4gq0l4i89hkbz",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQRe_C2hDKUAou3fcMDcwMUjWQlHZlvLtt0oVu_3vvv8UUtjVPW-NlmklcRScuv1sM-ORyAHqEcq8Sa1mXOcpDkSdtcqzEr9vp_h3k0PJeA2pPSJhAgfHGRGXYgfecht4nG4G8sz0OACGxM4HtTjqkTiulDGjx-QLnJDew:1plAus:HfUmpJq4XFhHbVuMkPuICXNfAZXxLSW2QL95LgSwAxQ",
+    "expire_date": "2023-04-22T15:55:50.931Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "xsbvml1hbwakzgswa1zvr6iaes4hlnlv",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQRe_C2hDKUAou3fcMDcwMUjWQlHZlvLtt0oVu_3vvv8UUtjVPW-NlmklcRScuv1sM-ORyAHqEcq8Sa1mXOcpDkSdtcqzEr9vp_h3k0PJeA2pPSJhAgfHGRGXYgfecht4nG4G8sz0OACGxM4HtTjqkTiulDGjx-QLnJDew:1pgVQ1:Lm2wT2AX2W5V5gW_d1K7yEcF5ms6Dm1xCgLwdNYouy4",
+    "expire_date": "2023-04-09T18:48:41.692Z"
+  }
+},
+{
+  "model": "account.user",
+  "fields": {
+    "password": "pbkdf2_sha256$390000$w8eUJIpNnbPzTZpS9LHegD$4Mv1dD5c+GiDeJP7508yUv5eI2+gRBQnSfutFxWtJE8=",
+    "last_login": "2023-05-02T14:36:36.077Z",
+    "email": "admin@admin.com",
+    "is_staff": true,
+    "is_superuser": true,
+    "is_active": true,
+    "is_verified": true,
+    "company": true,
+    "the_employer": false,
+    "employee": false,
+    "Token": 5198,
+    "created_date": "2023-02-16T13:53:17.186Z",
+    "updated_date": "2023-04-08T09:39:13.282Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "account.user",
+  "fields": {
+    "password": "pbkdf2_sha256$390000$nX2rOHdRzS96PIhVZlB1rm$wzkJqTvb799MFB2fv3+HuYwytJbIBwTpRe8MfvmNohI=",
+    "last_login": "2023-04-18T08:53:57.660Z",
+    "email": "index@gmail.com",
+    "is_staff": true,
+    "is_superuser": false,
+    "is_active": true,
+    "is_verified": false,
+    "company": false,
+    "the_employer": false,
+    "employee": true,
+    "Token": 8810,
+    "created_date": "2023-02-22T13:42:05.876Z",
+    "updated_date": "2023-04-18T08:53:36.802Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "account.user",
+  "fields": {
+    "password": "pbkdf2_sha256$390000$CbQE8dtuysjEkBTOOPXBy2$gewFsv8GY0tMDoho+TD2IlWqvis5wPVauiW6UASTPpA=",
+    "last_login": "2023-03-11T10:50:40.262Z",
+    "email": "1234test123@gmail.com",
+    "is_staff": false,
+    "is_superuser": false,
+    "is_active": true,
+    "is_verified": false,
+    "company": false,
+    "the_employer": false,
+    "employee": true,
+    "Token": 7222,
+    "created_date": "2023-03-11T10:50:40.234Z",
+    "updated_date": "2023-03-12T13:54:13.713Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "account.user",
+  "fields": {
+    "password": "pbkdf2_sha256$390000$eXRtOEAqQruhUPh2GeMBJY$I21HcINcKQoySMM0icgdm9Guv2+uqb6Kr2M1bF/A9NM=",
+    "last_login": "2023-04-08T12:26:36Z",
+    "email": "kheradmandimasoud416@gmail.com",
+    "is_staff": true,
+    "is_superuser": false,
+    "is_active": true,
+    "is_verified": true,
+    "company": true,
+    "the_employer": false,
+    "employee": true,
+    "Token": 4046,
+    "created_date": "2023-03-12T13:51:27.981Z",
+    "updated_date": "2023-04-08T12:27:28.063Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "account.user",
+  "fields": {
+    "password": "pbkdf2_sha256$390000$dxMNW6uBiLDZPUK0vpsWJu$WNwZ2WygaAfc8mI/A8KPUKZ1tUz/IEkjzZSW2lIGTpY=",
+    "last_login": "2023-04-02T19:40:19Z",
+    "email": "test@test.com",
+    "is_staff": true,
+    "is_superuser": true,
+    "is_active": true,
+    "is_verified": true,
+    "company": false,
+    "the_employer": false,
+    "employee": false,
+    "Token": null,
+    "created_date": "2023-04-02T19:32:44.888Z",
+    "updated_date": "2023-04-08T11:05:18.710Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "account.user",
+  "fields": {
+    "password": "pbkdf2_sha256$390000$HgXOBHCkoar4GxsH8Jy0EU$pMhmWwuPyLNMmJGJ8H8NRmptd/JgeV1nbloDhv/g3LE=",
+    "last_login": "2023-04-23T17:52:39.353Z",
+    "email": "index3@gmail.com",
+    "is_staff": true,
+    "is_superuser": true,
+    "is_active": true,
+    "is_verified": true,
+    "company": false,
+    "the_employer": false,
+    "employee": false,
+    "Token": null,
+    "created_date": "2023-04-23T08:15:52.758Z",
+    "updated_date": "2023-04-23T08:15:52.758Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "account.company",
+  "pk": 5,
+  "fields": {
+    "user": [
+      "kheradmandimasoud416@gmail.com"
+    ],
+    "logo": "",
+    "name": "testtttt comppp",
+    "email": "sadfjks@gmail.com",
+    "website": "",
+    "date_foundations": "123",
+    "locations": "dsfasdf",
+    "phone": "234234",
+    "ostan": "sadf",
+    "city": "dsgfd",
+    "info": "sdfsdf",
+    "code_posty": "123",
+    "instagram": "",
+    "linkedin": "",
+    "facebook": null,
+    "telegram": null
+  }
+},
+{
+  "model": "account.userprofile",
+  "pk": 1,
+  "fields": {
+    "user": [
+      "index@gmail.com"
+    ],
+    "name": "Maosud",
+    "picture": "imgpsh_fullsize_anim.jpg",
+    "lastname": "یشسب",
+    "job": "یسشب",
+    "age": 12,
+    "sex": "زن",
+    "phone_number": "123123",
+    "city": "سیب",
+    "code_posty": "12",
+    "address": "شسیب",
+    "tahsilat": "دیگ",
+    "info": "sad",
+    "cv_file": "choose-3.png",
+    "linkedin": null,
+    "key": [],
+    "wish_list": []
+  }
+},
+{
+  "model": "account.userprofile",
+  "pk": 2,
+  "fields": {
+    "user": [
+      "admin@admin.com"
+    ],
+    "name": "test",
+    "picture": "bg4_7qylRk3.jpg",
+    "lastname": "asdf",
+    "job": "asd",
+    "age": 12,
+    "sex": "مرد",
+    "phone_number": "09024485880",
+    "city": "بابلسر",
+    "code_posty": "1231234",
+    "address": "adsfasdf",
+    "tahsilat": "دییسب",
+    "info": "Masouddddd",
+    "cv_file": "bg4_nA52EvE.jpg",
+    "linkedin": null,
+    "key": [],
+    "wish_list": []
+  }
+},
+{
+  "model": "account.userprofile",
+  "pk": 3,
+  "fields": {
+    "user": [
+      "1234test123@gmail.com"
+    ],
+    "name": "",
+    "picture": "",
+    "lastname": "",
+    "job": "",
+    "age": null,
+    "sex": "مرد",
+    "phone_number": "",
+    "city": "",
+    "code_posty": "",
+    "address": "",
+    "tahsilat": "",
+    "info": "",
+    "cv_file": "",
+    "linkedin": null,
+    "key": [],
+    "wish_list": []
+  }
+},
+{
+  "model": "account.userprofile",
+  "pk": 4,
+  "fields": {
+    "user": [
+      "kheradmandimasoud416@gmail.com"
+    ],
+    "name": "",
+    "picture": "",
+    "lastname": "",
+    "job": "",
+    "age": null,
+    "sex": "مرد",
+    "phone_number": "",
+    "city": "",
+    "code_posty": "",
+    "address": "",
+    "tahsilat": "",
+    "info": "",
+    "cv_file": "",
+    "linkedin": null,
+    "key": [],
+    "wish_list": []
+  }
+},
+{
+  "model": "account.userprofile",
+  "pk": 5,
+  "fields": {
+    "user": [
+      "index3@gmail.com"
+    ],
+    "name": "مسعود",
+    "picture": "",
+    "lastname": "حسینی",
+    "job": "برنامه نویس",
+    "age": 12,
+    "sex": "مرد",
+    "phone_number": "123123",
+    "city": "sadf",
+    "code_posty": "123123",
+    "address": "sdafdfs",
+    "tahsilat": "دیپلم",
+    "info": "asdfadsf",
+    "cv_file": "Jobinja-SH-2236327.pdf",
+    "linkedin": null,
+    "key": [
+      2,
+      3,
+      4
+    ],
+    "wish_list": []
+  }
+},
+{
+  "model": "home.slider",
+  "pk": 1,
+  "fields": {
+    "image": "slide2.jpg",
+    "text": "شغل خود را به آسانی پیدا کنید"
+  }
+},
+{
+  "model": "home.navone",
+  "pk": 1,
+  "fields": {
+    "name": "خانه",
+    "link": ""
+  }
+},
+{
+  "model": "home.navone",
+  "pk": 2,
+  "fields": {
+    "name": "test",
+    "link": ""
+  }
+},
+{
+  "model": "home.navtwo",
+  "pk": 1,
+  "fields": {
+    "parent": 2,
+    "name": "خانه 1",
+    "link": "admin/"
+  }
+},
+{
+  "model": "home.aboutus",
+  "pk": 1,
+  "fields": {
+    "banner": "bnr1.jpg",
+    "title": "خلق تجربه های منحصر به فرد",
+    "body": "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد.\r\n\r\n\r\nلورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.",
+    "image": "pic1.jpg"
+  }
+},
+{
+  "model": "home.ziraboutus",
+  "pk": 1,
+  "fields": {
+    "banner": "bg4.jpg",
+    "title": "رزومه ساز انلاین ما متفاوت باشید",
+    "zir_title": "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.",
+    "button_name": "ایجاد حساب کاربری",
+    "button_link": "https://docs.djangoproject.com/en/4.1/ref/templates/builtins/"
+  }
+},
+{
+  "model": "home.contatctus",
+  "pk": 1,
+  "fields": {
+    "email": "index@gmail.com"
+  }
+},
+{
+  "model": "home.contatctus",
+  "pk": 3,
+  "fields": {
+    "email": "ass@gmail.com"
+  }
+},
+{
+  "model": "home.homecomment",
+  "pk": 1,
+  "fields": {
+    "name": "زهرا",
+    "job": "برنامه نویس",
+    "image": "pic1_V2TfPmb.jpg",
+    "comment": "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است",
+    "status": true
+  }
+},
+{
+  "model": "home.homecomment",
+  "pk": 2,
+  "fields": {
+    "name": "مریم",
+    "job": "دیزاینر",
+    "image": "pic2_cTXKANT.jpg",
+    "comment": "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است",
+    "status": true
+  }
+},
+{
+  "model": "home.homecomment",
+  "pk": 3,
+  "fields": {
+    "name": "مهسا",
+    "job": "مدیرپخش",
+    "image": "pic3.jpg",
+    "comment": "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است",
+    "status": true
+  }
+},
+{
+  "model": "home.homecomment",
+  "pk": 4,
+  "fields": {
+    "name": "الهه",
+    "job": "developer",
+    "image": "pic2_zmiSoFx.jpg",
+    "comment": "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است",
+    "status": true
+  }
+},
+{
+  "model": "job.key",
+  "pk": 1,
+  "fields": {
+    "title": "برنامه نویس"
+  }
+},
+{
+  "model": "job.key",
+  "pk": 2,
+  "fields": {
+    "title": "django"
+  }
+},
+{
+  "model": "job.key",
+  "pk": 3,
+  "fields": {
+    "title": "python"
+  }
+},
+{
+  "model": "job.key",
+  "pk": 4,
+  "fields": {
+    "title": "index"
+  }
+},
+{
+  "model": "job.jobcategory",
+  "pk": 1,
+  "fields": {
+    "image": "",
+    "name": "بازاریابی",
+    "class_icon": "ti-location-pin"
+  }
+},
+{
+  "model": "job.jobcategory",
+  "pk": 2,
+  "fields": {
+    "image": "",
+    "name": "برنامه نویس",
+    "class_icon": "ti-cloud-up"
+  }
+},
+{
+  "model": "job.jobcategory",
+  "pk": 4,
+  "fields": {
+    "image": "",
+    "name": "آموزش",
+    "class_icon": "ti-wand"
+  }
+},
+{
+  "model": "job.jobcategory",
+  "pk": 5,
+  "fields": {
+    "image": "",
+    "name": "حسابداری",
+    "class_icon": "ti-wallet"
+  }
+},
+{
+  "model": "job.jobcategory",
+  "pk": 6,
+  "fields": {
+    "image": "",
+    "name": "تریدر",
+    "class_icon": "ti-bar-chart"
+  }
+},
+{
+  "model": "job.jobcategory",
+  "pk": 7,
+  "fields": {
+    "image": "",
+    "name": "عکاس",
+    "class_icon": "ti-camera"
+  }
+},
+{
+  "model": "job.jobcategory",
+  "pk": 8,
+  "fields": {
+    "image": "",
+    "name": "تعمیرات",
+    "class_icon": "ti-tablet"
+  }
+},
+{
+  "model": "job.job",
+  "pk": 5,
+  "fields": {
+    "company": 5,
+    "name": "index333",
+    "category": 2,
+    "style": "تمام وقت",
+    "experience": "2",
+    "ostan": "خوزستان",
+    "salary": "12",
+    "info": "ad",
+    "necessary": "asd",
+    "privilege": "asd",
+    "status": true,
+    "telecommuting": true,
+    "created": "2023-04-08T11:29:57.411Z",
+    "updated_at": "2023-04-23T09:13:05.342Z",
+    "job_keys": [
+      2,
+      3,
+      4
+    ]
+  }
+},
+{
+  "model": "resume.sendresume",
+  "pk": 2,
+  "fields": {
+    "reciver": 5,
+    "sender": [
+      "admin@admin.com"
+    ],
+    "post": 5,
+    "cv_file": "",
+    "created": "2023-04-10T08:47:06.986Z",
+    "status": true
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2023-02-20T16:28:33.963Z",
+    "user": [
+      "admin@admin.com"
+    ],
+    "content_type": [
+      "account",
+      "company"
+    ],
+    "object_id": "2",
+    "object_repr": "test",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "action_time": "2023-02-20T16:44:35.924Z",
+    "user": [
+      "admin@admin.com"
+    ],
+    "content_type": [
+      "account",
+      "company"
+    ],
+    "object_id": "1",
+    "object_repr": "test",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 3,
+  "fields": {
+    "action_time": "2023-02-20T18:54:42.083Z",
+    "user": [
+      "admin@admin.com"
+    ],
+    "content_type": [
+      "account",
+      "user"
+    ],
+    "object_id": "3",
+    "object_repr": "indexx@gmail.com",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Is staff\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 4,
+  "fields": {
+    "action_time": "2023-02-20T18:56:15.028Z",
+    "user": [
+      "admin@admin.com"
+    ],
+    "content_type": [
+      "account",
+      "user"
+    ],
+    "object_id": "3",
+    "object_repr": "indexx@gmail.com",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"password\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 5,
+  "fields": {
+    "action_time": "2023-02-21T18:36:03.462Z",
+    "user": [
+      "admin@admin.com"
+    ],
+    "content_type": [
+      "account",
+      "user"
+    ],
+    "object_id": "4",
+    "object_repr": "indexxx@gmail.com",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 6,
+  "fields": {
+    "action_time": "2023-02-21T18:37:43.685Z",
+    "user": [
+      "admin@admin.com"
+    ],
+    "content_type": [
+      "account",
+      "user"
+    ],
+    "object_id": "5",
+    "object_repr": "indexxxx@gmail.com",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 7,
+  "fields": {
+    "action_time": "2023-02-21T18:37:54.032Z",
+    "user": [
+      "admin@admin.com"
+    ],
+    "content_type": [
+      "account",
+      "user"
+    ],
+    "object_id": "5",
+    "object_repr": "indexxxx@gmail.com",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 8,
+  "fields": {
+    "action_time": "2023-02-22T13:39:19.466Z",
+    "user": [
+      "admin@admin.com"
+    ],
+    "content_type": [
+      "account",
+      "user"
+    ],
+    "object_id": "2",
+    "object_repr": "index@gmail.com",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 9,
+  "fields": {
+    "action_time": "2023-02-22T13:39:19.470Z",
+    "user": [
+      "admin@admin.com"
+    ],
+    "content_type": [
+      "account",
+      "user"
+    ],
+    "object_id": "3",
+    "object_repr": "indexx@gmail.com",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 10,
+  "fields": {
+    "action_time": "2023-02-22T13:39:19.473Z",
+    "user": [
+      "admin@admin.com"
+    ],
+    "content_type": [
+      "account",
+      "user"
+    ],
+    "object_id": "4",
+    "object_repr": "indexxx@gmail.com",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 11,
+  "fields": {
+    "action_time": "2023-02-22T13:39:19.477Z",
+    "user": [
+      "admin@admin.com"
+    ],
+    "content_type": [
+      "account",
+      "user"
+    ],
+    "object_id": "7",
+    "object_repr": "indexxxx@gmail.com",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 12,
+  "fields": {
+    "action_time": "2023-02-22T13:39:19.480Z",
+    "user": [
+      "admin@admin.com"
+    ],
+    "content_type": [
+      "account",
+      "user"
+    ],
+    "object_id": "6",
+    "object_repr": "indexxxx@gmailc.om",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 13,
+  "fields": {
+    "action_time": "2023-02-22T13:42:05.879Z",
+    "user": [
+      "admin@admin.com"
+    ],
+    "content_type": [
+      "account",
+      "user"
+    ],
+    "object_id": "8",
+    "object_repr": "index@gmail.com",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 14,
+  "fields": {
+    "action_time": "2023-02-22T13:50:53.562Z",
+    "user": [
+      "admin@admin.com"
+    ],
+    "content_type": [
+      "account",
+      "user"
+    ],
+    "object_id": "8",
+    "object_repr": "index@gmail.com",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Is staff\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 15,
+  "fields": {
+    "action_time": "2023-02-22T17:53:05.584Z",
+    "user": [
+      "admin@admin.com"
+    ],
+    "content_type": [
+      "account",
+      "userprofile"
+    ],
+    "object_id": "1",
+    "object_repr": "index@gmail.com/// یشسب",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Name\", \"Picture\", \"Lastname\", \"Job\", \"Age\", \"Phone number\", \"City\", \"Code posty\", \"Address\", \"Tahsilat\", \"Info\", \"Cv file\", \"Linkedin\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 16,
+  "fields": {
+    "action_time": "2023-02-23T06:55:12.148Z",
+    "user": [
+      "admin@admin.com"
+    ],
+    "content_type": [
+      "account",
+      "userprofile"
+    ],
+    "object_id": "1",
+    "object_repr": "index@gmail.com/// یشسب",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Picture\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 17,
+  "fields": {
+    "action_time": "2023-02-27T07:45:21.136Z",
+    "user": [
+      "admin@admin.com"
+    ],
+    "content_type": [
+      "home",
+      "slider"
+    ],
+    "object_id": "1",
+    "object_repr": "Slider object (1)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 18,
+  "fields": {
+    "action_time": "2023-02-27T07:51:59.804Z",
+    "user": [
+      "admin@admin.com"
+    ],
+    "content_type": [
+      "home",
+      "slider"
+    ],
+    "object_id": "1",
+    "object_repr": "Slider object (1)",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Text\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 19,
+  "fields": {
+    "action_time": "2023-02-27T07:52:13.597Z",
+    "user": [
+      "admin@admin.com"
+    ],
+    "content_type": [
+      "home",
+      "slider"
+    ],
+    "object_id": "1",
+    "object_repr": "Slider object (1)",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Text\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 20,
+  "fields": {
+    "action_time": "2023-03-04T15:16:25.688Z",
+    "user": [
+      "admin@admin.com"
+    ],
+    "content_type": [
+      "job",
+      "jobcategory"
+    ],
+    "object_id": "1",
+    "object_repr": "بازاریابی",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 21,
+  "fields": {
+    "action_time": "2023-03-04T15:18:37.687Z",
+    "user": [
+      "admin@admin.com"
+    ],
+    "content_type": [
+      "job",
+      "job"
+    ],
+    "object_id": "1",
+    "object_repr": "مجری بازاریابی دیجیتال",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 22,
+  "fields": {
+    "action_time": "2023-03-04T15:23:49.152Z",
+    "user": [
+      "admin@admin.com"
+    ],
+    "content_type": [
+      "job",
+      "job"
+    ],
+    "object_id": "1",
+    "object_repr": "مجری بازاریابی دیجیتال",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 23,
+  "fields": {
+    "action_time": "2023-03-05T13:05:50.594Z",
+    "user": [
+      "admin@admin.com"
+    ],
+    "content_type": [
+      "account",
+      "company"
+    ],
+    "object_id": "2",
+    "object_repr": "admin@admin.com/  sdf",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Logo\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 24,
+  "fields": {
+    "action_time": "2023-03-05T14:08:16.567Z",
+    "user": [
+      "admin@admin.com"
+    ],
+    "content_type": [
+      "job",
+      "job"
+    ],
+    "object_id": "1",
+    "object_repr": "مجری بازاریابی دیجیتال",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0627\\u0645\\u06a9\\u0627\\u0646 \\u062f\\u0648\\u0631\\u06a9\\u0627\\u0631\\u06cc\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 25,
+  "fields": {
+    "action_time": "2023-03-05T14:58:16.537Z",
+    "user": [
+      "admin@admin.com"
+    ],
+    "content_type": [
+      "home",
+      "navone"
+    ],
+    "object_id": "1",
+    "object_repr": "خانه",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 26,
+  "fields": {
+    "action_time": "2023-03-05T14:58:27.032Z",
+    "user": [
+      "admin@admin.com"
+    ],
+    "content_type": [
+      "home",
+      "navone"
+    ],
+    "object_id": "2",
+    "object_repr": "test",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 27,
+  "fields": {
+    "action_time": "2023-03-05T14:58:53.724Z",
+    "user": [
+      "admin@admin.com"
+    ],
+    "content_type": [
+      "home",
+      "navtwo"
+    ],
+    "object_id": "1",
+    "object_repr": "خانه 1",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 28,
+  "fields": {
+    "action_time": "2023-03-06T11:14:32.061Z",
+    "user": [
+      "admin@admin.com"
+    ],
+    "content_type": [
+      "home",
+      "aboutus"
+    ],
+    "object_id": "1",
+    "object_repr": "خلق تجربه های منحصر به فرد",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 29,
+  "fields": {
+    "action_time": "2023-03-06T11:19:13.827Z",
+    "user": [
+      "admin@admin.com"
+    ],
+    "content_type": [
+      "home",
+      "aboutus"
+    ],
+    "object_id": "1",
+    "object_repr": "خلق تجربه های منحصر به فرد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Body\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 30,
+  "fields": {
+    "action_time": "2023-03-06T11:48:54.947Z",
+    "user": [
+      "admin@admin.com"
+    ],
+    "content_type": [
+      "home",
+      "ziraboutus"
+    ],
+    "object_id": "1",
+    "object_repr": "ZirAboutUs object (1)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 31,
+  "fields": {
+    "action_time": "2023-03-06T11:54:02.469Z",
+    "user": [
+      "admin@admin.com"
+    ],
+    "content_type": [
+      "home",
+      "aboutus"
+    ],
+    "object_id": "1",
+    "object_repr": "خلق تجربه های منحصر به فرد",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Banner\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 32,
+  "fields": {
+    "action_time": "2023-03-06T11:57:39.687Z",
+    "user": [
+      "admin@admin.com"
+    ],
+    "content_type": [
+      "home",
+      "ziraboutus"
+    ],
+    "object_id": "1",
+    "object_repr": "ZirAboutUs object (1)",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Banner\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 33,
+  "fields": {
+    "action_time": "2023-03-06T14:58:58.930Z",
+    "user": [
+      "admin@admin.com"
+    ],
+    "content_type": [
+      "home",
+      "contatctus"
+    ],
+    "object_id": "2",
+    "object_repr": "dsafsdf@asd,,.cp",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 34,
+  "fields": {
+    "action_time": "2023-03-06T15:07:56.036Z",
+    "user": [
+      "admin@admin.com"
+    ],
+    "content_type": [
+      "home",
+      "contatctus"
+    ],
+    "object_id": "4",
+    "object_repr": "asdasd@asd.cp",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 35,
+  "fields": {
+    "action_time": "2023-03-07T05:39:30.325Z",
+    "user": [
+      "admin@admin.com"
+    ],
+    "content_type": [
+      "job",
+      "jobcategory"
+    ],
+    "object_id": "2",
+    "object_repr": "برنامه نویس",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 36,
+  "fields": {
+    "action_time": "2023-03-07T05:40:59.598Z",
+    "user": [
+      "admin@admin.com"
+    ],
+    "content_type": [
+      "job",
+      "job"
+    ],
+    "object_id": "2",
+    "object_repr": "برنامه نویس وب",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 37,
+  "fields": {
+    "action_time": "2023-03-07T05:46:27.047Z",
+    "user": [
+      "admin@admin.com"
+    ],
+    "content_type": [
+      "job",
+      "job"
+    ],
+    "object_id": "1",
+    "object_repr": "مجری بازاریابی دیجیتال",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0627\\u0645\\u06a9\\u0627\\u0646 \\u062f\\u0648\\u0631\\u06a9\\u0627\\u0631\\u06cc\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 38,
+  "fields": {
+    "action_time": "2023-03-08T07:11:23.862Z",
+    "user": [
+      "admin@admin.com"
+    ],
+    "content_type": [
+      "job",
+      "jobcategory"
+    ],
+    "object_id": "3",
+    "object_repr": "test",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 39,
+  "fields": {
+    "action_time": "2023-03-08T07:11:46.521Z",
+    "user": [
+      "admin@admin.com"
+    ],
+    "content_type": [
+      "job",
+      "job"
+    ],
+    "object_id": "3",
+    "object_repr": "test",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 40,
+  "fields": {
+    "action_time": "2023-03-08T14:47:18.121Z",
+    "user": [
+      "admin@admin.com"
+    ],
+    "content_type": [
+      "account",
+      "userprofile"
+    ],
+    "object_id": "1",
+    "object_repr": "admin@admin.com/// یشسب",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"User\", \"Wish list\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 41,
+  "fields": {
+    "action_time": "2023-03-08T14:48:27.359Z",
+    "user": [
+      "admin@admin.com"
+    ],
+    "content_type": [
+      "account",
+      "userprofile"
+    ],
+    "object_id": "1",
+    "object_repr": "index@gmail.com/// یشسب",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"User\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 42,
+  "fields": {
+    "action_time": "2023-03-08T14:50:24.421Z",
+    "user": [
+      "admin@admin.com"
+    ],
+    "content_type": [
+      "account",
+      "userprofile"
+    ],
+    "object_id": "2",
+    "object_repr": "admin@admin.com/// asdf",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 43,
+  "fields": {
+    "action_time": "2023-03-08T15:05:18.970Z",
+    "user": [
+      "admin@admin.com"
+    ],
+    "content_type": [
+      "account",
+      "userprofile"
+    ],
+    "object_id": "2",
+    "object_repr": "admin@admin.com/// asdf",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Wish list\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 44,
+  "fields": {
+    "action_time": "2023-03-08T15:34:26.370Z",
+    "user": [
+      "admin@admin.com"
+    ],
+    "content_type": [
+      "account",
+      "userprofile"
+    ],
+    "object_id": "2",
+    "object_repr": "admin@admin.com/// asdf",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Wish list\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 45,
+  "fields": {
+    "action_time": "2023-03-08T15:34:46.546Z",
+    "user": [
+      "admin@admin.com"
+    ],
+    "content_type": [
+      "account",
+      "userprofile"
+    ],
+    "object_id": "2",
+    "object_repr": "admin@admin.com/// asdf",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Wish list\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 46,
+  "fields": {
+    "action_time": "2023-03-13T15:18:30.739Z",
+    "user": [
+      "admin@admin.com"
+    ],
+    "content_type": [
+      "account",
+      "user"
+    ],
+    "object_id": "10",
+    "object_repr": "kheradmandimasoud416@gmail.com",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Is staff\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 47,
+  "fields": {
+    "action_time": "2023-03-13T16:29:15.727Z",
+    "user": [
+      "admin@admin.com"
+    ],
+    "content_type": [
+      "account",
+      "userprofile"
+    ],
+    "object_id": "1",
+    "object_repr": "index@gmail.com/// یشسب",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Wish list\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 48,
+  "fields": {
+    "action_time": "2023-03-17T10:37:17.584Z",
+    "user": [
+      "admin@admin.com"
+    ],
+    "content_type": [
+      "account",
+      "userprofile"
+    ],
+    "object_id": "2",
+    "object_repr": "admin@admin.com/// asdf",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Wish list\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 49,
+  "fields": {
+    "action_time": "2023-03-17T10:37:31.351Z",
+    "user": [
+      "admin@admin.com"
+    ],
+    "content_type": [
+      "account",
+      "userprofile"
+    ],
+    "object_id": "2",
+    "object_repr": "admin@admin.com/// asdf",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Wish list\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 50,
+  "fields": {
+    "action_time": "2023-03-22T10:02:09.626Z",
+    "user": [
+      "admin@admin.com"
+    ],
+    "content_type": [
+      "account",
+      "userprofile"
+    ],
+    "object_id": "2",
+    "object_repr": "admin@admin.com/// asdf",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Wish list\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 51,
+  "fields": {
+    "action_time": "2023-03-22T10:03:30.753Z",
+    "user": [
+      "admin@admin.com"
+    ],
+    "content_type": [
+      "account",
+      "company"
+    ],
+    "object_id": "2",
+    "object_repr": "admin@admin.com/  کمپانی شماره 1",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 52,
+  "fields": {
+    "action_time": "2023-03-28T11:47:22.566Z",
+    "user": [
+      "admin@admin.com"
+    ],
+    "content_type": [
+      "home",
+      "homecomment"
+    ],
+    "object_id": "1",
+    "object_repr": "زهرا",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 53,
+  "fields": {
+    "action_time": "2023-03-28T11:47:44.693Z",
+    "user": [
+      "admin@admin.com"
+    ],
+    "content_type": [
+      "home",
+      "homecomment"
+    ],
+    "object_id": "2",
+    "object_repr": "مریم",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 54,
+  "fields": {
+    "action_time": "2023-03-28T11:48:10.049Z",
+    "user": [
+      "admin@admin.com"
+    ],
+    "content_type": [
+      "home",
+      "homecomment"
+    ],
+    "object_id": "3",
+    "object_repr": "مهسا",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 55,
+  "fields": {
+    "action_time": "2023-03-28T11:49:04.631Z",
+    "user": [
+      "admin@admin.com"
+    ],
+    "content_type": [
+      "home",
+      "homecomment"
+    ],
+    "object_id": "4",
+    "object_repr": "الهه",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 56,
+  "fields": {
+    "action_time": "2023-03-28T11:54:05.848Z",
+    "user": [
+      "admin@admin.com"
+    ],
+    "content_type": [
+      "home",
+      "homecomment"
+    ],
+    "object_id": "1",
+    "object_repr": "زهرا",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 57,
+  "fields": {
+    "action_time": "2023-03-28T12:25:19.619Z",
+    "user": [
+      "admin@admin.com"
+    ],
+    "content_type": [
+      "job",
+      "job"
+    ],
+    "object_id": "3",
+    "object_repr": "test",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 58,
+  "fields": {
+    "action_time": "2023-03-28T12:25:26.770Z",
+    "user": [
+      "admin@admin.com"
+    ],
+    "content_type": [
+      "job",
+      "jobcategory"
+    ],
+    "object_id": "3",
+    "object_repr": "test",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 59,
+  "fields": {
+    "action_time": "2023-03-28T12:26:11.820Z",
+    "user": [
+      "admin@admin.com"
+    ],
+    "content_type": [
+      "job",
+      "jobcategory"
+    ],
+    "object_id": "1",
+    "object_repr": "بازاریابی",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Class icon\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 60,
+  "fields": {
+    "action_time": "2023-03-28T12:26:27.890Z",
+    "user": [
+      "admin@admin.com"
+    ],
+    "content_type": [
+      "job",
+      "jobcategory"
+    ],
+    "object_id": "2",
+    "object_repr": "برنامه نویس",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Class icon\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 61,
+  "fields": {
+    "action_time": "2023-03-28T12:26:57.602Z",
+    "user": [
+      "admin@admin.com"
+    ],
+    "content_type": [
+      "job",
+      "jobcategory"
+    ],
+    "object_id": "4",
+    "object_repr": "آموزش",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 62,
+  "fields": {
+    "action_time": "2023-03-28T12:27:23.323Z",
+    "user": [
+      "admin@admin.com"
+    ],
+    "content_type": [
+      "job",
+      "jobcategory"
+    ],
+    "object_id": "5",
+    "object_repr": "حسابداری",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 63,
+  "fields": {
+    "action_time": "2023-03-28T12:27:46.835Z",
+    "user": [
+      "admin@admin.com"
+    ],
+    "content_type": [
+      "job",
+      "jobcategory"
+    ],
+    "object_id": "6",
+    "object_repr": "تریدر",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 64,
+  "fields": {
+    "action_time": "2023-03-28T12:28:11.754Z",
+    "user": [
+      "admin@admin.com"
+    ],
+    "content_type": [
+      "job",
+      "jobcategory"
+    ],
+    "object_id": "7",
+    "object_repr": "غکاس",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 65,
+  "fields": {
+    "action_time": "2023-03-28T12:28:57.579Z",
+    "user": [
+      "admin@admin.com"
+    ],
+    "content_type": [
+      "job",
+      "jobcategory"
+    ],
+    "object_id": "8",
+    "object_repr": "تعمیرات",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 66,
+  "fields": {
+    "action_time": "2023-03-28T12:49:25.220Z",
+    "user": [
+      "admin@admin.com"
+    ],
+    "content_type": [
+      "job",
+      "jobcategory"
+    ],
+    "object_id": "7",
+    "object_repr": "عکاس",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 67,
+  "fields": {
+    "action_time": "2023-03-28T13:35:48.061Z",
+    "user": [
+      "admin@admin.com"
+    ],
+    "content_type": [
+      "job",
+      "job"
+    ],
+    "object_id": "4",
+    "object_repr": "test",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 68,
+  "fields": {
+    "action_time": "2023-03-28T13:36:05.524Z",
+    "user": [
+      "admin@admin.com"
+    ],
+    "content_type": [
+      "job",
+      "job"
+    ],
+    "object_id": "2",
+    "object_repr": "برنامه نویس وب",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 69,
+  "fields": {
+    "action_time": "2023-03-28T13:38:24.611Z",
+    "user": [
+      "admin@admin.com"
+    ],
+    "content_type": [
+      "job",
+      "job"
+    ],
+    "object_id": "2",
+    "object_repr": "برنامه نویس وب",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 70,
+  "fields": {
+    "action_time": "2023-03-28T13:42:49.156Z",
+    "user": [
+      "admin@admin.com"
+    ],
+    "content_type": [
+      "job",
+      "job"
+    ],
+    "object_id": "2",
+    "object_repr": "برنامه نویس وب",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 71,
+  "fields": {
+    "action_time": "2023-03-30T10:35:01.753Z",
+    "user": [
+      "admin@admin.com"
+    ],
+    "content_type": [
+      "job",
+      "job"
+    ],
+    "object_id": "2",
+    "object_repr": "برنامه نویس وب",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 72,
+  "fields": {
+    "action_time": "2023-03-30T12:21:01.241Z",
+    "user": [
+      "admin@admin.com"
+    ],
+    "content_type": [
+      "job",
+      "job"
+    ],
+    "object_id": "1",
+    "object_repr": "مجری بازاریابی دیجیتال",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Category\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 73,
+  "fields": {
+    "action_time": "2023-04-08T07:23:58.947Z",
+    "user": [
+      "test@test.com"
+    ],
+    "content_type": [
+      "resume",
+      "sendresume"
+    ],
+    "object_id": "1",
+    "object_repr": "1234test123@gmail.com to admin@admin.com/  کمپانی شماره 1",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 74,
+  "fields": {
+    "action_time": "2023-04-08T07:24:04.780Z",
+    "user": [
+      "test@test.com"
+    ],
+    "content_type": [
+      "resume",
+      "sendresume"
+    ],
+    "object_id": "1",
+    "object_repr": "1234test123@gmail.com to admin@admin.com/  کمپانی شماره 1",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 75,
+  "fields": {
+    "action_time": "2023-04-08T07:28:39.972Z",
+    "user": [
+      "test@test.com"
+    ],
+    "content_type": [
+      "resume",
+      "sendresume"
+    ],
+    "object_id": "2",
+    "object_repr": "test@test.com to admin@admin.com/  کمپانی شماره 1",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 76,
+  "fields": {
+    "action_time": "2023-04-08T07:33:02.739Z",
+    "user": [
+      "test@test.com"
+    ],
+    "content_type": [
+      "resume",
+      "sendresume"
+    ],
+    "object_id": "3",
+    "object_repr": "test@test.com to admin@admin.com/  کمپانی شماره 1",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 77,
+  "fields": {
+    "action_time": "2023-04-08T07:34:43.258Z",
+    "user": [
+      "test@test.com"
+    ],
+    "content_type": [
+      "resume",
+      "sendresume"
+    ],
+    "object_id": "4",
+    "object_repr": "test@test.com to admin@admin.com/  کمپانی شماره 1",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 78,
+  "fields": {
+    "action_time": "2023-04-08T07:35:14.744Z",
+    "user": [
+      "test@test.com"
+    ],
+    "content_type": [
+      "resume",
+      "sendresume"
+    ],
+    "object_id": "5",
+    "object_repr": "test@test.com to admin@admin.com/  کمپانی شماره 1",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 79,
+  "fields": {
+    "action_time": "2023-04-08T07:51:37.902Z",
+    "user": [
+      "test@test.com"
+    ],
+    "content_type": [
+      "resume",
+      "sendresume"
+    ],
+    "object_id": "1",
+    "object_repr": "test@test.com to admin@admin.com/  کمپانی شماره 1",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 80,
+  "fields": {
+    "action_time": "2023-04-08T07:53:13.361Z",
+    "user": [
+      "test@test.com"
+    ],
+    "content_type": [
+      "resume",
+      "sendresume"
+    ],
+    "object_id": "2",
+    "object_repr": "test@test.com to admin@admin.com/  کمپانی شماره 1",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 81,
+  "fields": {
+    "action_time": "2023-04-08T07:53:29.475Z",
+    "user": [
+      "test@test.com"
+    ],
+    "content_type": [
+      "resume",
+      "sendresume"
+    ],
+    "object_id": "3",
+    "object_repr": "test@test.com to admin@admin.com/  کمپانی شماره 1",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 82,
+  "fields": {
+    "action_time": "2023-04-08T07:53:41.650Z",
+    "user": [
+      "test@test.com"
+    ],
+    "content_type": [
+      "resume",
+      "sendresume"
+    ],
+    "object_id": "4",
+    "object_repr": "test@test.com to admin@admin.com/  کمپانی شماره 1",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 83,
+  "fields": {
+    "action_time": "2023-04-08T07:54:02.679Z",
+    "user": [
+      "test@test.com"
+    ],
+    "content_type": [
+      "resume",
+      "sendresume"
+    ],
+    "object_id": "5",
+    "object_repr": "test@test.com to admin@admin.com/  کمپانی شماره 1",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 84,
+  "fields": {
+    "action_time": "2023-04-08T07:55:22.241Z",
+    "user": [
+      "test@test.com"
+    ],
+    "content_type": [
+      "resume",
+      "sendresume"
+    ],
+    "object_id": "6",
+    "object_repr": "test@test.com to admin@admin.com/  کمپانی شماره 1",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 85,
+  "fields": {
+    "action_time": "2023-04-08T07:56:00.619Z",
+    "user": [
+      "test@test.com"
+    ],
+    "content_type": [
+      "resume",
+      "sendresume"
+    ],
+    "object_id": "7",
+    "object_repr": "test@test.com to admin@admin.com/  کمپانی شماره 1",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 86,
+  "fields": {
+    "action_time": "2023-04-08T07:57:31.878Z",
+    "user": [
+      "test@test.com"
+    ],
+    "content_type": [
+      "resume",
+      "sendresume"
+    ],
+    "object_id": "8",
+    "object_repr": "admin@admin.com to admin@admin.com/  کمپانی شماره 1",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 87,
+  "fields": {
+    "action_time": "2023-04-08T08:36:38.515Z",
+    "user": [
+      "test@test.com"
+    ],
+    "content_type": [
+      "resume",
+      "sendresume"
+    ],
+    "object_id": "11",
+    "object_repr": "test@test.com to کمپانی شماره 1 for مجری بازاریابی دیجیتال",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 88,
+  "fields": {
+    "action_time": "2023-04-08T08:38:02.591Z",
+    "user": [
+      "test@test.com"
+    ],
+    "content_type": [
+      "resume",
+      "sendresume"
+    ],
+    "object_id": "12",
+    "object_repr": "test@test.com to کمپانی شماره 1 for مجری بازاریابی دیجیتال",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 89,
+  "fields": {
+    "action_time": "2023-04-08T08:41:18.309Z",
+    "user": [
+      "test@test.com"
+    ],
+    "content_type": [
+      "resume",
+      "sendresume"
+    ],
+    "object_id": "10",
+    "object_repr": "test@test.com to کمپانی شماره 1 for برنامه نویس وب",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 90,
+  "fields": {
+    "action_time": "2023-04-08T08:41:18.312Z",
+    "user": [
+      "test@test.com"
+    ],
+    "content_type": [
+      "resume",
+      "sendresume"
+    ],
+    "object_id": "9",
+    "object_repr": "test@test.com to کمپانی شماره 1 for test",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 91,
+  "fields": {
+    "action_time": "2023-04-08T08:41:28.764Z",
+    "user": [
+      "test@test.com"
+    ],
+    "content_type": [
+      "resume",
+      "sendresume"
+    ],
+    "object_id": "13",
+    "object_repr": "1234test123@gmail.com to کمپانی شماره 1 for مجری بازاریابی دیجیتال",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 92,
+  "fields": {
+    "action_time": "2023-04-08T08:41:36.610Z",
+    "user": [
+      "test@test.com"
+    ],
+    "content_type": [
+      "resume",
+      "sendresume"
+    ],
+    "object_id": "13",
+    "object_repr": "1234test123@gmail.com to کمپانی شماره 1 for مجری بازاریابی دیجیتال",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 93,
+  "fields": {
+    "action_time": "2023-04-08T08:49:51.910Z",
+    "user": [
+      "test@test.com"
+    ],
+    "content_type": [
+      "resume",
+      "sendresume"
+    ],
+    "object_id": "14",
+    "object_repr": "test@test.com to کمپانی شماره 1 for مجری بازاریابی دیجیتال",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 94,
+  "fields": {
+    "action_time": "2023-04-08T09:39:13.284Z",
+    "user": [
+      "test@test.com"
+    ],
+    "content_type": [
+      "account",
+      "user"
+    ],
+    "object_id": "1",
+    "object_repr": "admin@admin.com",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Company\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 95,
+  "fields": {
+    "action_time": "2023-04-08T11:04:53.225Z",
+    "user": [
+      "test@test.com"
+    ],
+    "content_type": [
+      "account",
+      "user"
+    ],
+    "object_id": "11",
+    "object_repr": "test@test.com",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Company\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 96,
+  "fields": {
+    "action_time": "2023-04-08T11:05:18.713Z",
+    "user": [
+      "test@test.com"
+    ],
+    "content_type": [
+      "account",
+      "user"
+    ],
+    "object_id": "11",
+    "object_repr": "test@test.com",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Company\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 97,
+  "fields": {
+    "action_time": "2023-04-08T11:06:18.097Z",
+    "user": [
+      "admin@admin.com"
+    ],
+    "content_type": [
+      "resume",
+      "sendresume"
+    ],
+    "object_id": "15",
+    "object_repr": "admin@admin.com to کمپانی شماره 1 for مجری بازاریابی دیجیتال",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 98,
+  "fields": {
+    "action_time": "2023-04-08T11:15:05.319Z",
+    "user": [
+      "admin@admin.com"
+    ],
+    "content_type": [
+      "resume",
+      "sendresume"
+    ],
+    "object_id": "15",
+    "object_repr": "index@gmail.com to کمپانی شماره 1 for مجری بازاریابی دیجیتال",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Sender\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 99,
+  "fields": {
+    "action_time": "2023-04-08T11:28:14.418Z",
+    "user": [
+      "admin@admin.com"
+    ],
+    "content_type": [
+      "resume",
+      "sendresume"
+    ],
+    "object_id": "16",
+    "object_repr": "kheradmandimasoud416@gmail.com to کمپانی شماره 1 for برنامه نویس وب",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 100,
+  "fields": {
+    "action_time": "2023-04-08T11:29:26.412Z",
+    "user": [
+      "admin@admin.com"
+    ],
+    "content_type": [
+      "account",
+      "company"
+    ],
+    "object_id": "5",
+    "object_repr": "kheradmandimasoud416@gmail.com/  testtttt comppp",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 101,
+  "fields": {
+    "action_time": "2023-04-08T11:29:57.412Z",
+    "user": [
+      "admin@admin.com"
+    ],
+    "content_type": [
+      "job",
+      "job"
+    ],
+    "object_id": "5",
+    "object_repr": "index333",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 102,
+  "fields": {
+    "action_time": "2023-04-08T12:25:56.609Z",
+    "user": [
+      "admin@admin.com"
+    ],
+    "content_type": [
+      "account",
+      "user"
+    ],
+    "object_id": "10",
+    "object_repr": "kheradmandimasoud416@gmail.com",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Is verified\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 103,
+  "fields": {
+    "action_time": "2023-04-08T12:26:20.734Z",
+    "user": [
+      "admin@admin.com"
+    ],
+    "content_type": [
+      "account",
+      "user"
+    ],
+    "object_id": "10",
+    "object_repr": "kheradmandimasoud416@gmail.com",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"password\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 104,
+  "fields": {
+    "action_time": "2023-04-08T12:26:24.680Z",
+    "user": [
+      "admin@admin.com"
+    ],
+    "content_type": [
+      "account",
+      "user"
+    ],
+    "object_id": "10",
+    "object_repr": "kheradmandimasoud416@gmail.com",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 105,
+  "fields": {
+    "action_time": "2023-04-08T12:27:28.067Z",
+    "user": [
+      "admin@admin.com"
+    ],
+    "content_type": [
+      "account",
+      "user"
+    ],
+    "object_id": "10",
+    "object_repr": "kheradmandimasoud416@gmail.com",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Company\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 106,
+  "fields": {
+    "action_time": "2023-04-08T12:33:32.675Z",
+    "user": [
+      "admin@admin.com"
+    ],
+    "content_type": [
+      "resume",
+      "sendresume"
+    ],
+    "object_id": "17",
+    "object_repr": "admin@admin.com to testtttt comppp for index333",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 107,
+  "fields": {
+    "action_time": "2023-04-08T12:33:32.678Z",
+    "user": [
+      "admin@admin.com"
+    ],
+    "content_type": [
+      "resume",
+      "sendresume"
+    ],
+    "object_id": "16",
+    "object_repr": "kheradmandimasoud416@gmail.com to کمپانی شماره 1 for برنامه نویس وب",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 108,
+  "fields": {
+    "action_time": "2023-04-08T12:33:32.680Z",
+    "user": [
+      "admin@admin.com"
+    ],
+    "content_type": [
+      "resume",
+      "sendresume"
+    ],
+    "object_id": "15",
+    "object_repr": "index@gmail.com to کمپانی شماره 1 for مجری بازاریابی دیجیتال",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 109,
+  "fields": {
+    "action_time": "2023-04-08T15:56:35.248Z",
+    "user": [
+      "admin@admin.com"
+    ],
+    "content_type": [
+      "resume",
+      "sendresume"
+    ],
+    "object_id": "1",
+    "object_repr": "1234test123@gmail.com to کمپانی شماره 1 for test",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 110,
+  "fields": {
+    "action_time": "2023-04-08T15:58:58.687Z",
+    "user": [
+      "admin@admin.com"
+    ],
+    "content_type": [
+      "resume",
+      "sendresume"
+    ],
+    "object_id": "1",
+    "object_repr": "1234test123@gmail.com to کمپانی شماره 1 for test",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Cv file\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 111,
+  "fields": {
+    "action_time": "2023-04-15T12:35:28.214Z",
+    "user": [
+      "admin@admin.com"
+    ],
+    "content_type": [
+      "resume",
+      "sendresume"
+    ],
+    "object_id": "3",
+    "object_repr": "admin@admin.com to کمپانی شماره 1 for test",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Cv file\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 112,
+  "fields": {
+    "action_time": "2023-04-15T16:09:41.979Z",
+    "user": [
+      "admin@admin.com"
+    ],
+    "content_type": [
+      "resume",
+      "sendresume"
+    ],
+    "object_id": "3",
+    "object_repr": "admin@admin.com to کمپانی شماره 1 for test",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 113,
+  "fields": {
+    "action_time": "2023-04-16T14:10:07.515Z",
+    "user": [
+      "admin@admin.com"
+    ],
+    "content_type": [
+      "home",
+      "navtwo"
+    ],
+    "object_id": "1",
+    "object_repr": "خانه 1",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0644\\u06cc\\u0646\\u06a9 \\u0646\\u0648\\u0628\\u0627\\u0631\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 114,
+  "fields": {
+    "action_time": "2023-04-23T08:19:47.120Z",
+    "user": [
+      "index3@gmail.com"
+    ],
+    "content_type": [
+      "account",
+      "userprofile"
+    ],
+    "object_id": "5",
+    "object_repr": "index3@gmail.com/// حسینی",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 115,
+  "fields": {
+    "action_time": "2023-04-23T08:31:59.553Z",
+    "user": [
+      "index3@gmail.com"
+    ],
+    "content_type": [
+      "account",
+      "userprofile"
+    ],
+    "object_id": "5",
+    "object_repr": "index3@gmail.com/// حسینی",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 116,
+  "fields": {
+    "action_time": "2023-04-23T08:32:50.091Z",
+    "user": [
+      "index3@gmail.com"
+    ],
+    "content_type": [
+      "job",
+      "key"
+    ],
+    "object_id": "1",
+    "object_repr": "برنامه نویس",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 117,
+  "fields": {
+    "action_time": "2023-04-23T08:32:58.148Z",
+    "user": [
+      "index3@gmail.com"
+    ],
+    "content_type": [
+      "job",
+      "key"
+    ],
+    "object_id": "2",
+    "object_repr": "django",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 118,
+  "fields": {
+    "action_time": "2023-04-23T08:33:14.512Z",
+    "user": [
+      "index3@gmail.com"
+    ],
+    "content_type": [
+      "job",
+      "key"
+    ],
+    "object_id": "3",
+    "object_repr": "python",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 119,
+  "fields": {
+    "action_time": "2023-04-23T08:33:16.807Z",
+    "user": [
+      "index3@gmail.com"
+    ],
+    "content_type": [
+      "account",
+      "userprofile"
+    ],
+    "object_id": "5",
+    "object_repr": "index3@gmail.com/// حسینی",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Key\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 120,
+  "fields": {
+    "action_time": "2023-04-23T09:06:27.161Z",
+    "user": [
+      "index3@gmail.com"
+    ],
+    "content_type": [
+      "job",
+      "key"
+    ],
+    "object_id": "4",
+    "object_repr": "index",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 121,
+  "fields": {
+    "action_time": "2023-04-23T09:06:28.650Z",
+    "user": [
+      "index3@gmail.com"
+    ],
+    "content_type": [
+      "job",
+      "job"
+    ],
+    "object_id": "5",
+    "object_repr": "index333",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Job keys\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 122,
+  "fields": {
+    "action_time": "2023-04-23T09:10:23.164Z",
+    "user": [
+      "index3@gmail.com"
+    ],
+    "content_type": [
+      "job",
+      "job"
+    ],
+    "object_id": "5",
+    "object_repr": "index333",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Job keys\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 123,
+  "fields": {
+    "action_time": "2023-04-23T09:13:05.347Z",
+    "user": [
+      "index3@gmail.com"
+    ],
+    "content_type": [
+      "job",
+      "job"
+    ],
+    "object_id": "5",
+    "object_repr": "index333",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Job keys\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 124,
+  "fields": {
+    "action_time": "2023-04-23T09:14:18.911Z",
+    "user": [
+      "index3@gmail.com"
+    ],
+    "content_type": [
+      "account",
+      "userprofile"
+    ],
+    "object_id": "5",
+    "object_repr": "index3@gmail.com/// حسینی",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Key\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 125,
+  "fields": {
+    "action_time": "2023-04-28T12:32:48.362Z",
+    "user": [
+      "index3@gmail.com"
+    ],
+    "content_type": [
+      "job",
+      "job"
+    ],
+    "object_id": "4",
+    "object_repr": "test",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Job keys\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 126,
+  "fields": {
+    "action_time": "2023-05-03T07:57:40.209Z",
+    "user": [
+      "index3@gmail.com"
+    ],
+    "content_type": [
+      "account",
+      "company"
+    ],
+    "object_id": "2",
+    "object_repr": "admin@admin.com/  کمپانی شماره 1",
+    "action_flag": 3,
+    "change_message": ""
+  }
+}
+]

@@ -1,0 +1,7 @@
+<form method="post" action="{% url 'account:signup_company' %}">
+    {% csrf_token %}
+    <input type="text" name="username" placeholder="username">
+    <input name="password" type="password" placeholder="pass">
+    <input name="password1" type="password" placeholder="confirm your password">
+    <button type="submit" value="save">save</button>
+</form>

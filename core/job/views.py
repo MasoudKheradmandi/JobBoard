@@ -78,7 +78,7 @@ def add_product_wish_list(request):
 
 @login_required
 def wish_list(request):
-    user = User.objects.get(id=1)
+    user = User.objects.get(id=request.user.id)
     wish_list = user.userprofile.wish_list.all()
     time = 90
     if request.GET.get('time'):
