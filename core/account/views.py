@@ -144,7 +144,6 @@ def verify(request):
             user=User.objects.get(email=email)
 
             if user.Token == int(token):
-                print("asddsdsdssds")
                 login(request,user)
                 return redirect('account:new_password')
             """

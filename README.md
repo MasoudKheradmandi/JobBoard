@@ -7,20 +7,14 @@
 </p>
 
 - [About](#about)
-- [Features](#features)
 - [Info](#info)
-
-### Features
-- Django
-- User authentication
-- Being project close to reality
 
 
 
 ### About
 
 - این پروژه یک وبسایت کاریابی هستش و تمام تمرکزم روی این موضوع بود که بیشترین شباهت رو به یک سایت کاریابی واقعی داشته باشه
-
+- این سایت هنوز درحال توسعه هستش و همیشه بخش های جدیدی به آن اضافه میشود
 
 ### Info
 

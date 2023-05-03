@@ -104,7 +104,6 @@ def wish_list(request):
 def delete_from_wish_list(request,id):    
     obj = request.user.userprofile.wish_list.get(id=id)
     request.user.userprofile.wish_list.remove(obj)
-    print(obj.__class__)
     return redirect('job:wish_list')
 
 
