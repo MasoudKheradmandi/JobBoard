@@ -11,7 +11,7 @@ from django.utils import timezone
 from datetime import datetime
 from resume.forms import FormSender
 from django.contrib import messages
-
+from account.decorators import is_employee
 from resume.models import SendResume
 # Create your views here.
 def listview(request):
@@ -77,6 +77,7 @@ def add_product_wish_list(request):
 
 
 @login_required
+@is_employee
 def wish_list(request):
     user = User.objects.get(id=request.user.id)
     wish_list = user.userprofile.wish_list.all()
@@ -101,6 +102,7 @@ def wish_list(request):
 
 
 @login_required
+@is_employee
 def delete_from_wish_list(request,id):    
     obj = request.user.userprofile.wish_list.get(id=id)
     request.user.userprofile.wish_list.remove(obj)

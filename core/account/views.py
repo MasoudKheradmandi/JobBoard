@@ -14,7 +14,7 @@ from django.contrib.auth.decorators import login_required
 from job.models.job import Job
 from django.db.models import Count
 from django.core.paginator import Paginator
-from account.decorators import is_company
+from account.decorators import is_company,is_employee
 #--------------------Company--------
 
 def company_signup(request):
@@ -91,7 +91,7 @@ def user_signup(request):
 
     return render(request,'register.html',)
 
-
+@is_employee
 def user_profile(request):
     obj = UserProfile.objects.get(user_id=request.user.id)
 
@@ -171,7 +171,7 @@ def new_password(request):
             return HttpResponse("Success")
     return render(request,'changepass.html')
 
-
+@is_employee
 def suggest_job_for_user(request):
     keys = request.user.userprofile.key.all()
     job_suggestions = Job.objects.filter(job_keys__title__in=list(keys))

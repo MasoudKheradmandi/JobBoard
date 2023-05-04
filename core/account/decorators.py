@@ -10,3 +10,13 @@ def is_company(function):
             raise PermissionDenied
             
     return wrap
+
+def is_employee(function):
+    def wrap(request, *args, **kwargs):
+        users = User.objects.get(email=request.user.email)
+        if users.employee == True:
+            return function(request, *args, **kwargs)
+        else:
+            raise PermissionDenied
+            
+    return wrap
