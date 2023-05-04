@@ -12,4 +12,5 @@ urlpatterns = [
     path('det/<id>/',views.detailview,name='detailview'),
     path('search/',views.searchlistview,name='searchlistview'),
     path('del_wish/<id>/',views.delete_from_wish_list,name='delete_from_wish_list'),
+    path('postsave/',views.make_post,name='make_post'),
 ]

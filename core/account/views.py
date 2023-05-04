@@ -56,9 +56,6 @@ def CompanyProfile(request):
 
 
 
-
-
-
 #--------------------user--------------
 
 

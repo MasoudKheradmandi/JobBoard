@@ -13,6 +13,7 @@ from resume.forms import FormSender
 from django.contrib import messages
 from account.decorators import is_employee
 from resume.models import SendResume
+from .forms import SaveJobForm
 # Create your views here.
 def listview(request):
 
@@ -129,3 +130,17 @@ def searchlistview(request):
     }
 
     return render(request,'search_list_view.html',context)
+
+
+
+def make_post(request):
+    if request.method == "POST":
+        form = SaveJobForm(request.POST)
+        if form.is_valid():
+            form.save()
+        else:
+            print(form.errors)
+    context = {
+        'form':SaveJobForm
+    }
+    return render(request,'jobs_maker.html',context)
