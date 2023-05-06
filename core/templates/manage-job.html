@@ -1,0 +1,211 @@
+﻿{% extends 'base.html' %}
+{% block body %}
+    <!-- Content -->
+    <div class="page-content bg-white">
+        <!-- contact area -->
+        <div class="content-block">
+			<!-- Browse Jobs -->
+			<div class="section-full bg-white p-t50 p-b20">
+				<div class="container">
+					<div class="row">
+						<div class="col-xl-3 col-lg-4 m-b30">
+							<div class="sticky-top">
+								<div class="candidate-info company-info">
+									<div class="candidate-detail text-center">
+										<div class="canditate-des">
+											<a href="javascript:void(0);">
+												<img alt="" src="images/logo/icon3.jpg">
+											</a>
+											<div class="upload-link" title="آپلود عکس پروفایل" data-toggle="tooltip" data-placement="left">
+												<input type="file" class="update-flie">
+												<i class="fa fa-pencil"></i>
+											</div>
+										</div>
+										<div class="candidate-title">
+											<h4 class="m-b5"><a href="javascript:void(0);">پنل مدیریت</a></h4>
+										</div>
+									</div>
+									<ul>
+										<li><a href="company-profile.html">
+											<i class="fa fa-user-o" aria-hidden="true"></i> 
+											<span>پروفایل</span></a></li>
+										<li><a href="company-post-jobs.html">
+											<i class="fa fa-file-text-o" aria-hidden="true"></i> 
+											<span>ارسال شغل</span></a></li>
+										<li><a href="company-transactions.html">
+											<i class="fa fa-random" aria-hidden="true"></i>
+											<span>معاملات</span></a></li>
+										<li><a href="company-manage-job.html" class="active">
+											<i class="fa fa-briefcase" aria-hidden="true"></i> 
+											<span>مدیریت</span></a></li>
+										<li><a href="company-resume.html">
+											<i class="fa fa-id-card-o" aria-hidden="true"></i>
+											<span>رزومه</span></a></li>
+										<li><a href="jobs-change-password.html">
+											<i class="fa fa-key" aria-hidden="true"></i> 
+											<span>تغییر رمز عبور</span></a></li>
+										<li><a href="index.html">
+											<i class="fa fa-sign-out" aria-hidden="true"></i> 
+											<span>خروج</span></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-9 col-lg-8 m-b30">
+							<div class="job-bx clearfix">
+								<div class="job-bx-title clearfix">
+									<h5 class="font-weight-700 pull-left text-uppercase">مدیریت اشغال</h5>
+									<div class="float-right">
+										<span class="select-title">مرتب سازی بر اساس تازه ترین ها</span>
+										<select>
+											<option>همه</option>
+											<option>هیچ</option>
+											<option>خوانده شده</option>
+											<option>خوانده نشده</option>
+											<option>شروع شده</option>
+											<option>بدون امتیاز</option>
+										</select>
+									</div>
+								</div>
+								<table class="table-job-bx cv-manager company-manage-job">
+									<thead>
+										<tr>
+											<th class="feature">
+												<div class="custom-control custom-checkbox">
+													<input type="checkbox" id="check12" class="custom-control-input selectAllCheckBox" name="example1">
+													<label class="custom-control-label" for="check12"></label>
+												</div>
+											</th>
+											<th>عنوان کسب</th>
+											<th>فرم درخواست</th>
+											<th>تاریخ</th>
+											<th>وضعیت</th>
+										</tr>
+									</thead>
+									<tbody>
+										{% for job in jobs %}
+										<tr>
+											<td class="feature">
+												<div class="custom-control custom-checkbox">
+													<input type="checkbox" class="custom-control-input" id="check{{job.id}}" name="example{{job.id}}">
+													<label class="custom-control-label" for="check{{job.id}}"></label>
+												</div>
+											</td>
+											<td class="job-name">
+												<a href="javascript:void(0);">{{job.name}}</a>
+												<ul class="job-post-info">
+													<li><i class="fa fa-map-marker"></i> بردسیر, کرمان</li>
+													<li><i class="fa fa-bookmark-o"></i>{{job.style}}</li>
+													<li><i class="fa fa-filter"></i>{{job.category}}</li>
+												</ul>
+											</td>
+											<td class="application text-primary">درخواست ها (5)</td>
+											<td class="expired pending">در انتظار </td>
+											<td class="job-links">
+												<a href="javascript:void(0);" data-toggle="modal" data-target="#exampleModalLong">
+												<i class="fa fa-eye"></i></a>
+												<a href="javascript:void(0);"><i class="ti-trash"></i></a>
+											</td>
+										</tr>
+										{% endfor %}
+									</tbody>
+								</table>
+								{% if jobs.paginator.num_pages != 1 %}
+								<div class="pagination-bx float-left">
+									<ul class="pagination">
+										
+										{% if jobs.has_previous %}
+										<li class="next"><a href="?page={{ jobs.previous_page_number }}"><i class="ti-arrow-left"></i> قبلی</a></li>
+										<li><a href="?page={{ jobs.previous_page_number }}">{{ jobs.previous_page_number }}</a></li>
+										{% endif %}
+										
+										<li class='active'><a href="javascript:void(0);">{{ jobs.number }}</a></li>
+										
+										{% if jobs.has_next %}
+											<li><a href="?page={{ jobs.next_page_number }}">{{ jobs.next_page_number }}</a></li>
+											<li class="previous"><a href="?page={{ jobs.next_page_number }}">بعدی <i class="ti-arrow-right"></i></a></li>
+										{% endif %}
+									</ul>
+								</div>
+								{% endif %}
+								<!-- Modal -->
+								<div class="modal fade modal-bx-info" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+									<div class="modal-dialog" role="document">
+										<div class="modal-content">
+											<div class="modal-header">
+												<div class="logo-img">
+													<img alt="" src="images/logo/icon2.png">
+												</div>
+												<h5 class="modal-title">نام شرکت</h5>
+												<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+													<span aria-hidden="true">&times;</span>
+												</button>
+											</div>
+											<div class="modal-body">
+												<ul>
+													<li><strong>نام شغل :</strong><p> توسعه دهنده وب - HTML, CSS, PHP </p></li>
+													<li><strong>تجربیات :</strong><p>5 سال</p></li>
+													<li><strong>توضیحات :</strong>
+														<p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p></li>
+												</ul>
+											</div>
+											<div class="modal-footer">
+												<button type="button" class="btn btn-secondary" data-dismiss="modal">بستن</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- Modal End -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+            <!-- Browse Jobs END -->
+		</div>
+    </div>
+    <!-- Content END-->
+	<!-- Modal Box -->
+	<div class="modal fade lead-form-modal" id="car-details" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+				<div class="modal-body row m-a0 clearfix">
+					<div class="col-lg-6 col-md-6 overlay-primary-dark d-flex p-a0" style="background-image: url(images/background/bg3.jpg);  background-position:center; background-size:cover;">
+						<div class="form-info text-white align-self-center">
+							<h3 class="m-b15">وارد حساب کاربری خود شوید</h3>
+							<p class="m-b15">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+							<ul class="list-inline m-a0">
+								<li><a href="#" class="m-r10 text-white"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="#" class="m-r10 text-white"><i class="fa fa-google-plus"></i></a></li>
+								<li><a href="#" class="m-r10 text-white"><i class="fa fa-linkedin"></i></a></li>
+								<li><a href="#" class="m-r10 text-white"><i class="fa fa-instagram"></i></a></li>
+								<li><a href="#" class="m-r10 text-white"><i class="fa fa-twitter"></i></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-6 col-md-6 p-a0">
+						<div class="lead-form browse-job text-left">
+							<form>
+								<h3 class="m-t0">ورود</h3>
+								<div class="form-group">
+									<input value="" class="form-control" placeholder="نام">
+								</div>	
+								<div class="form-group">
+									<input value="" class="form-control" placeholder="شماره موبایل">
+								</div>
+								<div class="clearfix">
+									<button type="button" class="btn-primary site-button btn-block">ثبت </button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>	
+			</div>
+		</div>
+	</div>
+	<!-- Modal Box End -->
+
+{% endblock %}

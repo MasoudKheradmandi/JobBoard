@@ -1,19 +1,20 @@
 from django.shortcuts import render,get_object_or_404,redirect
 from account.models import UserProfile
-from .models.job import Job,JobCategory
+from .models.job import Job,JobCategory,Key
 from home.models import Slider
 from django.core.paginator import Paginator
 from django.http import JsonResponse
 from django.contrib.auth.decorators import login_required
 from django.db.models import F
-from account.models.user import User
+from account.models import User
 from django.utils import timezone
 from datetime import datetime
 from resume.forms import FormSender
 from django.contrib import messages
-from account.decorators import is_employee
+from account.decorators import is_employee,is_company
 from resume.models import SendResume
 from .forms import SaveJobForm
+from account.models import Company
 # Create your views here.
 def listview(request):
 
@@ -131,16 +132,40 @@ def searchlistview(request):
 
     return render(request,'search_list_view.html',context)
 
-
-
+@login_required
+@is_company
 def make_post(request):
     if request.method == "POST":
         form = SaveJobForm(request.POST)
         if form.is_valid():
-            form.save()
+            last_v=form.save(commit=False)
+            job_keys= request.POST.get('job_keys')
+            key=job_keys.split(',')
+            print(job_keys)
+            last_v.company = Company.objects.get(user=request.user)
+            last_v.save()
+            for x in key:
+                if Key.objects.filter(title=x):
+                    tag = Key.objects.get(title=x)
+                    last_v.job_keys.add(tag.id)
+                else:
+                    Key.objects.create(title=x)
+                    tag = Key.objects.get(title=x)
+                    last_v.job_keys.add(tag.id)
         else:
-            print(form.errors)
+            messages.error(request,'مشکلی پیش امده لطفا دوباره امتحان کنید')
     context = {
         'form':SaveJobForm
     }
     return render(request,'jobs_maker.html',context)
+
+
+def manage_job(request):
+    jobs = Job.objects.filter(company=Company.objects.get(user=request.user))
+    paginator = Paginator(jobs, 10)
+    page_number = request.GET.get('page')
+    page_obj = paginator.get_page(page_number)
+    context = {
+        'jobs':page_obj
+    }
+    return render(request,'manage-job.html',context)

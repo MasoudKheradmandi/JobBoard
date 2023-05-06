@@ -13,4 +13,5 @@ urlpatterns = [
     path('search/',views.searchlistview,name='searchlistview'),
     path('del_wish/<id>/',views.delete_from_wish_list,name='delete_from_wish_list'),
     path('postsave/',views.make_post,name='make_post'),
+    path('job-management/',views.manage_job,name='manage_job'),
 ]
