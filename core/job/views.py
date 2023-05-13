@@ -160,6 +160,8 @@ def make_post(request):
     return render(request,'jobs_maker.html',context)
 
 
+@login_required
+@is_company
 def manage_job(request):
     jobs = Job.objects.filter(company=Company.objects.get(user=request.user))
     paginator = Paginator(jobs, 10)
