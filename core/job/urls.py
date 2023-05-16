@@ -14,4 +14,5 @@ urlpatterns = [
     path('del_wish/<id>/',views.delete_from_wish_list,name='delete_from_wish_list'),
     path('postsave/',views.make_post,name='make_post'),
     path('job-management/',views.manage_job,name='manage_job'),
+    path('celery/',views.celery_task_test,name='celery_task_test')
 ]

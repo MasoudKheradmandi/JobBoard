@@ -3,7 +3,7 @@ from account.models import UserProfile
 from .models.job import Job,JobCategory,Key
 from home.models import Slider
 from django.core.paginator import Paginator
-from django.http import JsonResponse
+from django.http import JsonResponse , HttpResponse
 from django.contrib.auth.decorators import login_required
 from django.db.models import F
 from account.models import User
@@ -15,6 +15,7 @@ from account.decorators import is_employee,is_company
 from resume.models import SendResume
 from .forms import SaveJobForm
 from account.models import Company
+import time
 # Create your views here.
 def listview(request):
 
@@ -171,3 +172,8 @@ def manage_job(request):
         'jobs':page_obj
     }
     return render(request,'manage-job.html',context)
+
+
+def celery_task_test(request):
+    # time.sleep(20)
+    return HttpResponse("Masoud")
