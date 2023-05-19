@@ -112,8 +112,7 @@ def user_profile(request):
 def reset_token(request):
     if request.method == "POST":
         email = request.POST.get('email')
-        if True:
-            User.objects.get(email=email)
+        if User.objects.filter(email=email):
             random_number = random.randint(1000,9999)
             user=User.objects.get(email=email)
             user.Token = random_number
@@ -130,8 +129,8 @@ def reset_token(request):
             return response
             # return redirect('account:send_mail').set_cookie("Email",email,1000)
     else:
-            messages.error(request,'همچین اکانتی وجود ندارد')
-            return HttpResponse("BUG")
+        messages.error(request,'همچین اکانتی وجود ندارد')
+        return HttpResponse("BUG")
 
 
 def verify(request):
