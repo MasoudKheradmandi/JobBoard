@@ -31,7 +31,6 @@ def company_signup(request):
         else:
             messages.error(request,'پسووردهای وارد شده یکسان نمیباشد')
 
-
     return render(request,'company_login/register.html',)
 
 
