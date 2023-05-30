@@ -33,5 +33,5 @@ class Company(models.Model):
 
 @receiver(post_save, sender=User)
 def profile_company_maker(sender,instance,created,**kwargs):
-    if created and instance.company:
-        Company.objects.create(user=instance)
+    if instance.company:
+        Company.objects.update_or_create(user=instance)

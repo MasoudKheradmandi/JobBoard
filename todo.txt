@@ -1,1 +1,3 @@
 ظاهر تمپلیت search list مشکل داره... یه کلاس کم دازه که مال یه لیست ویو دیگه اس
+
+bug in category list in index Template

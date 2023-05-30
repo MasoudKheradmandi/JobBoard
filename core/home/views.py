@@ -13,11 +13,13 @@ from django.db.models import Count , Q
 User = get_user_model()
 # Create your views here.
 def home(request):
+    x = JobCategory.objects.annotate(num_jobs=Count('job'),filter=Q(job__status=True)).order_by('-num_jobs')
+    print(x)
     context = {
         'slider':Slider.objects.filter().last(),
         'jobs':Job.objects.filter(status=True).order_by('-created')[:5],
         'comments':HomeComment.objects.filter(status=True),
-        'category':JobCategory.objects.annotate(num_jobs=Count('job'),filter=Q(job__status=True)).order_by('-num_jobs'),
+        'category':JobCategory.objects.filter(job__status=True).annotate(num_jobs=Count('job')).order_by('-num_jobs'),
         'cat_count':JobCategory.objects.all().count()
     }
     return render(request,'index.html',context)

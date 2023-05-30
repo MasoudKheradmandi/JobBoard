@@ -16,6 +16,7 @@ from resume.models import SendResume
 from .forms import SaveJobForm
 from account.models import Company
 import time
+from job.tasks import task_celery
 # Create your views here.
 def listview(request):
 
@@ -176,4 +177,7 @@ def manage_job(request):
 
 def celery_task_test(request):
     # time.sleep(20)
-    return HttpResponse("Masoud")
+    task_celery.delay(
+        x = "Masoud"
+    )
+    return HttpResponse("Done")
