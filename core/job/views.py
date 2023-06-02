@@ -8,14 +8,13 @@ from django.contrib.auth.decorators import login_required
 from django.db.models import F
 from account.models import User
 from django.utils import timezone
-from datetime import datetime
+from datetime import datetime,timedelta
 from resume.forms import FormSender
 from django.contrib import messages
 from account.decorators import is_employee,is_company
 from resume.models import SendResume
 from .forms import SaveJobForm
 from account.models import Company
-import time
 from job.tasks import task_celery
 # Create your views here.
 def listview(request):
@@ -30,7 +29,10 @@ def listview(request):
             'week':7,
             'amonth':30,
         }
-        contact_list=contact_list.annotate(days_passed3 =(datetime.now(timezone.utc).day-F('created__day'))).filter(days_passed3__lte=time_dict[time])
+        contact_list=contact_list.annotate(days_passed3 =(datetime.now(timezone.utc)-F('created'))).filter(days_passed3__lte=timedelta(days =time_dict[time]))
+        # for x in contact_list:
+        #     print(x.days_passed3)
+        #     print(x.created)
 
     paginator = Paginator(contact_list, 10)
     page_number = request.GET.get('page')
@@ -94,7 +96,7 @@ def wish_list(request):
             'week':7,
             'amonth':30,
         }
-        wish_list=wish_list.annotate(days_passed3 =(datetime.now(timezone.utc).day-F('created__day'))).filter(days_passed3__lte=time_dict[time])
+        wish_list=wish_list.annotate(days_passed3 =(datetime.now(timezone.utc)-F('created'))).filter(days_passed3__lte=timedelta(days =time_dict[time]))
     paginator = Paginator(wish_list, 10)
     page_number = request.GET.get('page')
     page_obj = paginator.get_page(page_number)
