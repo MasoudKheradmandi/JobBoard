@@ -7,9 +7,8 @@ from django.contrib import messages
 from .forms import ContactUsForm
 from django.core.mail import send_mail
 from django.http import HttpResponse
-from job.models import JobCategory
+from job.models import JobCategory,Company,Key
 from django.db.models import Count , Q
-
 User = get_user_model()
 # Create your views here.
 def home(request):
@@ -32,8 +31,29 @@ def NavBar(request):
     }
     return render(request,'layout/header.html',context)
 
+from faker import Faker
 
 def aboutus(request):
+    # fake = Faker('fa_IR')
+    # key_list=[]
+    # for l in Key.objects.all():
+    #     key_list.append(l)
+    # for number in range(100):
+    #     company = []
+    #     job_cat = []
+        
+    #     for x in Company.objects.all():
+    #         company.append(x)
+    #     for m in JobCategory.objects.all():
+    #         job_cat.append(m)
+    #     obj=Job.objects.create(
+    #         company = fake.random_element(elements=company),name=fake.job(),category=fake.random_element(elements=job_cat),style=fake.random_element(elements=('تمام وقت', 'پاره وقت', 'کارآموز','فریلنسر')),
+    #         experience=fake.random_element(elements=('1','2','3','4')),ostan=fake.random_element(elements=('گیلان','مازندران','آذربایجان شرقی','آذربایجان غربی','کرمانشاه')),salary=fake.random_int(min=2, max=100),info= fake.text(max_nb_chars=500),necessary= fake.paragraph(),privilege=fake.text(),status=fake.boolean(chance_of_getting_true=70),telecommuting=fake.boolean(chance_of_getting_true=20),created=fake.date_between(start_date='-30y', end_date='today'),updated_at=fake.date_between(start_date='-30y', end_date='today'),
+    #     )
+    # for job in Job.objects.all():
+    #     random_tags = fake.random_elements(elements=key_list, length=fake.random_int(min=1, max=5))
+    #     job.job_keys.add(*random_tags)
+    # Job.objects.all().delete()
     context = {
         'about_us':AboutUs.objects.filter().last(),
         'zir':ZirAboutUs.objects.filter().last(),
@@ -60,3 +80,4 @@ def sendmail(request):
     )
     email.send()
     return HttpResponse("Done")
+

@@ -36,8 +36,8 @@
                     <div class="header-nav navbar-collapse collapse justify-content-start" id="navbarNavDropdown">
                         <ul class="nav navbar-nav">
 							{% for navbar in NavOne %}
-                            <li class="active">
-								<a {% if navbar.link %} href="{{navbar.link}}" {% endif %}>{{navbar.name}}<i class="fa fa-chevron-down"></i></a>
+                            <li class="">
+								<a {% if navbar.link %} href="{{navbar.link}}" {% endif %}>{{navbar.name}}<i class="fa"></i></a>
 								{% for n in navbar.navtwo_set.all %}
                                 <ul class="sub-menu">
 									<li><a href="{{n.link}}" class="dez-page">{{n.name}}</a></li>

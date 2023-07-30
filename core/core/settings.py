@@ -165,3 +165,5 @@ EMAIL_HOST_PASSWORD = 'hjvn pvet aymu pmeg'
 
 CELERY_BROKER_URL = "redis://localhost:6379"
 CELERY_RESULT_BACKEND = "redis://localhost:6379"
+
+
