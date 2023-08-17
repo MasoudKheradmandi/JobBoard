@@ -26,3 +26,7 @@ def delete_cv(request,id):
     obj.save()
     messages.success(request,'درخواست از لیست شما حذف شد')
     return redirect('resume:get_resume')
+
+
+def readme(request):
+    return render(request,'readme.html',{})
