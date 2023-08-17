@@ -1,0 +1,37 @@
+<ul>
+    <li><a href="{% url 'account:company_profile' %}">
+        <i class="fa fa-user-o" aria-hidden="true"></i> 
+        <span>پروفایل</span></a></li>
+    <li><a href="{% url 'job:make_post' %}">
+        <i class="fa fa-file-text-o" aria-hidden="true"></i> 
+        <span>ارسال شغل</span></a></li>
+    <li><a href="{% url 'job:manage_job' %}">
+        <i class="fa fa-random" aria-hidden="true"></i>
+        <span>شغل های ارسال شده</span></a></li>
+
+    <li><a href="{% url 'resume:get_resume' %}">
+        <i class="fa fa-id-card-o" aria-hidden="true"></i>
+        <span>رزومه</span></a></li>
+    <li id='reset'><a href="#">
+        <i class="fa fa-key" aria-hidden="true"></i> 
+        <span>تغییر رمز عبور</span></a></li>
+    <li><a href="{% url 'account:log_out' %}">
+        <i class="fa fa-sign-out" aria-hidden="true"></i> 
+        <span>خروج</span></a></li>
+</ul>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+<script>
+    $(document).ready(function(){
+
+        var1 = window.location.pathname;
+       $(`a[href='${var1}']`).addClass('active')
+}
+);
+$(document).ready(function(){
+    $('#reset').click(function(){
+        alert("this function have bug we will fix this bug soon :)")
+    })
+});
+
+</script>

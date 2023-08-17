@@ -156,6 +156,7 @@ def make_post(request):
                     Key.objects.create(title=x)
                     tag = Key.objects.get(title=x)
                     last_v.job_keys.add(tag.id)
+            messages.success(request,'پست شما با موفقیت ثبت شد پس از تایید از سمت jobboard نمایش داده خواهد شد')
         else:
             messages.error(request,'مشکلی پیش امده لطفا دوباره امتحان کنید')
     context = {

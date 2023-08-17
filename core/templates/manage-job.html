@@ -22,32 +22,10 @@
 											</div>
 										</div>
 										<div class="candidate-title">
-											<h4 class="m-b5"><a href="javascript:void(0);">پنل مدیریت</a></h4>
+											<h4 class="m-b5"><a href="javascript:void(0);">ادمین</a></h4>
 										</div>
 									</div>
-									<ul>
-										<li><a href="company-profile.html">
-											<i class="fa fa-user-o" aria-hidden="true"></i> 
-											<span>پروفایل</span></a></li>
-										<li><a href="company-post-jobs.html">
-											<i class="fa fa-file-text-o" aria-hidden="true"></i> 
-											<span>ارسال شغل</span></a></li>
-										<li><a href="company-transactions.html">
-											<i class="fa fa-random" aria-hidden="true"></i>
-											<span>معاملات</span></a></li>
-										<li><a href="company-manage-job.html" class="active">
-											<i class="fa fa-briefcase" aria-hidden="true"></i> 
-											<span>مدیریت</span></a></li>
-										<li><a href="company-resume.html">
-											<i class="fa fa-id-card-o" aria-hidden="true"></i>
-											<span>رزومه</span></a></li>
-										<li><a href="jobs-change-password.html">
-											<i class="fa fa-key" aria-hidden="true"></i> 
-											<span>تغییر رمز عبور</span></a></li>
-										<li><a href="index.html">
-											<i class="fa fa-sign-out" aria-hidden="true"></i> 
-											<span>خروج</span></a></li>
-									</ul>
+									{% include 'layout/company_rtl_div.html' %}
 								</div>
 							</div>
 						</div>
@@ -55,17 +33,7 @@
 							<div class="job-bx clearfix">
 								<div class="job-bx-title clearfix">
 									<h5 class="font-weight-700 pull-left text-uppercase">مدیریت اشغال</h5>
-									<div class="float-right">
-										<span class="select-title">مرتب سازی بر اساس تازه ترین ها</span>
-										<select>
-											<option>همه</option>
-											<option>هیچ</option>
-											<option>خوانده شده</option>
-											<option>خوانده نشده</option>
-											<option>شروع شده</option>
-											<option>بدون امتیاز</option>
-										</select>
-									</div>
+									
 								</div>
 								<table class="table-job-bx cv-manager company-manage-job">
 									<thead>
@@ -94,15 +62,19 @@
 											<td class="job-name">
 												<a href="javascript:void(0);">{{job.name}}</a>
 												<ul class="job-post-info">
-													<li><i class="fa fa-map-marker"></i> بردسیر, کرمان</li>
+													<li><i class="fa fa-map-marker"></i> {{job.ostan}}</li>
 													<li><i class="fa fa-bookmark-o"></i>{{job.style}}</li>
 													<li><i class="fa fa-filter"></i>{{job.category}}</li>
 												</ul>
 											</td>
-											<td class="application text-primary">درخواست ها (5)</td>
+											{% if job.status %}
+											<td class="expired success">تایید شده</td>
+											{% else %}
 											<td class="expired pending">در انتظار </td>
+											{% endif %}
+											<td class="application text-primary">{{job.created}}</td>
 											<td class="job-links">
-												<a href="javascript:void(0);" data-toggle="modal" data-target="#exampleModalLong">
+												<a href="{% url 'job:detailview' job.id %}">
 												<i class="fa fa-eye"></i></a>
 												<a href="javascript:void(0);"><i class="ti-trash"></i></a>
 											</td>

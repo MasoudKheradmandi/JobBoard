@@ -21,8 +21,8 @@
 										</div>
 										<div class="candidate-title">
 											<div class="">
-												<h4 class="m-b5"><a href="javascript:void(0);">ثریا قاسمی</a></h4>
-												<p class="m-b0"><a href="javascript:void(0);">توسعه دهنده وب</a></p>
+												{% if obj.name %} <h4 class="m-b5"><a href="javascript:void(0);">{{obj.name}}</a></h4> {% else %}<h4 class="m-b5"><a href="javascript:void(0);">نام نویسی</a></h4>{% endif %}
+											{% if obj.job %}<p class="m-b0"><a href="javascript:void(0);">{{obj.job}}</a></p>{% else %} <p class="m-b0"><a href="javascript:void(0);">شغل</a></p>{% endif %}
 											</div>
 										</div>
 									</div>

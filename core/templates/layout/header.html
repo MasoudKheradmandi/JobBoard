@@ -8,29 +8,33 @@
                 <div class="container clearfix">
                     <!-- website logo -->
                     <div class="logo-header mostion">
-						<a href="index.html"><img src="{% static 'images/logo.png' %}" class="logo" alt=""></a>
-						<a href="index.html"><img src="{% static 'images/logo-white.png' %}" class="logo-white" alt=""></a>
+						<a href="{% url 'home:home' %}"><img src="{% static 'images/logo.png' %}" class="logo" alt=""></a>
+						<a href="{% url 'home:home' %}"><img src="{% static 'images/logo-white.png' %}" class="logo-white" alt=""></a>
 					</div>
                     <!-- nav toggle button -->
                     <!-- nav toggle button -->
                     <button class="navbar-toggler collapsed navicon justify-content-end" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-						<span></span>
+						<span>
+                            
+                        </span>
 						<span></span>
 						<span></span>
 					</button>
                     <!-- extra nav -->
                     <div class="extra-nav">
-                        <div class="extra-cell">
+                        {% comment %} <div class="extra-cell">
 							<a href="javascript:void(0);" class="layout-btn">
 								<input type="checkbox" checked="checked" class="filled">
 								<span class="mode-label"></span>
 							</a>
-                            {% if request.user.is_authenticated %}
-                            <a href="{% url 'account:user_profile' %}" title="اطلاعات بیشتر" class="site-button"><i class="fa fa-user"></i> پروفایل</a>
+                            {% if request.user.employee %}
+                            <a href="{% url 'account:user_profile' %}" title="پروفایل" class="site-button"><i class="fa fa-user"></i> پروفایل</a>
+                            {% elif request.user.company %}
+                            <a href="{% url 'account:company_profile' %}" title="پنل مدیریت" class="site-button"><i class="fa fa-user"></i> پنل مدیریت</a>
                             {% else %}
-							<a href="{% url 'account:user_login' %}" title="اطلاعات بیشتر" class="site-button"><i class="fa fa-lock"></i> حساب کاربری </a>
+							<a href="{% url 'account:user_login' %}" title="حساب کاربری" class="site-button"><i class="fa fa-lock"></i> حساب کاربری </a>
                             {% endif %}
-                        </div>
+                        </div> {% endcomment %}
                     </div>
                     <!-- main nav -->
                     <div class="header-nav navbar-collapse collapse justify-content-start" id="navbarNavDropdown">
@@ -45,7 +49,17 @@
                                 {% endfor %}
 							</li>
                             {% endfor %}
-						</ul>			
+                            
+						</ul>	
+                        <ul class="nav navbar-nav">		
+                        {% if request.user.employee %}
+                        <a href="{% url 'account:user_profile' %}" title="پروفایل" class="site-button"><i class="fa fa-user"></i> پروفایل</a>
+                        {% elif request.user.company %}
+                        <a href="{% url 'account:company_profile' %}" title="پنل مدیریت" class="site-button"><i class="fa fa-user"></i> پنل مدیریت</a>
+                        {% else %}
+                        <a href="{% url 'account:user_login' %}" title="حساب کاربری" class="site-button"><i class="fa fa-lock"></i> حساب کاربری </a>
+                        {% endif %}
+                    </ul>
                     </div>
                 </div>
             </div>

@@ -72,6 +72,7 @@
             </div>
         </div>
 		<!-- Section Banner END -->
+
 		<!-- About Us -->
 <div class="section-full job-categories content-inner-2 bg-white">
     <div class="container">
@@ -81,15 +82,15 @@
                 <h6 class="fw3">بیش از {{cat_count}} دسته شغل</h6>
             </div>
             <div class="head-counter-bx">
-                <h2 class="m-b5 counter">{{jobs.count}}</h2>
+                <h2 class="m-b5 counter">{{count_jobs}}</h2>
                 <h6 class="fw3">شغل ارسال شده</h6>
             </div>
             <div class="head-counter-bx">
-                <h2 class="m-b5 counter">4500</h2>
-                <h6 class="fw3">وظایف ارسال شده</h6>
+                <h2 class="m-b5 counter">{{resume_count}}</h2>
+                <h6 class="fw3">رزومه ارسال شده</h6>
             </div>
             <div class="head-counter-bx">
-                <h2 class="m-b5 counter">1500</h2>
+                <h2 class="m-b5 counter">{{users}}</h2>
                 <h6 class="fw3">فریلنسر</h6>
             </div>
         </div>
@@ -115,7 +116,16 @@
     </div>
 </div>
 <!-- About Us END -->
-
+<div class="alert alert-danger text-center" role="alert">
+	این یک وبسایت برای رزومه هستش اگه نیاز به یوزرهای مختلف با پرمیشن های مختلف دارین من براتون دونوع یوزر اماده ساختم
+	<br>
+	normal user -> username = ali@gmail.com 
+	password= 1234test123
+	<br> 
+	special user(company) -> username=torhab password= 1234test123
+	<br>
+	هرچند برای خودتون هم میتونید یوزر بسازید
+  </div>
 {% comment %} 
 اینجا باید will.html اپلود بشه
 {% endcomment %}
@@ -199,7 +209,7 @@
 		<div class="section-full content-inner-2 bg-white" style="background-image:url(images/lines.png); background-position:bottom; background-repeat:no-repeat; background-size: 100%;">
 			<div class="container">
 				<div class="section-head text-black text-center">
-					<h2 class="m-b0">تعرفه ها</h2>
+					<h2 class="m-b0">از این قسمت به پایین کاری انجام نشده و template خام هستش</h2>
 					<p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است</p>
 				</div>
 				<!-- Pricing table-1 Columns 3 with gap -->
@@ -304,23 +314,5 @@
 
 
 {% block js %}
-    <script>
-        $(document).ready(function(){
-            $('.inputid').click(function(){
-                $.ajax({
-                    type : 'GET',
-                    url : '{% url "job:add_product_wish_list" %}',
-                    data : {'id':$(this).data('id'),},
-                    dataType : 'json',
-                    success : function (data) {
-                        alert(data.status)
-                    },  
-                    error: function(data){
-                        alert('Error');
-                    }                                
-                })   
-            });
-            });
-    
-    </script>
+
 {% endblock %}

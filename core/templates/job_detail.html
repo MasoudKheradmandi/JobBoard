@@ -31,7 +31,7 @@
 								<div class="row">
 									<div class="col-lg-12 col-md-6">
 										<div class="m-b30">
-											<img src="images/blog/grid/pic1.jpg" alt="">
+											<img src="" alt="">
 										</div>
 									</div>
 									<div class="col-lg-12 col-md-6">
@@ -42,6 +42,21 @@
 												<li><i class="ti-money"></i><strong class="font-weight-700 text-black">حقوق</strong> {{job.salary}} میلیون</li>
 												<li><i class="ti-shield"></i><strong class="font-weight-700 text-black">تجربه</strong>بیشتراز {{job.experience}} سال</li>
 												<li><i class="ti-shield"></i><strong class="font-weight-700 text-black">نوع همکاری</strong>{% if job.telecommuting %} دورکاری {% else %} حضوری {% endif %}</li>
+											</ul>
+										</div>
+									</div>
+									<div class="col-lg-12 col-md-6">
+										<div class="widget bg-white p-lr20 p-t20  widget_getintuch radius-sm">
+											<h5 class="text-black font-weight-700 p-t10 m-b15">به زودی این بخش طراحی و زیبا سازی خواهد شد ولی کار میکنه</h5>
+											<h5 class="text-black font-weight-700 p-t10 m-b15">ارسال رزومه</h5>
+											<ul>
+												<form  method='post' action='' enctype="multipart/form-data" >
+												<div  class="form-group">
+													{% csrf_token %}
+												{{ form.cv_file }}
+												</div>
+												<button type='submit'>Save</button>
+												</form>
 											</ul>
 										</div>
 									</div>
@@ -68,20 +83,16 @@
 								<div class="dez-divider divider-2px bg-gray-dark mb-4 mt-0"></div>
 								<h6><a href="javascript:void(0)">{{job.company.name}}</a></h6>
 								<p>{{job.company.info}}</p>
-								<a href="jobs-applied-job.html" class="site-button">درخواست</a>
+								<a href="javascript:void(0)" class="site-button">درخواست</a>
 							</div>
 						</div>
-						<form method='post' action='' enctype="multipart/form-data" >
-							{% csrf_token %}
-						{{ form.cv_file }}
-						<button type='submit'>Save</button>
-						</form>
+						
 					</div>
 				</div>
 			</div>
             <!-- Job Detail -->
 			<!-- Our Jobs -->
-			<div class="section-full content-inner">
+			{% comment %} <div class="section-full content-inner">
 				<div class="container">
 					<div class="row">
 						<div class="col-xl-3 col-lg-6 col-md-6">
@@ -174,7 +185,7 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			</div> {% endcomment %}
 			<!-- Our Jobs END -->
 		</div>
     </div>
